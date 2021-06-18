@@ -1,0 +1,216 @@
+@prefix dbo: <file:///home/schavez/chowlk/tmp/http//dbpedia.org/ontology/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix esgreen: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#> .
+@prefix geosparql: <http://www.opengis.net/doc/IS/geosparql/1.0> .
+@prefix hasheight: <http://www.owl-ontologies.com/hasheight#> .
+@prefix haslength: <http://www.owl-ontologies.com/haslength#> .
+@prefix haswidth: <http://www.owl-ontologies.com/haswidth#> .
+@prefix n_isAdult: <http://www.owl-ontologies.com/n_isAdult#> .
+@prefix n_isJuvenile: <http://www.owl-ontologies.com/n_isJuvenile#> .
+@prefix n_isNew: <http://www.owl-ontologies.com/n_isNew#> .
+@prefix n_isOld: <http://www.owl-ontologies.com/n_isOld#> .
+@prefix n_others: <http://www.owl-ontologies.com/n_others#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix po: <https://planteome.org/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sio: <https://bioportal.bioontology.org/ontologies/SIO> .
+@prefix wiki: <https://www.wikidata.org/wiki/> .
+@prefix xsd1: <http://www.w3.org/2001/XMLSchema> .
+
+dbo:District a owl:Class ;
+    rdfs:label "District" .
+
+schema:AdministrativeArea a owl:Class ;
+    rdfs:label "Administrative Area" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom geosparql:Point ;
+            owl:onProperty geosparql:location ] .
+
+schema:Park a owl:Class ;
+    rdfs:label "Park" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd1:nonNegativeInteger ;
+            owl:onProperty sio:hasValue ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom schema:Place ;
+            owl:onProperty schema:istypeOf ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom geosparql:SpatialFeature ;
+            owl:onProperty schema:contains ] .
+
+esgreen:isMeasuredIn a owl:ObjectProperty ;
+    rdfs:label "is measured in" ;
+    rdfs:domain sio:count .
+
+hasheight: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:integer .
+
+haslength: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:integer .
+
+haswidth: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:integer .
+
+n_isAdult: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:xsd .
+
+n_isJuvenile: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:xsd .
+
+n_isNew: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:xsd .
+
+n_isOld: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:xsd .
+
+n_others: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:xsd .
+
+sio:1Dextentquantity a owl:ObjectProperty ;
+    rdfs:label "1 dextentquantity" ;
+    rdfs:domain sio:Spatialquantity ;
+    rdfs:range sio:Dimension .
+
+sio:2Dextentquantity a owl:ObjectProperty ;
+    rdfs:label "2 dextentquantity" ;
+    rdfs:domain sio:Spatialquantity ;
+    rdfs:range sio:Area .
+
+sio:3Dextentquantity a owl:ObjectProperty ;
+    rdfs:label "3 dextentquantity" ;
+    rdfs:domain sio:Spatialquantity ;
+    rdfs:range sio:Spatialquantity .
+
+sio:hasCentralMeasures a owl:ObjectProperty ;
+    rdfs:label "has central measures" ;
+    rdfs:domain sio:Measurement ;
+    rdfs:range sio:mean .
+
+sio:hasDimensionalquantity a owl:ObjectProperty ;
+    rdfs:label "has dimensionalquantity" ;
+    rdfs:domain sio:Measurement ;
+    rdfs:range sio:Spatialquantity .
+
+sio:timeInterval a owl:Class ;
+    rdfs:label "time Interval" .
+
+sio:timeMeasurement a owl:ObjectProperty ;
+    rdfs:label "time measurement" .
+
+wiki: a owl:Ontology ;
+    dc:creator "Carlos Utrilla Guerrero" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "ESGREEN for describing parklands in cities" ;
+    owl:versionInfo "1.0" .
+
+wiki:SpeciesOfPlants a owl:Class ;
+    rdfs:label "Species Of Plants" ;
+    rdfs:subClassOf geosparql:SpatialObject .
+
+schema:Place a owl:Class ;
+    rdfs:label "Place" .
+
+schema:contains a owl:ObjectProperty ;
+    rdfs:label "contains" .
+
+schema:istypeOf a owl:ObjectProperty ;
+    rdfs:label "istype of" .
+
+esgreen:hasLifecycle a owl:ObjectProperty ;
+    rdfs:label "has lifecycle" ;
+    rdfs:domain esgreen:Observation ;
+    rdfs:range po:lifeCycle .
+
+esgreen:hasTotalUnits a owl:DatatypeProperty ;
+    rdfs:label "has total units" ;
+    rdfs:range xsd1:integer .
+
+esgreen:hasValue a owl:DatatypeProperty ;
+    rdfs:label "has value" .
+
+esgreen:makesMeasurement a owl:ObjectProperty ;
+    rdfs:label "makes measurement" ;
+    rdfs:domain esgreen:Observation ;
+    rdfs:range sio:count .
+
+esgreen:measuresProperty a owl:ObjectProperty ;
+    rdfs:label "measures property" ;
+    rdfs:domain esgreen:Observation ;
+    rdfs:range sio:Measurement .
+
+geosparql:SpatialObject a owl:Class ;
+    rdfs:label "Spatial Object" ;
+    rdfs:subClassOf geosparql:SpatialFeature .
+
+sio:Area a owl:Class ;
+    rdfs:label "Area" .
+
+sio:Dimension a owl:Class ;
+    rdfs:label "Dimension" .
+
+sio:dimensionlessquantity a owl:ObjectProperty ;
+    rdfs:label "dimensionlessquantity" ;
+    rdfs:domain sio:count ;
+    rdfs:range sio:Measurement .
+
+sio:hasValue a owl:DatatypeProperty ;
+    rdfs:label "has value" .
+
+sio:mean a owl:Class ;
+    rdfs:label "mean" .
+
+geosparql:SpatialFeature a owl:Class ;
+    rdfs:label "Spatial Feature" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom geosparql:Point ;
+            owl:onProperty geosparql:location ],
+        geosparql:Point .
+
+geosparql:location a owl:ObjectProperty ;
+    rdfs:label "location" .
+
+po:lifeCycle a owl:Class ;
+    rdfs:label "life Cycle" .
+
+esgreen:Observation a owl:Class ;
+    rdfs:label "Observation" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom sio:count ;
+            owl:onProperty esgreen:makesMeasurement ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom sio:Measurement ;
+            owl:onProperty esgreen:measuresProperty ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom po:lifeCycle ;
+            owl:onProperty esgreen:hasLifecycle ] .
+
+geosparql:Point a owl:Class ;
+    rdfs:label "Point" .
+
+sio:count a owl:Class ;
+    rdfs:label "count" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom xsd1:integer ;
+            owl:onProperty esgreen:hasTotalUnits ],
+        [ a owl:Restriction ;
+            owl:cardinality "1"^^xsd1:nonNegativeInteger ;
+            owl:onProperty esgreen:hasValue ],
+        [ a owl:Restriction ;
+            owl:allValuesFrom sio:Measurement ;
+            owl:onProperty sio:dimensionlessquantity ] .
+
+sio:Spatialquantity a owl:Class ;
+    rdfs:label "Spatialquantity" .
+
+sio:Measurement a owl:Class ;
+    rdfs:label "Measurement" .
+

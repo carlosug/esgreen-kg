@@ -1,0 +1,345 @@
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques/> <http://purl.org/dc/elements/1.1/creator> "Carlos Utrilla Guerrero" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques/> <http://purl.org/dc/elements/1.1/description> "This is the draft version of the ontology that describes terms concerning parklands, their characteristics in the context of the \"Open, collaborative and interoperable government platform\" project, in which the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate." .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques/> <http://purl.org/dc/elements/1.1/title> "ESGREEN for describing parklands in cities" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/contains
+<http://schema.org/contains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/contains> <http://www.w3.org/2000/01/rdf-schema#label> "contains" .
+# 
+# http://schema.org/istypeOf
+<http://schema.org/istypeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/istypeOf> <http://www.w3.org/2000/01/rdf-schema#label> "istype of" .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#hasLifecycle
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#hasLifecycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#hasLifecycle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Observation> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#hasLifecycle> <http://www.w3.org/2000/01/rdf-schema#range> <https://planteome.org/lifeCycle> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#hasLifecycle> <http://www.w3.org/2000/01/rdf-schema#label> "has lifecycle" .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#hasTotalUnits
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#hasTotalUnits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#hasTotalUnits> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchemainteger> .
+<http://www.w3.org/2001/XMLSchemainteger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#isMeasuredIn
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#isMeasuredIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://bioportal.bioontology.org/ontologies/SIOcount> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#isMeasuredIn> <http://www.w3.org/2000/01/rdf-schema#label> "is measured in" .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#makesMeasurement
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#makesMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Observation> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#range> <https://bioportal.bioontology.org/ontologies/SIOcount> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#makesMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "makes measurement" .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#measuresProperty
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#measuresProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#measuresProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Observation> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#measuresProperty> <http://www.w3.org/2000/01/rdf-schema#range> <https://bioportal.bioontology.org/ontologies/SIOMeasurement> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#measuresProperty> <http://www.w3.org/2000/01/rdf-schema#label> "measures property" .
+# 
+# http://www.opengis.net/doc/IS/geosparql/1.0location
+<http://www.opengis.net/doc/IS/geosparql/1.0location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opengis.net/doc/IS/geosparql/1.0location> <http://www.w3.org/2000/01/rdf-schema#label> "location" .
+# 
+# http://www.owl-ontologies.com/hasheight#
+<http://www.owl-ontologies.com/hasheight#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/hasheight#> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchemainteger> .
+# 
+# http://www.owl-ontologies.com/haslength#
+<http://www.owl-ontologies.com/haslength#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/haslength#> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchemainteger> .
+# 
+# http://www.owl-ontologies.com/haswidth#
+<http://www.owl-ontologies.com/haswidth#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/haswidth#> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchemainteger> .
+# 
+# http://www.owl-ontologies.com/n_isAdult#
+<http://www.owl-ontologies.com/n_isAdult#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/n_isAdult#> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchemaxsd> .
+<http://www.w3.org/2001/XMLSchemaxsd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.owl-ontologies.com/n_isJuvenile#
+<http://www.owl-ontologies.com/n_isJuvenile#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/n_isJuvenile#> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchemaxsd> .
+# 
+# http://www.owl-ontologies.com/n_isNew#
+<http://www.owl-ontologies.com/n_isNew#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/n_isNew#> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchemaxsd> .
+# 
+# http://www.owl-ontologies.com/n_isOld#
+<http://www.owl-ontologies.com/n_isOld#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/n_isOld#> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchemaxsd> .
+# 
+# http://www.owl-ontologies.com/n_others#
+<http://www.owl-ontologies.com/n_others#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/n_others#> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchemaxsd> .
+# 
+# https://bioportal.bioontology.org/ontologies/SIO1Dextentquantity
+<https://bioportal.bioontology.org/ontologies/SIO1Dextentquantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://bioportal.bioontology.org/ontologies/SIO1Dextentquantity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://bioportal.bioontology.org/ontologies/SIOSpatialquantity> .
+<https://bioportal.bioontology.org/ontologies/SIO1Dextentquantity> <http://www.w3.org/2000/01/rdf-schema#range> <https://bioportal.bioontology.org/ontologies/SIODimension> .
+<https://bioportal.bioontology.org/ontologies/SIO1Dextentquantity> <http://www.w3.org/2000/01/rdf-schema#label> "1 dextentquantity" .
+# 
+# https://bioportal.bioontology.org/ontologies/SIO2Dextentquantity
+<https://bioportal.bioontology.org/ontologies/SIO2Dextentquantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://bioportal.bioontology.org/ontologies/SIO2Dextentquantity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://bioportal.bioontology.org/ontologies/SIOSpatialquantity> .
+<https://bioportal.bioontology.org/ontologies/SIO2Dextentquantity> <http://www.w3.org/2000/01/rdf-schema#range> <https://bioportal.bioontology.org/ontologies/SIOArea> .
+<https://bioportal.bioontology.org/ontologies/SIO2Dextentquantity> <http://www.w3.org/2000/01/rdf-schema#label> "2 dextentquantity" .
+# 
+# https://bioportal.bioontology.org/ontologies/SIO3Dextentquantity
+<https://bioportal.bioontology.org/ontologies/SIO3Dextentquantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://bioportal.bioontology.org/ontologies/SIO3Dextentquantity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://bioportal.bioontology.org/ontologies/SIOSpatialquantity> .
+<https://bioportal.bioontology.org/ontologies/SIO3Dextentquantity> <http://www.w3.org/2000/01/rdf-schema#range> <https://bioportal.bioontology.org/ontologies/SIOSpatialquantity> .
+<https://bioportal.bioontology.org/ontologies/SIO3Dextentquantity> <http://www.w3.org/2000/01/rdf-schema#label> "3 dextentquantity" .
+# 
+# https://bioportal.bioontology.org/ontologies/SIOdimensionlessquantity
+<https://bioportal.bioontology.org/ontologies/SIOdimensionlessquantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://bioportal.bioontology.org/ontologies/SIOdimensionlessquantity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://bioportal.bioontology.org/ontologies/SIOcount> .
+<https://bioportal.bioontology.org/ontologies/SIOdimensionlessquantity> <http://www.w3.org/2000/01/rdf-schema#range> <https://bioportal.bioontology.org/ontologies/SIOMeasurement> .
+<https://bioportal.bioontology.org/ontologies/SIOdimensionlessquantity> <http://www.w3.org/2000/01/rdf-schema#label> "dimensionlessquantity" .
+# 
+# https://bioportal.bioontology.org/ontologies/SIOhasCentralMeasures
+<https://bioportal.bioontology.org/ontologies/SIOhasCentralMeasures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://bioportal.bioontology.org/ontologies/SIOhasCentralMeasures> <http://www.w3.org/2000/01/rdf-schema#domain> <https://bioportal.bioontology.org/ontologies/SIOMeasurement> .
+<https://bioportal.bioontology.org/ontologies/SIOhasCentralMeasures> <http://www.w3.org/2000/01/rdf-schema#range> <https://bioportal.bioontology.org/ontologies/SIOmean> .
+<https://bioportal.bioontology.org/ontologies/SIOhasCentralMeasures> <http://www.w3.org/2000/01/rdf-schema#label> "has central measures" .
+# 
+# https://bioportal.bioontology.org/ontologies/SIOhasDimensionalquantity
+<https://bioportal.bioontology.org/ontologies/SIOhasDimensionalquantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://bioportal.bioontology.org/ontologies/SIOhasDimensionalquantity> <http://www.w3.org/2000/01/rdf-schema#domain> <https://bioportal.bioontology.org/ontologies/SIOMeasurement> .
+<https://bioportal.bioontology.org/ontologies/SIOhasDimensionalquantity> <http://www.w3.org/2000/01/rdf-schema#range> <https://bioportal.bioontology.org/ontologies/SIOSpatialquantity> .
+<https://bioportal.bioontology.org/ontologies/SIOhasDimensionalquantity> <http://www.w3.org/2000/01/rdf-schema#label> "has dimensionalquantity" .
+# 
+# https://bioportal.bioontology.org/ontologies/SIOtimeMeasurement
+<https://bioportal.bioontology.org/ontologies/SIOtimeMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://bioportal.bioontology.org/ontologies/SIOtimeMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "time measurement" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#hasTotalUnits
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#hasTotalUnits> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#hasValue
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#hasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#hasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value" .
+# 
+# http://www.owl-ontologies.com/hasheight#
+<http://www.owl-ontologies.com/hasheight#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.owl-ontologies.com/haslength#
+<http://www.owl-ontologies.com/haslength#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.owl-ontologies.com/haswidth#
+<http://www.owl-ontologies.com/haswidth#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.owl-ontologies.com/n_isAdult#
+<http://www.owl-ontologies.com/n_isAdult#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.owl-ontologies.com/n_isJuvenile#
+<http://www.owl-ontologies.com/n_isJuvenile#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.owl-ontologies.com/n_isNew#
+<http://www.owl-ontologies.com/n_isNew#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.owl-ontologies.com/n_isOld#
+<http://www.owl-ontologies.com/n_isOld#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# http://www.owl-ontologies.com/n_others#
+<http://www.owl-ontologies.com/n_others#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://bioportal.bioontology.org/ontologies/SIOhasValue
+<https://bioportal.bioontology.org/ontologies/SIOhasValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://bioportal.bioontology.org/ontologies/SIOhasValue> <http://www.w3.org/2000/01/rdf-schema#label> "has value" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# file:///home/schavez/chowlk/tmp/http//dbpedia.org/ontology/District
+<file:///home/schavez/chowlk/tmp/http//dbpedia.org/ontology/District> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<file:///home/schavez/chowlk/tmp/http//dbpedia.org/ontology/District> <http://www.w3.org/2000/01/rdf-schema#label> "District" .
+# 
+# http://schema.org/AdministrativeArea
+<http://schema.org/AdministrativeArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/AdministrativeArea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/doc/IS/geosparql/1.0location> .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.opengis.net/doc/IS/geosparql/1.0Point> .
+<http://schema.org/AdministrativeArea> <http://www.w3.org/2000/01/rdf-schema#label> "Administrative Area" .
+# 
+# http://schema.org/Park
+<http://schema.org/Park> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Park> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/contains> .
+_:genid2 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.opengis.net/doc/IS/geosparql/1.0SpatialFeature> .
+<http://schema.org/Park> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://schema.org/istypeOf> .
+_:genid3 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://schema.org/Place> .
+<http://schema.org/Park> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <https://bioportal.bioontology.org/ontologies/SIOhasValue> .
+_:genid4 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<http://schema.org/Park> <http://www.w3.org/2000/01/rdf-schema#label> "Park" .
+# 
+# http://schema.org/Place
+<http://schema.org/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place" .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Observation
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Observation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#hasLifecycle> .
+_:genid5 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://planteome.org/lifeCycle> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Observation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid6 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#makesMeasurement> .
+_:genid6 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://bioportal.bioontology.org/ontologies/SIOcount> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Observation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#measuresProperty> .
+_:genid7 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://bioportal.bioontology.org/ontologies/SIOMeasurement> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Observation> <http://www.w3.org/2000/01/rdf-schema#label> "Observation" .
+# 
+# http://www.opengis.net/doc/IS/geosparql/1.0Point
+<http://www.opengis.net/doc/IS/geosparql/1.0Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/doc/IS/geosparql/1.0Point> <http://www.w3.org/2000/01/rdf-schema#label> "Point" .
+# 
+# http://www.opengis.net/doc/IS/geosparql/1.0SpatialFeature
+<http://www.opengis.net/doc/IS/geosparql/1.0SpatialFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/doc/IS/geosparql/1.0SpatialFeature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/doc/IS/geosparql/1.0Point> .
+<http://www.opengis.net/doc/IS/geosparql/1.0SpatialFeature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid8 <http://www.w3.org/2002/07/owl#onProperty> <http://www.opengis.net/doc/IS/geosparql/1.0location> .
+_:genid8 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.opengis.net/doc/IS/geosparql/1.0Point> .
+<http://www.opengis.net/doc/IS/geosparql/1.0SpatialFeature> <http://www.w3.org/2000/01/rdf-schema#label> "Spatial Feature" .
+# 
+# http://www.opengis.net/doc/IS/geosparql/1.0SpatialObject
+<http://www.opengis.net/doc/IS/geosparql/1.0SpatialObject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/doc/IS/geosparql/1.0SpatialObject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/doc/IS/geosparql/1.0SpatialFeature> .
+<http://www.opengis.net/doc/IS/geosparql/1.0SpatialObject> <http://www.w3.org/2000/01/rdf-schema#label> "Spatial Object" .
+# 
+# http://www.w3.org/2001/XMLSchemainteger
+# 
+# http://www.w3.org/2001/XMLSchemaxsd
+# 
+# https://bioportal.bioontology.org/ontologies/SIOArea
+<https://bioportal.bioontology.org/ontologies/SIOArea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://bioportal.bioontology.org/ontologies/SIOArea> <http://www.w3.org/2000/01/rdf-schema#label> "Area" .
+# 
+# https://bioportal.bioontology.org/ontologies/SIODimension
+<https://bioportal.bioontology.org/ontologies/SIODimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://bioportal.bioontology.org/ontologies/SIODimension> <http://www.w3.org/2000/01/rdf-schema#label> "Dimension" .
+# 
+# https://bioportal.bioontology.org/ontologies/SIOMeasurement
+<https://bioportal.bioontology.org/ontologies/SIOMeasurement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://bioportal.bioontology.org/ontologies/SIOMeasurement> <http://www.w3.org/2000/01/rdf-schema#label> "Measurement" .
+# 
+# https://bioportal.bioontology.org/ontologies/SIOSpatialquantity
+<https://bioportal.bioontology.org/ontologies/SIOSpatialquantity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://bioportal.bioontology.org/ontologies/SIOSpatialquantity> <http://www.w3.org/2000/01/rdf-schema#label> "Spatialquantity" .
+# 
+# https://bioportal.bioontology.org/ontologies/SIOcount
+<https://bioportal.bioontology.org/ontologies/SIOcount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://bioportal.bioontology.org/ontologies/SIOcount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid9 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#hasTotalUnits> .
+_:genid9 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://www.w3.org/2001/XMLSchemainteger> .
+<https://bioportal.bioontology.org/ontologies/SIOcount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid10 <http://www.w3.org/2002/07/owl#onProperty> <https://bioportal.bioontology.org/ontologies/SIOdimensionlessquantity> .
+_:genid10 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://bioportal.bioontology.org/ontologies/SIOMeasurement> .
+<https://bioportal.bioontology.org/ontologies/SIOcount> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#hasValue> .
+_:genid11 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+<https://bioportal.bioontology.org/ontologies/SIOcount> <http://www.w3.org/2000/01/rdf-schema#label> "count" .
+# 
+# https://bioportal.bioontology.org/ontologies/SIOmean
+<https://bioportal.bioontology.org/ontologies/SIOmean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://bioportal.bioontology.org/ontologies/SIOmean> <http://www.w3.org/2000/01/rdf-schema#label> "mean" .
+# 
+# https://bioportal.bioontology.org/ontologies/SIOtimeInterval
+<https://bioportal.bioontology.org/ontologies/SIOtimeInterval> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://bioportal.bioontology.org/ontologies/SIOtimeInterval> <http://www.w3.org/2000/01/rdf-schema#label> "time Interval" .
+# 
+# https://planteome.org/lifeCycle
+<https://planteome.org/lifeCycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://planteome.org/lifeCycle> <http://www.w3.org/2000/01/rdf-schema#label> "life Cycle" .
+# 
+# https://www.wikidata.org/wiki/SpeciesOfPlants
+<https://www.wikidata.org/wiki/SpeciesOfPlants> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.wikidata.org/wiki/SpeciesOfPlants> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.opengis.net/doc/IS/geosparql/1.0SpatialObject> .
+<https://www.wikidata.org/wiki/SpeciesOfPlants> <http://www.w3.org/2000/01/rdf-schema#label> "Species Of Plants" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#hasTotalUnits> <http://www.w3.org/2000/01/rdf-schema#label> "has total units" .
+# 
+<http://www.owl-ontologies.com/hasheight#> <http://www.w3.org/2000/01/rdf-schema#label> "" .
+# 
+<http://www.owl-ontologies.com/haslength#> <http://www.w3.org/2000/01/rdf-schema#label> "" .
+# 
+<http://www.owl-ontologies.com/haswidth#> <http://www.w3.org/2000/01/rdf-schema#label> "" .
+# 
+<http://www.owl-ontologies.com/n_isAdult#> <http://www.w3.org/2000/01/rdf-schema#label> "" .
+# 
+<http://www.owl-ontologies.com/n_isJuvenile#> <http://www.w3.org/2000/01/rdf-schema#label> "" .
+# 
+<http://www.owl-ontologies.com/n_isNew#> <http://www.w3.org/2000/01/rdf-schema#label> "" .
+# 
+<http://www.owl-ontologies.com/n_isOld#> <http://www.w3.org/2000/01/rdf-schema#label> "" .
+# 
+<http://www.owl-ontologies.com/n_others#> <http://www.w3.org/2000/01/rdf-schema#label> "" .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
