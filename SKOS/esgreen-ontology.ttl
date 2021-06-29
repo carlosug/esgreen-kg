@@ -1,28 +1,41 @@
-@prefix circumference: <http://www.owl-ontologies.com/circumference#> .
-@prefix count: <http://www.owl-ontologies.com/count#> .
+@prefix EPPOCode: <http://www.owl-ontologies.com/EPPOCode#> .
+@prefix SubTotalCountDistrict: <http://www.owl-ontologies.com/SubTotalCountDistrict#> .
+@prefix avgTreeHt: <http://www.owl-ontologies.com/avgTreeHt#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix districtName: <http://www.owl-ontologies.com/districtName#> .
 @prefix distritNumber: <http://www.owl-ontologies.com/distritNumber#> .
-@prefix eppo: <https://gd.eppo.int/> .
 @prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
 @prefix esgreen: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#> .
 @prefix geosparql: <http://www.opengis.net/doc/IS/geosparql/1.0#> .
-@prefix height: <http://www.owl-ontologies.com/height#> .
-@prefix n_isAdult: <http://www.owl-ontologies.com/n_isAdult#> .
-@prefix n_isJuvenile: <http://www.owl-ontologies.com/n_isJuvenile#> .
-@prefix n_isNew: <http://www.owl-ontologies.com/n_isNew#> .
-@prefix n_isOld: <http://www.owl-ontologies.com/n_isOld#> .
-@prefix n_others: <http://www.owl-ontologies.com/n_others#> .
+@prefix lat: <http://www.owl-ontologies.com/lat#> .
+@prefix long: <http://www.owl-ontologies.com/long#> .
+@prefix n_count: <http://www.owl-ontologies.com/n_count#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix parkName: <http://www.owl-ontologies.com/parkName#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema: <http://schema.org/> .
-@prefix surface_area: <http://www.owl-ontologies.com/surface_area#> .
+@prefix scientific_name: <http://www.owl-ontologies.com/scientific_name#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix subTotalCountPark: <http://www.owl-ontologies.com/subTotalCountPark#> .
+@prefix surface: <http://www.owl-ontologies.com/surface#> .
+@prefix surfacePark: <http://www.owl-ontologies.com/surfacePark#> .
+@prefix totalCountPark: <http://www.owl-ontologies.com/totalCountPark#> .
 @prefix xsd1: <http://www.w3.org/2001/XMLSchema> .
 @prefix year: <http://www.owl-ontologies.com/year#> .
 
-schema:Place a owl:Class ;
-    rdfs:label "Place" ;
-    rdfs:subClassOf esgreen:Park .
+schema:countOf a owl:ObjectProperty ;
+    rdfs:label "count of" ;
+    rdfs:domain esgreen:TreesCharactistics .
+
+schema:inLocation a owl:ObjectProperty ;
+    rdfs:label "in location" ;
+    rdfs:domain esgreen:TreesCharactistics ;
+    rdfs:range schema:AdministrativeArea .
+
+sio:AssociatedWith a owl:ObjectProperty ;
+    rdfs:label "associated with" ;
+    rdfs:domain schema:Place ;
+    rdfs:range esadm:District .
 
 esgreen: a owl:Ontology ;
     dc:creator "Carlos Utrilla Guerrero" ;
@@ -30,24 +43,39 @@ esgreen: a owl:Ontology ;
     dc:title "ESGREEN for representing parkland and nature resources in cities" ;
     owl:versionInfo "1.0" .
 
-esgreen:SpeciesInLocation a owl:Class ;
-    rdfs:label "Species In Location" .
+esgreen:Adult a owl:Class ;
+    rdfs:label "Adult" .
 
-esgreen:SpecieslifeCycle a owl:Class ;
-    rdfs:label "Specieslife Cycle" .
+esgreen:Juvenile a owl:Class ;
+    rdfs:label "Juvenile" .
 
-esgreen:haspredominantSpecie a owl:ObjectProperty ;
-    rdfs:label "haspredominant specie" ;
-    rdfs:domain esgreen:Specie .
+esgreen:New a owl:Class ;
+    rdfs:label "New" ;
+    rdfs:subClassOf esgreen:AgeCategory .
 
-esadm:District a owl:Class ;
-    rdfs:label "District" .
+esgreen:Old a owl:Class ;
+    rdfs:label "Old" .
 
-circumference: a owl:DatatypeProperty ;
+esgreen:Other a owl:Class ;
+    rdfs:label "Other" .
+
+esgreen:Specie a owl:Class ;
+    rdfs:label "Specie" ;
+    rdfs:subClassOf geosparql:SpatialObject .
+
+esgreen:hasDominant a owl:ObjectProperty ;
+    rdfs:label "has dominant" ;
+    rdfs:domain esgreen:Park .
+
+EPPOCode: a owl:DatatypeProperty ;
     rdfs:label "" ;
     rdfs:range xsd1:xsd .
 
-count: a owl:DatatypeProperty ;
+SubTotalCountDistrict: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:xsd .
+
+avgTreeHt: a owl:DatatypeProperty ;
     rdfs:label "" ;
     rdfs:range xsd1:xsd .
 
@@ -59,31 +87,39 @@ distritNumber: a owl:DatatypeProperty ;
     rdfs:label "" ;
     rdfs:range xsd1:xsd .
 
-height: a owl:DatatypeProperty ;
+lat: a owl:DatatypeProperty ;
     rdfs:label "" ;
     rdfs:range xsd1:xsd .
 
-n_isAdult: a owl:DatatypeProperty ;
+long: a owl:DatatypeProperty ;
     rdfs:label "" ;
     rdfs:range xsd1:xsd .
 
-n_isJuvenile: a owl:DatatypeProperty ;
+n_count: a owl:DatatypeProperty ;
     rdfs:label "" ;
     rdfs:range xsd1:xsd .
 
-n_isNew: a owl:DatatypeProperty ;
+parkName: a owl:DatatypeProperty ;
     rdfs:label "" ;
     rdfs:range xsd1:xsd .
 
-n_isOld: a owl:DatatypeProperty ;
+scientific_name: a owl:DatatypeProperty ;
     rdfs:label "" ;
     rdfs:range xsd1:xsd .
 
-n_others: a owl:DatatypeProperty ;
+subTotalCountPark: a owl:DatatypeProperty ;
     rdfs:label "" ;
     rdfs:range xsd1:xsd .
 
-surface_area: a owl:DatatypeProperty ;
+surface: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:xsd .
+
+surfacePark: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:xsd .
+
+totalCountPark: a owl:DatatypeProperty ;
     rdfs:label "" ;
     rdfs:range xsd1:xsd .
 
@@ -91,38 +127,33 @@ year: a owl:DatatypeProperty ;
     rdfs:label "" ;
     rdfs:range xsd1:xsd .
 
-schema:AdministrativeArea a owl:Class ;
-    rdfs:label "Administrative Area" ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom geosparql:Point ;
-            owl:onProperty geosparql:location ] .
+schema:Place a owl:Class ;
+    rdfs:label "Place" ;
+    rdfs:subClassOf esgreen:Park .
 
 schema:containsPlace a owl:ObjectProperty ;
     rdfs:label "contains place" ;
     rdfs:domain esgreen:Park ;
     rdfs:range geosparql:SpatialFeature .
 
-schema:sameAs a owl:ObjectProperty ;
-    rdfs:label "same as" ;
-    rdfs:domain esgreen:Specie ;
-    rdfs:range eppo:taxon .
+esgreen:AgeCategory a owl:Class ;
+    rdfs:label "Age Category" .
+
+esadm:District a owl:Class ;
+    rdfs:label "District" .
 
 geosparql:SpatialObject a owl:Class ;
     rdfs:label "Spatial Object" ;
     rdfs:subClassOf geosparql:SpatialFeature .
 
-esgreen:Park a owl:Class ;
-    rdfs:label "Park" ;
+schema:AdministrativeArea a owl:Class ;
+    rdfs:label "Administrative Area" ;
     rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom geosparql:SpatialFeature ;
-            owl:onProperty schema:containsPlace ] .
+            owl:allValuesFrom geosparql:Point ;
+            owl:onProperty geosparql:location ] .
 
-esgreen:Specie a owl:Class ;
-    rdfs:label "Specie" ;
-    rdfs:subClassOf [ a owl:Restriction ;
-            owl:allValuesFrom eppo:taxon ;
-            owl:onProperty schema:sameAs ],
-        geosparql:SpatialObject .
+esgreen:TreesCharactistics a owl:Class ;
+    rdfs:label "Trees Charactistics" .
 
 geosparql:Point a owl:Class ;
     rdfs:label "Point" .
@@ -132,8 +163,11 @@ geosparql:location a owl:ObjectProperty ;
     rdfs:domain schema:AdministrativeArea,
         geosparql:SpatialFeature .
 
-eppo:taxon a owl:Class ;
-    rdfs:label "taxon" .
+esgreen:Park a owl:Class ;
+    rdfs:label "Park" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom geosparql:SpatialFeature ;
+            owl:onProperty schema:containsPlace ] .
 
 geosparql:SpatialFeature a owl:Class ;
     rdfs:label "Spatial Feature" ;

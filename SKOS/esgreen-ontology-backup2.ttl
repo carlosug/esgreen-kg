@@ -1,0 +1,143 @@
+@prefix circumference: <http://www.owl-ontologies.com/circumference#> .
+@prefix count: <http://www.owl-ontologies.com/count#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix districtName: <http://www.owl-ontologies.com/districtName#> .
+@prefix distritNumber: <http://www.owl-ontologies.com/distritNumber#> .
+@prefix eppo: <https://gd.eppo.int/> .
+@prefix esadm: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+@prefix esgreen: <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#> .
+@prefix geosparql: <http://www.opengis.net/doc/IS/geosparql/1.0#> .
+@prefix height: <http://www.owl-ontologies.com/height#> .
+@prefix n_isAdult: <http://www.owl-ontologies.com/n_isAdult#> .
+@prefix n_isJuvenile: <http://www.owl-ontologies.com/n_isJuvenile#> .
+@prefix n_isNew: <http://www.owl-ontologies.com/n_isNew#> .
+@prefix n_isOld: <http://www.owl-ontologies.com/n_isOld#> .
+@prefix n_others: <http://www.owl-ontologies.com/n_others#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix surface_area: <http://www.owl-ontologies.com/surface_area#> .
+@prefix xsd1: <http://www.w3.org/2001/XMLSchema> .
+@prefix year: <http://www.owl-ontologies.com/year#> .
+
+schema:Place a owl:Class ;
+    rdfs:label "Place" ;
+    rdfs:subClassOf esgreen:Park .
+
+esgreen: a owl:Ontology ;
+    dc:creator "Carlos Utrilla Guerrero" ;
+    dc:description "Ontology code created by Chowlk" ;
+    dc:title "ESGREEN for representing parkland and nature resources in cities" ;
+    owl:versionInfo "1.0" .
+
+esgreen:SpeciesInLocation a owl:Class ;
+    rdfs:label "Species In Location" .
+
+esgreen:SpecieslifeCycle a owl:Class ;
+    rdfs:label "Specieslife Cycle" .
+
+esgreen:haspredominantSpecie a owl:ObjectProperty ;
+    rdfs:label "haspredominant specie" ;
+    rdfs:domain esgreen:Specie .
+
+esadm:District a owl:Class ;
+    rdfs:label "District" .
+
+circumference: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:xsd .
+
+count: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:xsd .
+
+districtName: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:xsd .
+
+distritNumber: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:xsd .
+
+height: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:xsd .
+
+n_isAdult: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:xsd .
+
+n_isJuvenile: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:xsd .
+
+n_isNew: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:xsd .
+
+n_isOld: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:xsd .
+
+n_others: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:xsd .
+
+surface_area: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:xsd .
+
+year: a owl:DatatypeProperty ;
+    rdfs:label "" ;
+    rdfs:range xsd1:xsd .
+
+schema:AdministrativeArea a owl:Class ;
+    rdfs:label "Administrative Area" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom geosparql:Point ;
+            owl:onProperty geosparql:location ] .
+
+schema:containsPlace a owl:ObjectProperty ;
+    rdfs:label "contains place" ;
+    rdfs:domain esgreen:Park ;
+    rdfs:range geosparql:SpatialFeature .
+
+schema:sameAs a owl:ObjectProperty ;
+    rdfs:label "same as" ;
+    rdfs:domain esgreen:Specie ;
+    rdfs:range eppo:taxon .
+
+geosparql:SpatialObject a owl:Class ;
+    rdfs:label "Spatial Object" ;
+    rdfs:subClassOf geosparql:SpatialFeature .
+
+esgreen:Park a owl:Class ;
+    rdfs:label "Park" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom geosparql:SpatialFeature ;
+            owl:onProperty schema:containsPlace ] .
+
+esgreen:Specie a owl:Class ;
+    rdfs:label "Specie" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom eppo:taxon ;
+            owl:onProperty schema:sameAs ],
+        geosparql:SpatialObject .
+
+geosparql:Point a owl:Class ;
+    rdfs:label "Point" .
+
+geosparql:location a owl:ObjectProperty ;
+    rdfs:label "location" ;
+    rdfs:domain schema:AdministrativeArea,
+        geosparql:SpatialFeature .
+
+eppo:taxon a owl:Class ;
+    rdfs:label "taxon" .
+
+geosparql:SpatialFeature a owl:Class ;
+    rdfs:label "Spatial Feature" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:allValuesFrom geosparql:Point ;
+            owl:onProperty geosparql:location ] .
+
