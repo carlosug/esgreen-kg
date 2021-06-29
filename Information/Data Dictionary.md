@@ -30,36 +30,36 @@ In total, 18 items, 6 csv files for each year, 2017, 2018 and 2020 respectively.
 
   * `Estado_arbolado_ParquesHistoricoSingularesForestales_YYYY`
 
-    * | Original variable name           | New variable name | Description                                                  | Type     | Use                            |
-      | -------------------------------- | ----------------- | ------------------------------------------------------------ | -------- | ------------------------------ |
-      | PARQUE                           | park_name         | The unique name of the park on which tree is located         | string   | To locate the tree             |
-      | Altura Promedio (m)              | avgTreeHt         | Average height (m) of all trees in a Park. Calculated as distance from ground level to three top | integrer | for growth curve or change     |
-      | Perimetro Promedio (cm)          | avgTreePerim      | Average circumference of all trees in a Park. Diameter * Pi  | integrer | Phenology/allometric equations |
-      | Recién Plantado y no consolidado | n_ageNew          | Number of trees which age is 1 to 5 years                    | int      | Phenology/allometric equations |
-      | Joven                            | n_ageJuvenile     | Num of trees in juvenile stage                               | int      |                                |
-      | Maduro                           | n_ageAdult        | Num of trees Achieved max. Optimal development               | int      |                                |
-      | Viejo                            | n_ageOld          | Num of trees deprecated age stage                            | int      |                                |
-      | Otros                            | n_others          | Number of trees death and others                             | int      |                                |
-      | Total General                    | subTotalCountPark | Total amount of trees in each park within a city             | int      | To count/agg per district      |
-      | Total                            | totalCountPark    | Total amount of tree in all parks within a city              | int      | To count/agg the whole city    |
+    * | Original variable name           | New variable name | Description                                                  | Type   | Use                            |
+      | -------------------------------- | ----------------- | ------------------------------------------------------------ | ------ | ------------------------------ |
+      | PARQUE                           | park_name         | The unique name of the park on which tree is located         | string | To locate the tree             |
+      | Altura Promedio (m)              | avgTreeHt         | Average height (m) of all trees in a Park. Calculated as distance from ground level to three top | int    | for growth curve or change     |
+      | Perimetro Promedio (cm)          | avgTreePerim      | Average circumference of all trees in a Park. Diameter * Pi  | int    | Phenology/allometric equations |
+      | Recién Plantado y no consolidado | n_ageNew          | Number of trees which age is 1 to 5 years                    | int    | Phenology/allometric equations |
+      | Joven                            | n_ageJuvenile     | Num of trees in juvenile stage                               | int    |                                |
+      | Maduro                           | n_ageAdult        | Num of trees Achieved max. Optimal development               | int    |                                |
+      | Viejo                            | n_ageOld          | Num of trees deprecated age stage                            | int    |                                |
+      | Otros                            | n_others          | Number of trees death and others                             | int    |                                |
+      | Total General                    | subTotalCountPark | Total amount of trees in each park within a city             | int    | To count/agg per district      |
+      | Total                            | totalCountPark    | Total amount of tree in all parks within a city              | int    | To count/agg the whole city    |
 
   * `EstadoZonasVerdesDistritosCalles_YYYY`
 
-    * | Original variable name                   | New variable name     | Description                                                  | Type     | Use                            |
-    | ---------------------------------------- | --------------------- | ------------------------------------------------------------ | -------- | ------------------------------ |
-      | NOMBRE DISTRITO                          | area_name             | Name of the area/district on which tree is located           | string   | To locate the park             |
-      | Num_DISTRITO                             | area_code             | The unique ID name of the park on which tree is located      | integer  |                                |
-      | Recién Plantado y no consolidado (RPyNC) | n_ageNew              | Number of trees which age is 1 to 5 years                    | int      | Phenology/allometric equations |
-      | Altura Media (Hmedia)_RRLyNC             | avgTreeHt_New         |                                                              |          |                                |
-      | Joven (J)                                | n_ageJuvenile         | Num of trees in juvenile stage                               | int      |                                |
-      | Hmedia_J                                 | avgTreeHt_Juvenile    | Average height of all J trees in a Park. Calculated as distance from ground level to three top (m) | int      | for growth curve or change     |
-      | Maduro (M)                               | n_ageAdult            | Num of trees Achieved max. Optimal development               | int      |                                |
-      | Hmedia_M                                 | avgTreeHt_Adult       | Average height of all M trees in a Park. Calculated as distance from ground level to three top | integrer | for growth curve or change     |
-      | Viejo (V)                                | n_ageOld              | Num of trees deprecated age stage                            | int      |                                |
-      | HMedia_V                                 | avgTreeHt_Juvenile    | Average height of all J trees in a Park. Calculated as distance from ground level to three top | integrer | for growth curve or change     |
-      | Otros                                    | n_others              | Number of trees death and others                             | int      |                                |
-      | Hmedia_O                                 | avgTreeHt_Others      | Average height of all O trees in a Park. Calculated as distance from ground level to three top | integrer | for growth curve or change     |
-      | Total General                            | subTotalCountDistrict | Total amount of trees in each district within a city         | int      | To count/agg per district      |
+    * | Original variable name                   | New variable name     | Description                                                  | Type   | Use                            |
+      | ---------------------------------------- | --------------------- | ------------------------------------------------------------ | ------ | ------------------------------ |
+      | NOMBRE DISTRITO                          | area_name             | Name of the area/district on which tree is located           | string | To locate the park             |
+      | Num_DISTRITO                             | area_code             | The unique ID name of the park on which tree is located      | int    |                                |
+      | Recién Plantado y no consolidado (RPyNC) | n_ageNew              | Number of trees which age is 1 to 5 years                    | int    | Phenology/allometric equations |
+      | Altura Media (Hmedia)_RRLyNC             | avgTreeHt_New         |                                                              |        |                                |
+      | Joven (J)                                | n_ageJuvenile         | Num of trees in juvenile stage                               | int    |                                |
+    | Hmedia_J                                 | avgTreeHt_Juvenile    | Average height of all J trees in a Park. Calculated as distance from ground level to three top (m) | int    | for growth curve or change     |
+      | Maduro (M)                               | n_ageAdult            | Num of trees Achieved max. Optimal development               | int    |                                |
+      | Hmedia_M                                 | avgTreeHt_Adult       | Average height of all M trees in a Park. Calculated as distance from ground level to three top | int    | for growth curve or change     |
+      | Viejo (V)                                | n_ageOld              | Num of trees deprecated age stage                            | int    |                                |
+      | HMedia_V                                 | avgTreeHt_Juvenile    | Average height of all J trees in a Park. Calculated as distance from ground level to three top | int    | for growth curve or change     |
+      | Otros                                    | n_others              | Number of trees death and others                             | int    |                                |
+      | Hmedia_O                                 | avgTreeHt_Others      | Average height of all O trees in a Park. Calculated as distance from ground level to three top | int    | for growth curve or change     |
+      | Total General                            | subTotalCountDistrict | Total amount of trees in each district within a city         | int    | To count/agg per district      |
   
   * `MasasParquesHistoricoSingularesForestales_YYYY`
   
@@ -102,26 +102,3 @@ In total, 18 items, 6 csv files for each year, 2017, 2018 and 2020 respectively.
 ---
 
 ### Specie Level
-
-
-
-| Original variable name                   | New variable name                     | Description                                                  | Type     | Use                            |
-| ---------------------------------------- | ------------------------------------- | ------------------------------------------------------------ | -------- | ------------------------------ |
-| NOMBRE DISTRITO                          | area_name                             | Name of the area/district on which tree is located           | string   | To locate the parl             |
-| Num_DISTRITO                             | area_code                             | The unique ID name of the park on which tree is located      | integer  |                                |
-| Recién Plantado y no consolidado (RPyNC) | AgeNew                                | Number of trees which age is 1 to 5 years                    | int      | Phenology/allometric equations |
-| Altura Media (Hmedia)_RRLyNC             |                                       |                                                              |          |                                |
-| Joven (J)                                | AgeJuvenile                           | Num of trees in juvenile stage                               | int      |                                |
-| Hmedia_J                                 | AvgTreeHt_J                           | Average height of all J trees in a Park. Calculated as distance from ground level to three top (m) | integrer | for growth curve or change     |
-| Maduro (M)                               | AgeAdult                              | Num of trees Achieved max. Optimal development               | int      |                                |
-| Hmedia_M                                 | AvgTreeHt_M (m)                       | Average height of all M trees in a Park. Calculated as distance from ground level to three top | integrer | for growth curve or change     |
-| Viejo (V)                                | AgeOld                                | Num of trees deprecated age stage                            | int      |                                |
-| HMedia_V                                 | AvgTreeHt_J (m)                       | Average height of all J trees in a Park. Calculated as distance from ground level to three top | integrer | for growth curve or change     |
-| Otros                                    |                                       | Number of trees death and others                             | int      |                                |
-| Hmedia_O                                 | AvgTreeHt_O (m)                       | Average height of all O trees in a Park. Calculated as distance from ground level to three top | integrer | for growth curve or change     |
-|                                          | *6. MasasZonasVerdesDistrictosCalles* |                                                              |          |                                |
-| DISTRITO                                 | area_name                             | Name of the area/district on which tree is located           | string   |                                |
-| ESPECIE PREDOMINANTE                     | scientific_name                       | Botanical name                                               | string   | To group by taxon              |
-| N masas                                  |                                       |                                                              | integrer |                                |
-| Superficie Masa Forestal m2              | Surface                               | Estimated using density of each mass of all trees (m2)       | integer  |                                |
-| Superficie Masa Forestal ha              | Surface                               | Calculated area equal to a squared 100 m sides (ha)          | integer  |                                |
