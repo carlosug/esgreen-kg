@@ -7,8 +7,8 @@
 
 ## Diagram in png:
 
-+ [Version Simple](Information/diagram-version-simple.png): Simple version of representation of the data.
-+ [Version Complex](Information/diagram-version-complex.png): Complex version of representation of the data.
++ [Version Simple](Information/diagram-simple.png): Simple version of representation of the data.
++ [Version Complex](Information/diagram-complex.png): Complex version of representation of the data.
 
 ## Ontology versions - Steps:
 
