@@ -52,7 +52,7 @@ In total, 18 items, 6 csv files for each year, 2017, 2018 and 2020 respectively.
       | Recién Plantado y no consolidado (RPyNC) | n_ageNew              | Number of trees which age is 1 to 5 years                    | int    | Phenology/allometric equations |
       | Altura Media (Hmedia)_RRLyNC             | avgTreeHt_New         |                                                              |        |                                |
       | Joven (J)                                | n_ageJuvenile         | Num of trees in juvenile stage                               | int    |                                |
-    | Hmedia_J                                 | avgTreeHt_Juvenile    | Average height of all J trees in a Park. Calculated as distance from ground level to three top (m) | int    | for growth curve or change     |
+      | Hmedia_J                                 | avgTreeHt_Juvenile    | Average height of all J trees in a Park. Calculated as distance from ground level to three top (m) | int    | for growth curve or change     |
       | Maduro (M)                               | n_ageAdult            | Num of trees Achieved max. Optimal development               | int    |                                |
       | Hmedia_M                                 | avgTreeHt_Adult       | Average height of all M trees in a Park. Calculated as distance from ground level to three top | int    | for growth curve or change     |
       | Viejo (V)                                | n_ageOld              | Num of trees deprecated age stage                            | int    |                                |
