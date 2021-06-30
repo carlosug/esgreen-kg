@@ -1,0 +1,612 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://http://vocab.ciudadesabiertas.es/def/comercio/arboladoenparques#"
+     xml:base="http://http://vocab.ciudadesabiertas.es/def/comercio/arboladoenparques"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#">
+        <dc:creator>Carlos Utrilla Guerrero</dc:creator>
+        <dc:description>This is the draft version of the ontology that represents terms concerning parkland, their characteristics in the context of the &quot;Open, collaborative and interoperable government platform&quot; project, in which the city councils of Madrid, Zaragoza, Santiago de Compostela and A Coruña participate.</dc:description>
+        <dc:title>ESGREEN for representing parkland in cities</dc:title>
+        <owl:versionInfo>Draft 1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/containsPlace -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/containsPlace">
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Park"/>
+        <rdfs:range rdf:resource="http://www.opengis.net/doc/IS/geosparql/1.0#SpatialFeature"/>
+        <rdfs:label>contains place</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/countOf -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/countOf">
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#TreesCharactistics"/>
+        <rdfs:label>count of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://schema.org/inLocation -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/inLocation">
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#TreesCharactistics"/>
+        <rdfs:range rdf:resource="http://schema.org/AdministrativeArea"/>
+        <rdfs:label>in location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semanticscience.org/resource/AssociatedWith -->
+
+    <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/AssociatedWith">
+        <rdfs:domain rdf:resource="http://schema.org/Place"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#District"/>
+        <rdfs:label>associated with</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#hasDominant -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#hasDominant">
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Park"/>
+        <rdfs:label>has dominant</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.opengis.net/doc/IS/geosparql/1.0#location -->
+
+    <owl:ObjectProperty rdf:about="http://www.opengis.net/doc/IS/geosparql/1.0#location">
+        <rdfs:domain rdf:resource="http://schema.org/AdministrativeArea"/>
+        <rdfs:domain rdf:resource="http://www.opengis.net/doc/IS/geosparql/1.0#SpatialFeature"/>
+        <rdfs:label>location</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/EPPOCode# -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/EPPOCode#">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchemaxsd"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/SubTotalCountDistrict# -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/SubTotalCountDistrict#">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchemaxsd"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/avgTreeHt# -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/avgTreeHt#">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchemaxsd"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/districtName# -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/districtName#">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchemaxsd"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/distritNumber# -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/distritNumber#">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchemaxsd"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/lat# -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/lat#">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchemaxsd"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/long# -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/long#">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchemaxsd"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/n_count# -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/n_count#">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchemaxsd"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/parkName# -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/parkName#">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchemaxsd"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/scientific_name# -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/scientific_name#">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchemaxsd"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/subTotalCountPark# -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/subTotalCountPark#">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchemaxsd"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/surface# -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/surface#">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchemaxsd"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/surfacePark# -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/surfacePark#">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchemaxsd"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/totalCountPark# -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/totalCountPark#">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchemaxsd"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/year# -->
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/year#">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchemaxsd"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/EPPOCode# -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/EPPOCode#"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/SubTotalCountDistrict# -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/SubTotalCountDistrict#"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/avgTreeHt# -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/avgTreeHt#"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/districtName# -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/districtName#"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/distritNumber# -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/distritNumber#"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/lat# -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/lat#"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/long# -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/long#"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/n_count# -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/n_count#"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/parkName# -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/parkName#"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/scientific_name# -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/scientific_name#"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/subTotalCountPark# -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/subTotalCountPark#"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/surface# -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/surface#"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/surfacePark# -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/surfacePark#"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/totalCountPark# -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/totalCountPark#"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/year# -->
+
+    <owl:DatatypeProperty rdf:about="http://www.owl-ontologies.com/year#"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://schema.org/AdministrativeArea -->
+
+    <owl:Class rdf:about="http://schema.org/AdministrativeArea">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/doc/IS/geosparql/1.0#location"/>
+                <owl:allValuesFrom rdf:resource="http://www.opengis.net/doc/IS/geosparql/1.0#Point"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Administrative Area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://schema.org/Place -->
+
+    <owl:Class rdf:about="http://schema.org/Place">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Park"/>
+        <rdfs:label>Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Adult -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Adult"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#AgeCategory -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#AgeCategory">
+        <rdfs:label>Age Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Juvenile -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Juvenile"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#New -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#New">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#AgeCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Old -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Old"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Other -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Other">
+        <rdfs:label>Other</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Park -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Park">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://schema.org/containsPlace"/>
+                <owl:allValuesFrom rdf:resource="http://www.opengis.net/doc/IS/geosparql/1.0#SpatialFeature"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Park</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Specie -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Specie">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/doc/IS/geosparql/1.0#SpatialObject"/>
+        <rdfs:label>Specie</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#TreesCharactistics -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#TreesCharactistics">
+        <rdfs:label>Trees Charactistics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#District -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#District">
+        <rdfs:label>District</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/doc/IS/geosparql/1.0#Point -->
+
+    <owl:Class rdf:about="http://www.opengis.net/doc/IS/geosparql/1.0#Point">
+        <rdfs:label>Point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/doc/IS/geosparql/1.0#SpatialFeature -->
+
+    <owl:Class rdf:about="http://www.opengis.net/doc/IS/geosparql/1.0#SpatialFeature">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.opengis.net/doc/IS/geosparql/1.0#location"/>
+                <owl:allValuesFrom rdf:resource="http://www.opengis.net/doc/IS/geosparql/1.0#Point"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Spatial Feature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.opengis.net/doc/IS/geosparql/1.0#SpatialObject -->
+
+    <owl:Class rdf:about="http://www.opengis.net/doc/IS/geosparql/1.0#SpatialObject">
+        <rdfs:subClassOf rdf:resource="http://www.opengis.net/doc/IS/geosparql/1.0#SpatialFeature"/>
+        <rdfs:label>Spatial Object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchemaxsd -->
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchemaxsd"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Adult -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Adult">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#AgeCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Juvenile -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Juvenile">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#AgeCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#New -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#New">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#AgeCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Old -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Old">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#AgeCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Others -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Others">
+        <rdf:type rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#AgeCategory"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Adult">
+        <rdfs:label>Adult</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Juvenile">
+        <rdfs:label>Juvenile</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#New">
+        <rdfs:label>New</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/arboladoenparques#Old">
+        <rdfs:label>Old</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/EPPOCode#">
+        <rdfs:label></rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/SubTotalCountDistrict#">
+        <rdfs:label></rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/avgTreeHt#">
+        <rdfs:label></rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/districtName#">
+        <rdfs:label></rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/distritNumber#">
+        <rdfs:label></rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/lat#">
+        <rdfs:label></rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/long#">
+        <rdfs:label></rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/n_count#">
+        <rdfs:label></rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/parkName#">
+        <rdfs:label></rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/scientific_name#">
+        <rdfs:label></rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/subTotalCountPark#">
+        <rdfs:label></rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/surface#">
+        <rdfs:label></rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/surfacePark#">
+        <rdfs:label></rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/totalCountPark#">
+        <rdfs:label></rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.owl-ontologies.com/year#">
+        <rdfs:label></rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
