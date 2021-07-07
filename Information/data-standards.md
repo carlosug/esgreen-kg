@@ -6,8 +6,6 @@
 
 In total, 18 items, 6 csv files for each year, 2017, 2018 and 2020 respectively.
 
-
-
 * Madrid:
 
   * `ArboladoParquesHistoricoSingularesForestales_YYYY`
@@ -20,7 +18,7 @@ In total, 18 items, 6 csv files for each year, 2017, 2018 and 2020 respectively.
       
       ```ttl
       # ArboladoParquesHistoricosSingularesyForestalesYYYY.csv
-      ########
+      ######## Turtle syntax ########
       :Jardines-del-buen-retiro rdf:type :Park .
       Park sio: isLocatedIn District .
       :Jardines-del-buen-retiro sio:contains :collection-of-aesculus-hippocastanum .
@@ -61,6 +59,30 @@ In total, 18 items, 6 csv files for each year, 2017, 2018 and 2020 respectively.
       | Otros                            | n_others          | Number of trees death and others                             | `int`    |                                |
       | Total General                    | subTotalCountPark | Total amount of trees in each park within a city             | `int`    | To count/agg per district      |
       | Total                            | totalCountPark    | Total amount of tree in all parks within a city              | `int`    | To count/agg the whole city    |
+      
+      ```ttl
+      # Estado_arbolado_ParquesHistoricoSingularesForestales_YYYY.csv
+      ######## Turtle syntax ########
+      
+      :Parque-Madrid-Rio rdf:type :Park .
+      Park sio: isLocatedIn District .
+      :Parques-Madrid-Rio sio:contains :collection-of-trees .
+      :collection-of-trees a sio:Collection .
+      :collection-of-trees sio:hasAttribute :age .
+      :age a :subClassOf sio:dimensional-quantity .
+      :age sio: has-label :lifeCycleInfo .
+      :lifeCycleInfo sio:has-value "New" .
+      :lifeCycleInfo a sio:memberCount .
+      :cph_count sio:has-value "8" .  
+      :collection-of-trees sio:hasAttribute : averageHeight-Parque-Madrid-Rio .
+      :averageHeight a sio:mean .
+      :averageHeight-Parque-Madrid-Rio sio: has-value "5.99" .
+      :collection-of-trees sio:hasAttribute :circumference-Parque-Madrid-Rio .
+      :circumference-Parque-Madrid-Rio a sio:dimensional-quantity .
+      :circumference-Parque-Madrid-Rio sio: has-value "32.49" .
+      ```
+      
+      
   
   * `EstadoZonasVerdesDistritosCalles_YYYY`
   
@@ -79,6 +101,27 @@ In total, 18 items, 6 csv files for each year, 2017, 2018 and 2020 respectively.
       | Otros                                    | n_others              | Number of trees death and others                             | `int`    |                                |
       | Hmedia_O                                 | avgTreeHt_Others      | Average height of all O trees in a Park. Calculated as distance from ground level to three top | `int`    | for growth curve or change     |
       | Total General                            | subTotalCountDistrict | Total amount of trees in each district within a city         | `int`    | To count/agg per district      |
+      
+      ```ttl
+      # EstadoZonasVerdesDistritosCalles_YYYY.csv
+      ######## Turtle syntax ########
+      
+      :Barajas rdf:type :District .
+      District sio: similarTo :township .
+      :barajas sio:contains :collection-of-trees .
+      :collection-of-trees a sio:Collection .
+      :collection-of-trees sio:hasAttribute :age .
+      :age a :subClassOf sio:dimensional-quantity.
+      :age sio: has-label :lifeCycleInfo .
+      :lifeCycleInfo sio:has-value "New" .
+      :lifeCycleInfo a sio:memberCount .
+      :cph_count sio:has-value "1039" .
+      :collection-of-trees sio:hasAttribute : averageHeight-barajas .  
+      :averageHeight-barajas a sio:mean .
+      :averageHeight-barajas sio: has-value "4.19"
+      ```
+      
+      
   
   * `MasasParquesHistoricoSingularesForestales_YYYY`
   
@@ -92,6 +135,29 @@ In total, 18 items, 6 csv files for each year, 2017, 2018 and 2020 respectively.
       | Superficie (ha)              | surface           | Calculated area equal to a squared 100 m sides (h)           | `float`  |                           |
       | Superficie TOTAL Parque (ha) | surfacePark (h)   | Surface of the total park                                    | `float`  |                           |
   
+    ```ttl
+    # MasasParquesHistoricoSingularesForestales_YYYY.csv
+    ######## Turtle syntax ########
+    
+    :Parques-Madrid-Rio rdf:type :Park .
+    Park sio: isLocatedIn District .
+    :Parques-Madrid-Rio sio:contains :collection-of-pinus-alepensis .
+    :collection-of-pinus-alepensis a sio:Collection .
+    :collection-of-pinus-alepensis sio:hasMember :pinus-alepensis .
+    :pinus-alepensis a :habitatSpecies.
+    :pinus-alepensis sio: has-unique-indentifier :EUNIS-code .
+    :EUNIS-Code sio:has-value "G3.74" .
+    :collection-of-pinus-alepensis sio:has-attribute :parques-madrid-rio_sa .
+    ::parques-madrid-rio_sa a sio:SurfaceArea.
+    ::parques-madrid-rio_sa sio:has-value "92970.17" .
+    :collection-of-pinus-alepensis sio:has-attribute :parques-madrid-rio_count .
+    ::parques-madrid-rio_count a sio:memberCount.
+    ::parques-madrid-rio_count sio:has-value "2811" .
+     
+    ```
+    
+    
+    
   * `MasasZonasVerdesDistritosCalles_YYYY`
   
   * * | Original variable name       | New variable name | Description                                                  | Type   | Use                |
@@ -106,18 +172,21 @@ In total, 18 items, 6 csv files for each year, 2017, 2018 and 2020 respectively.
 
 
 
----
+```ttl
+# MasasZonasVerdesDistritosCalles_YYYY.csv
+######## Turtle syntax ########
 
-### District Level
+:arganzuela rdf:type :District .
+District sio: similarTo :township .
+:barajas sio:contains :collection-of-pinus-halepensis .
+:collection-of-pinus-halepensis a sio:Collection .
+:collection-of-pinus-halepensis sio:hasMember :Pinus-halepensis .
+:pinus-halepensis a :habitatSpecies.
+:pinus-halepensis sio: has-unique-indentifier :EUNIS-code .
+:EUNIS-Code sio:has-value "G3.74" .
+:collection-of-pinus-halepensis sio:has-attribute :cph_count .
+:cph_count a sio:memberCount .
+:cph_count sio:has-value "6973"
+ 
+```
 
-
-
----
-
-### Park Level
-
-
-
----
-
-### Specie Level

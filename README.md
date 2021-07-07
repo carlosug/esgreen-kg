@@ -37,8 +37,8 @@ A total of 18 datasets originally from [Madrid Green Data Space](https://mgds.oe
 
 
 
-#### Serialization Turtle syntax:
-- [General standards and description of all datasets](Information/data-standards.md)
+### Serialization Turtle syntax:
+- [One per each dataset](Information/data-standards.md)
 
 
 
