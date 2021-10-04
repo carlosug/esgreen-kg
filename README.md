@@ -1,7 +1,8 @@
-# esgreen-ontology
-🌲 An OWL ontology to represent elements (trees) in green spaces (parkland, green areas and district) of the city that are relevant for [Open City Project](https://github.com/CiudadesAbiertas). 
+# Knowledge Graph for Open Government Data
+🌲 A RDF knowledge graph for green spaces infrastructure (trees, parkland, green areas) of a city that are relevant for [Open City Project](https://github.com/CiudadesAbiertas). 
 
 ---
+
 
 ## Inputs:
 A total of 18 datasets originally from [Madrid Green Data Space](https://mgds.oeg.fi.upm.es/datasets.html) are used to generate the Ontology. These datasets consist of measures (e.g., number of trees) and dimensions describing the measures (e.g., regions)

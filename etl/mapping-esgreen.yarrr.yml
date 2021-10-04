@@ -1,0 +1,90 @@
+# RULES NEEDED: see data-standards: https://github.com/carlosug/greencity-ontology/blob/main/Information/data-standards.md 
+# how the IRI representing a tree is generated
+# that this is IRI is used as subject of the triples and quads
+# that the class of a tree is EUNIS-code:Identifier,
+# that the properties are annotated with the properties of sio ontology sio:givenProperty (e.g. scientific name as string),
+# that the number of the each calculation is annotated with sio ontology e:metrics,
+# and is of the datatype xsd:integer
+# that the hair color is annotated with the property dbo:hairColor,
+
+
+prefixes:
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  dc: "http://purl.org/dc/elements/1.1/"
+  rr: "http://www.w3.org/ns/r2rml#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  grel: "http://users.ugent.be/~bjdmeest/function/grel.ttl#"
+  idlab: "http://example.com/idlab/function/"
+  idsf: "https://w3id.org/um/ids/rmlfunctions.ttl#"
+  pubmed: "https://identifiers.org/pubmed:"
+  schema: "https://schema.org/"
+  sio: "http://semanticscience.org/resource/"
+  eol: "https://eol.org/pages/#"
+
+authors:
+  - Carlos
+  - Vincent Emonet <vincent.emonet@gmail.com>
+
+# original datasets: https://datos.madrid.es/egob/catalogo/#
+mappings:
+  habitatSpecies:
+    sources:
+      - access: data/_.csv
+        type: csv
+        referenceFormulation: csv
+
+    s: sio:uniqueID/$(eunis-code)
+    po:
+      - [a, sio:tree]
+      - [rdfs:label, $(ScientificName)]
+      - [dc:referenceSpeciesId, $(referenceSpeciesId)]
+
+  collectionOfTrees:
+    sources:
+      - access: data/_.csv
+        type: csv
+        referenceFormulation: csv
+
+    s: sio:collection-of-trees/$(Id)
+    po:
+      - [a, schema:Evidence]
+      - [rdfs:label, $(Misc)]
+      - [dc:description, $(Rules)]
+      - [ludeme:evidenceForGame, ludeme:game/$(GameId)]
+      - [ludeme:geoloc, $(Location)]
+      - [ludeme:dateStart, $(DateStart)]
+      - [ludeme:dateEnd, $(DateEnd)]
+
+  district:
+    sources:
+      - access: data/_.csv
+        type: csv
+        referenceFormulation: csv
+
+    s: sio:district/$(Id)
+    po:
+      - [a, schema:Evidence]
+      - [rdfs:label, $(Misc)]
+      - [dc:description, $(Rules)]
+      - [ludeme:evidenceForGame, ludeme:game/$(GameId)]
+      - [ludeme:geoloc, $(Location)]
+      - [ludeme:dateStart, $(DateStart)]
+      - [ludeme:dateEnd, $(DateEnd)]
+
+
+  park:
+    sources:
+      - access: data/_.csv
+        type: csv
+        referenceFormulation: csv
+
+    s: sio:park/$(Id)
+    po:
+      - [a, schema:Evidence]
+      - [rdfs:label, $(Misc)]
+      - [dc:description, $(Rules)]
+      - [ludeme:evidenceForGame, ludeme:game/$(GameId)]
+      - [ludeme:geoloc, $(Location)]
+      - [ludeme:dateStart, $(DateStart)]
+      - [ludeme:dateEnd, $(DateEnd)]
