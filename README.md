@@ -1,16 +1,67 @@
 # Knowledge Graph for Open Government Data
-🌲 A RDF knowledge graph for green spaces infrastructure (trees, parkland, green areas) of a city that are relevant for [Open City Project](https://github.com/CiudadesAbiertas). 
+🌲 A RDF knowledge graph for green spaces infrastructure (trees, parkland, green areas) data of a city that are relevant for [Open City Project](https://github.com/CiudadesAbiertas). 
 
 ---
 
+## Research questions
+* 1. **city center** most abundant organisms.
+* 2. **outside** city center.
+* 3. **areas** with least and most diverse species  diversity (Shannon Index).
 
-## Inputs:
+
+### Inputs:
 A total of 18 datasets originally from [Madrid Green Data Space](https://mgds.oeg.fi.upm.es/datasets.html) are used to generate the Ontology. These datasets consist of measures (e.g., number of trees) and dimensions describing the measures (e.g., regions)
 
 - [Datasets](data/madrid)
 - [General standards and description of all datasets](Information/data-standards.md)
 
-## Outputs:
+
+## Documentation
+
+### Install locally
+
+Install dependencies:
+
+```bash
+yarn global add @rmlio/yarrrml-parser
+wget https://github.com/RMLio/rmlmapper-java/releases/download/v4.12.0/rmlmapper.jar
+pip install cow-csvw
+```
+
+### Run RML mapper
+
+```powershell
+cd etl
+.\run.ps1
+```
+### Run CoW
+
+* Export the dataset as csv
+
+* Generate the metadata file with CSVw mappings:
+
+```powershell
+cow_tool build data/esgreen.csv
+```
+Run the CSVw mappings to generate RDF:
+
+```powershell
+cow_tool convert data/esgreen.csv
+```
+
+## Outputs
+
+### Serialization Turtle syntax:
+
+- [One per each dataset](Information/data-standards.md)
+
+* [Documentation](https://carlosug.github.io/greencity-ontology/main/docs/lode/index-en.html)
+
+* [Visualisation](http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/carlosug/greencity-ontology/main/Ontologies/esgreen-ontology.owl)
+
+![http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/carlosug/greencity-ontology/main/Ontologies/esgreen-ontology.owl](Information/esgreen.svg)
+
+
 
 ### Diagram in png:
 
@@ -20,35 +71,11 @@ A total of 18 datasets originally from [Madrid Green Data Space](https://mgds.oe
 
 <img src="Information/diagram-complex2.png" alt="Data Model - esgreen" style="zoom:150%;" />
 
-
-
-### Ontology versions - Steps:
-
-#### [esgreen-ontology Draft 1.0](Ontologies/esgreen-ontology.owl)
-
-* 1. Make an ontology diagram using the [Version Simple](Information/diagram-simple.png) with [diagrams.net](https://www.diagrams.net/) following a set of recommendations for ontology diagrams representation from [Chowlk Ontology Visual Notation](https://chowlk.linkeddata.es/chowlk_spec).
-* 2. Automatically generated with `RDF file` with [Chowlk](https://chowlk.linkeddata.es/).
-* 3. Use [WIDOCO](https://github.com/dgarijo/Widoco) to generate documentation.
-
-#### [esgreen-ontology Draft 2.0](Ontologies/esgreen-ontology-modified-protege.owl)
-
-* 1. Insert `esgreen-ontology Draft 1.0` version in [Protege software](https://protege.stanford.edu/).
-* 2. Make necessary changes to create `rdf` file.
-* 3. Create a documentation using from the `rdf` file of `ii`.
-
-
-
-### Serialization Turtle syntax:
-- [One per each dataset](Information/data-standards.md)
-
-
-
 ---
+## License
 
-[Documentation](https://carlosug.github.io/greencity-ontology/main/docs/lode/index-en.html)
+**Copyright (C) 2021, CLARIAH-PLUS WP1: CP-21-F-I 5**
 
-[Visualisation](http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/carlosug/greencity-ontology/main/Ontologies/esgreen-ontology.owl)
-
-![http://www.visualdataweb.de/webvowl/#iri=https://raw.githubusercontent.com/carlosug/greencity-ontology/main/Ontologies/esgreen-ontology.owl](Information/esgreen.svg)
+MIT License 
 
 ---
