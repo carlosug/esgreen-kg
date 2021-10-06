@@ -13,9 +13,11 @@
 ## Inputs
 A total of 18 datasets originally from [Madrid Green Data Space](https://mgds.oeg.fi.upm.es/datasets.html) are used to generate the Ontology. These datasets consist of measures (e.g., number of trees) and dimensions describing the measures (e.g., regions)
 
-- [Datasets](data/madrid)
+- [Datasets](data/inputs)
+
+### Data Model
+Concepts and properties are annotated with the [Semanticscience  Integrated Ontology](https://bioportal.bioontology.org/ontologies/SIO/)
 - [General standards and description of all datasets](Information/data-standards.md)
-- [Semanticscience  Integrated Ontology](https://bioportal.bioontology.org/ontologies/SIO/)
 
 
 ## Documentation
@@ -30,7 +32,7 @@ wget https://github.com/RMLio/rmlmapper-java/releases/download/v4.12.0/rmlmapper
 pip install cow-csvw
 ```
 
-### Run RML mapper
+### Run RML mapper 
 
 ```powershell
 cd etl
