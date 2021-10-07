@@ -36,15 +36,19 @@ mappings:
         type: csv
         referenceFormulation: csv
 
-    s: esgreen:anatomical_entity/$(ESPECIE)
-    g: esgreen:graph/trees
+    s: esgreen:Trees/$(ESPECIE)
+    g: esgreen:graph/collectionOfTrees
+# then we define the predicate/objects for this subject,
+# aka the properties/values for this entity
     po:
-      - [a, sio:anatomical entity]
-      # we link to EUNIS code (or eol)
-      - [eunis:Scientific Name, $(ESPECIE)]
-      - [eunis:ID-code, $(ESPECIEID)] # here we map with name
-      - [sio:is located in, $(PARQUE)]
-      - [sio:, $(has unique indentifier)]
+      - [a, sio:AnatomicalEntity]
+      # here we should link to EUNIS code (or eol) as following:
+      - [sio:ScientificName, $(ESPECIE), en~lang]
+      # here are other expected relationships:
+      # - [eunis:ID-code, $(ESPECIEID)] # here we map with name
+      # - [sio:is located in, $(PARQUE)]
+      # - [sio:, $(has unique indentifier)]
+    
 
   collectionOfTrees:
     sources:
@@ -52,68 +56,79 @@ mappings:
         type: csv
         referenceFormulation: csv
 
-    s: sio:anatomical entity/$(ESPECIE)
+    s: esgreen:collectionOfTrees/$(ESPECIE)
     po:
-      - [a, sio:anatomical entity]
+      - [a, sio:Collection]
       # we link to EUNIS code (or eol)
-      - [sio:has member, $(ESPECIE)]
-      - [eunis:ID-code, $(ESPECIEID)] # here we map with name
-      - [sio:is located in, $(PARQUE)]
-      - [sio:, $(has unique indentifier)]
+      - [sio:hasMember, $(ESPECIE)]
+      - [sio:isLocatedIn, $(PARQUE)]
+      - [sio:Name, $(PARQUE), es~lang]
+      - [sio:MemberCount, $(UNIDADES 2020), xsd:integer]
+      
 
   park:
     sources:
-      - access: data/inputs/Estado_arbolado_ParquesHistoricoSingularesForestales_2020.csv
+      park-source:
+        access: data/inputs/Estado_arbolado_ParquesHistoricoSingularesForestales_2020.csv
+        type: csv
+        referenceFormulation: csv
+      park-source-2:
+        access: data/inputs/MasasParquesHistoricoSingularesForestales_2020.csv
         type: csv
         referenceFormulation: csv
 
-    s: sio:site/$(PARQUE)
-    # g: 
+
+    s: esgreen:Site/$(PARQUE)
+    g: esgreen:graph/COLUMNS 
     po:
       - [a, sio:Site]
-      - [has a, sio:catalog]
-      - [has a, $(ESPECIE PREDOMINANTE)]
-      - [rdfs:label, $(PARQUE)]
-      - [has dimensional quantity, $(COLUMNS)]
-      - [sio:length of perimeter, $(Perimetro Promedio (cm))]
-      - [sio:height, $(Altura Promedio (m))]
-      - [has life status,$(LABELS)] # how can I annotate here different life status of a tree?
-      - [sio:member count, $(Joven)]
-      - [sio:member count, $(Maduro)]
-      - [sio:member count, $(Viejo)]
-      - [sio:member count, $(Otros)]
+      - [contains, sio:Collection]
+      - [contains, sio:AnatomicalEntity)]
+      - [sio:Name, $(PARQUE), es~lang]
+      - [hasMeasurementValue, $(COLUMNS)] # TO CHECK!!!
+      - [sio:LifeStatus, $(COLUMNS)]
+      - [sio:LengthOfPerimeter, $(Perimetro Promedio (cm)), xsd:integer]
+      - [sio:Height, $(Altura Promedio (m)), xsd:integer]
+      - [sio:LifeStatus, $(COLUMNS)] # how can I annotate here different life status of a tree?
+      - [sio:memberCount, $(Recien plantado y no consolidado), xsd:integer]
+      - [sio:memberCount, $(Joven), xsd:integer]
+      - [sio:memberCount, $(Maduro), xsd:integer]
+      - [sio:memberCount, $(Viejo), xsd:integer]
+      - [sio:memberCount, $(Otros), xsd:integer]
       # we link with MasasParquesHistoricoSingularesForestales_2020 to get predominant species
-      - [refers to, sio:catalog]
-      - [contains, sio:catalog-anatomical entity]
-      - - [rdfs:label, $(ESPECIE PREDOMINANTE)]
-      - [sio:member count, $(Unidades$)]
+      - [sio:Name, $(ESPECIE PREDOMINANTE)]
+      - [sio:MemberCount, $(Unidades)]
       - [sio:surface area, $(SUPERFICIE OCUPADA (m2))]
+
 
   district:
     sources:
-      - access: data/inputs/ArboladoZonasVerdesDistritosCalles_2020.csv
+      - access: data/inputs/EstadoZonasVerdesDistritosCalles_2020.csv
         type: csv
         referenceFormulation: csv
 
-    s: sio:township/$(Numero_Distrito)
+    s: esgreen:district/$(Numero_Distrito)
     po:
-      - [similar to, sio:township]
-      - [is part of, sio:city]
-      - [is part of, sio:province]
-      - [rdfs:label, $(Nombre_distrito)]
-      - [eunis:Scientific Name, $(NOMBRE_ESPECIE)] # map with eunis database
-      - [sio:has measurement value, $(Num_Unidades)]
-      - [sio:Geographical position, $(Location)] # map with georeferencing data
+      - [similarTo, sio:Townnship] # not sure about this and below statements
+      - [isPartOf, sio:City]
+      - [isPartOf, sio:GeopoliticalRegion]
+      - [sio:Name, $(Nombre_distrito), es~lang]
+      - [hasMeasurementValue, $(COLUMNS)] # TO CHECK!!!
+      - [sio:LifeStatus, $(COLUMNS)]
+      - [sio:memberCount, $(Num_Unidades)]
+      # - [sio:Geographical position, $(Location)] # map with georeferencing data
       # we link with EstadoZonasVerdesDistritosCalles_2020 data to get information about life status of tree
-      - [sio:township, EstadoZonasVerdesDistritosCalles_2020/$(N_Distrito)]
-      - [has dimensional quantity, $(VALUES)] # maybe here quads???
-      - [sio:height, $(Hmedia_J)]
-      - [sio:height, $(Altura Media (Hmedia)_RRLyNC)]
-      - [sio:height, $(Hmedia_J)]
-      - [sio:height, $(HMedia_V)]
-      - [sio:height, $(Hmedia_O)]
-      - [has life status,$(LABELS)] # how can I annotate here different life status of a tree?
-      - [sio:member count, $(Joven (J))]
-      - [sio:member count, $(Maduro (M))]
-      - [sio:member count, $(Viejo (V))]
-      - [sio:member count, $(Otros)]
+      - [sio:Height, $(Hmedia_J), xsd:float]
+      - [sio:Height, $(Altura Media (Hmedia)_RRLyNC), xsd:float]
+      - [sio:Height, $(Hmedia_J), xsd:float]
+      - [sio:Height, $(HMedia_V), xsd:float]
+      - [sio:Height, $(Hmedia_O), xsd:float]
+      - [sio:LifeStatus, $(LABELS)] # how can I annotate here different life status of a tree?
+      - [sio:memberCount, $(Joven (J)), xsd:integer]
+      - [sio:memberCount, $(Maduro (M)), xsd:integer]
+      - [sio:memberCount, $(Viejo (V)), xsd:integer]
+      - [sio:memberCount, $(Otros), xsd:integer]
+
+
+
+
