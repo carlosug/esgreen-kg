@@ -1,13 +1,3 @@
-# RULES NEEDED: see data-standards: https://github.com/carlosug/greencity-ontology/blob/main/Information/data-standards.md 
-# how the IRI representing a tree is generated
-# that this is IRI is used as subject of the triples and quads
-# that the class of a tree is EUNIS-code:Identifier,
-# that the properties are annotated with the properties of sio ontology sio:givenProperty (e.g. scientific name as string),
-# that the number of the each calculation is annotated with sio ontology e:metrics,
-# and is of the datatype xsd:integer
-# that the hair color is annotated with the property dbo:hairColor,
-
-
 prefixes:
   rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   rdfs: "http://www.w3.org/2000/01/rdf-schema#"
@@ -24,17 +14,23 @@ prefixes:
   eunis: "https://eunis.eea.europa.eu/species/" 
   esgreen: "https://w3id.org/esgreen/"
 
-authors:
-  - Carlos Utrilla Guerrero <c.utrillaguerrero@maastrichtuniversity.nl>
-  - Vincent Emonet <vincent.emonet@gmail.com>
+# authors:
+#   - Carlos Utrilla Guerrero <c.utrillaguerrero@maastrichtuniversity.nl>
+#   - Vincent Emonet <vincent.emonet@gmail.com>
+
+# PARQUE;ESPECIE;UNIDADES 2020
+# JARDINES DEL BUEN RETIRO;Aesculus hippocastanum;5951
+# JARDINES DEL BUEN RETIRO;Platanus x hybrida;934
+# JARDINES DEL BUEN RETIRO;Cercis siliquastrum;720
+# JARDINES DEL BUEN RETIRO;Trachycarpus fortunei;532
 
 # original datasets: https://datos.madrid.es/egob/catalogo/#
 mappings:
   habitatSpecies:
     sources:
-      - access: data/inputs/ArboladoParquesHistoricoSingularesForestales_2020.csv
-        type: csv
+      - access: inputs/ArboladoParquesHistoricoSingularesForestales_2020.csv #df_1
         referenceFormulation: csv
+        delimiter: ;
 
     s: esgreen:Trees/$(ESPECIE)
     g: esgreen:graph/collectionOfTrees
@@ -44,91 +40,173 @@ mappings:
       - [a, sio:AnatomicalEntity]
       # here we should link to EUNIS code (or eol) as following:
       - [sio:ScientificName, $(ESPECIE), en~lang]
-      # here are other expected relationships:
+      # here are other expected relationship:
       # - [eunis:ID-code, $(ESPECIEID)] # here we map with name
       # - [sio:is located in, $(PARQUE)]
       # - [sio:, $(has unique indentifier)]
-    
+      # - p: sio:hasAttribute
+      #   o: 
+      #     function: grel:string_sha1
+      #     parameters:
+      #       - p: grel:valueParameter
+      #         o: 
+      #       - [grel:valueParameter, "esgreen:$(ESPECIE)/location"]
+      #     type: iri
+      - [sio:hasAttribute, "esgreen:$(ESPECIE)/location~iri"]
 
-  collectionOfTrees:
+
+  locationHabitatSpecies:
     sources:
-      - access: data/inputs/ArboladoParquesHistoricoSingularesForestales_2020.csv
-        type: csv
+      - access: inputs/ArboladoParquesHistoricoSingularesForestales_2020.csv #df_1
         referenceFormulation: csv
+        delimiter: ;
 
-    s: esgreen:collectionOfTrees/$(ESPECIE)
+    s: esgreen:$(ESPECIE)/location
+    g: esgreen:graph/collectionOfTrees
     po:
-      - [a, sio:Collection]
-      # we link to EUNIS code (or eol)
-      - [sio:hasMember, $(ESPECIE)]
-      - [sio:isLocatedIn, $(PARQUE)]
-      - [sio:Name, $(PARQUE), es~lang]
-      - [sio:MemberCount, $(UNIDADES 2020), xsd:integer]
-      
+      - [a, sio:Location]
+      - [sio:hasCount, $(UNIDADES 2020)]
+      - [sio:hasValue, esgreen:$(PARQUE)~iri]
+      # - [sio:title, $(PARQUE), en~lang]
 
-  park:
+  parque:
     sources:
-      park-source:
-        access: data/inputs/Estado_arbolado_ParquesHistoricoSingularesForestales_2020.csv
-        type: csv
+      - access: inputs/ArboladoParquesHistoricoSingularesForestales_2020.csv #df_1
         referenceFormulation: csv
-      park-source-2:
-        access: data/inputs/MasasParquesHistoricoSingularesForestales_2020.csv
-        type: csv
-        referenceFormulation: csv
+        delimiter: ;
 
-
-    s: esgreen:Site/$(PARQUE)
-    g: esgreen:graph/COLUMNS 
+    s: esgreen:$(PARQUE)
+    g: esgreen:graph/collectionOfTrees
     po:
       - [a, sio:Site]
-      - [contains, sio:Collection]
-      - [contains, sio:AnatomicalEntity)]
-      - [sio:Name, $(PARQUE), es~lang]
-      - [hasMeasurementValue, $(COLUMNS)] # TO CHECK!!!
-      - [sio:LifeStatus, $(COLUMNS)]
-      - [sio:LengthOfPerimeter, $(Perimetro Promedio (cm)), xsd:integer]
-      - [sio:Height, $(Altura Promedio (m)), xsd:integer]
-      - [sio:LifeStatus, $(COLUMNS)] # how can I annotate here different life status of a tree?
-      - [sio:memberCount, $(Recien plantado y no consolidado), xsd:integer]
-      - [sio:memberCount, $(Joven), xsd:integer]
-      - [sio:memberCount, $(Maduro), xsd:integer]
-      - [sio:memberCount, $(Viejo), xsd:integer]
-      - [sio:memberCount, $(Otros), xsd:integer]
-      # we link with MasasParquesHistoricoSingularesForestales_2020 to get predominant species
-      - [sio:Name, $(ESPECIE PREDOMINANTE)]
-      - [sio:MemberCount, $(Unidades)]
-      - [sio:surface area, $(SUPERFICIE OCUPADA (m2))]
+      - [sio:title, $(PARQUE), en~lang]
 
 
-  district:
-    sources:
-      - access: data/inputs/EstadoZonasVerdesDistritosCalles_2020.csv
-        type: csv
-        referenceFormulation: csv
-
-    s: esgreen:district/$(Numero_Distrito)
-    po:
-      - [similarTo, sio:Townnship] # not sure about this and below statements
-      - [isPartOf, sio:City]
-      - [isPartOf, sio:GeopoliticalRegion]
-      - [sio:Name, $(Nombre_distrito), es~lang]
-      - [hasMeasurementValue, $(COLUMNS)] # TO CHECK!!!
-      - [sio:LifeStatus, $(COLUMNS)]
-      - [sio:memberCount, $(Num_Unidades)]
-      # - [sio:Geographical position, $(Location)] # map with georeferencing data
-      # we link with EstadoZonasVerdesDistritosCalles_2020 data to get information about life status of tree
-      - [sio:Height, $(Hmedia_J), xsd:float]
-      - [sio:Height, $(Altura Media (Hmedia)_RRLyNC), xsd:float]
-      - [sio:Height, $(Hmedia_J), xsd:float]
-      - [sio:Height, $(HMedia_V), xsd:float]
-      - [sio:Height, $(Hmedia_O), xsd:float]
-      - [sio:LifeStatus, $(LABELS)] # how can I annotate here different life status of a tree?
-      - [sio:memberCount, $(Joven (J)), xsd:integer]
-      - [sio:memberCount, $(Maduro (M)), xsd:integer]
-      - [sio:memberCount, $(Viejo (V)), xsd:integer]
-      - [sio:memberCount, $(Otros), xsd:integer]
+      # here are other expected relationship:
+      # - [eunis:ID-code, $(ESPECIEID)] # here we map with name
+      # - [sio:is located in, $(PARQUE)]
+      # - [sio:, $(has unique indentifier)]
+      # - p: sio:hasAttribute
+      #   o: 
+      #     function: grel:string_sha1
+      #     parameters:
+      #       - [grel:input, "$(ESPECIE)/location"]
 
 
 
+  # collectionOfTrees:
+  #   sources:
+  #     - access: data/inputs/ArboladoParquesHistoricoSingularesForestales_2020.csv
+  #       type: csv
+  #       referenceFormulation: csv
 
+  #   s: esgreen:collectionOfTrees/$(ESPECIE)
+  #   po:
+  #     - [a, sio:Collection]
+  #     # we link to EUNIS code (or eol)
+  #     - [sio:hasMember, $(ESPECIE)]
+  #     - [sio:isLocatedIn, $(PARQUE)]
+  #     - [sio:Name, $(PARQUE), es~lang]
+  #     - [sio:MemberCount, $(UNIDADES 2020), xsd:integer]
+      
+
+  # park:
+  #   sources:
+  #     - access: inputs/Estado_arbolado_ParquesHistoricoSingularesForestales_2020.csv
+  #       referenceFormulation: csv
+  #       delimiter: ;
+  #     - access: inputs/MasasParquesHistoricoSingularesForestales_2020.csv
+  #       referenceFormulation: csv
+  #       delimiter: ;
+  # #   # sources:
+  # #   #   park-source:
+  # #   #     access: data/inputs/Estado_arbolado_ParquesHistoricoSingularesForestales_2020.csv
+  # #   #     type: csv
+  # #   #     referenceFormulation: csv
+  # #   #   park-source-2:
+  # #   #     access: data/inputs/MasasParquesHistoricoSingularesForestales_2020.csv
+  # #   #     type: csv
+  # #   #     referenceFormulation: csv
+
+  #   s: esgreen:Site/$(PARQUE)
+  #   g: esgreen:graph/COLUMNS 
+  #   po:
+  #     - [a, sio:Site]
+  #     # - [a, sio:Collection]
+  #     # - [a, sio:Site]
+  #     - [sio:contains, sio:Collection]
+  #     - [sio:contains, sio:AnatomicalEntity)]
+  #     - [sio:Name, $(PARQUE), es~lang]
+  #     - [sio:hasMeasurementValue, $(COLUMNS)] # TO CHECK!!!
+  #     - [sio:LifeStatus, $(COLUMNS)]
+  #     - [sio:LengthOfPerimeter, $(Perimetro Promedio (cm)), xsd:integer]
+  #     - [sio:Height, $(Altura Promedio (m)), xsd:integer]
+  #     - [sio:LifeStatus, $(COLUMNS)] # how can I annotate here different life status of a tree?
+  #     # - [sio:memberCount, $(Recien plantado y no consolidado), xsd:integer]
+  #     # - [sio:memberCount, $(Joven), xsd:integer]
+  #     # - [sio:memberCount, $(Maduro), xsd:integer]
+  #     # - [sio:memberCount, $(Viejo), xsd:integer]
+  #     # - [sio:memberCount, $(Otros), xsd:integer]
+  #     # we link with MasasParquesHistoricoSingularesForestales_2020 to get predominant species
+  #     - [sio:Name, $(ESPECIE PREDOMINANTE)]
+  #     # - [sio:MemberCount, $(Unidades)]
+  #     - [sio:SurfaceArea, $(SUPERFICIE OCUPADA (m2))]
+
+  #     # - [sio:hasAttribute, esgreen:Site/$(PARQUE)/surface~iri]
+  #     - p: sio:hasAttribute
+  #       o: 
+  #         function: grel:string_sha1
+  #         parameters:
+  #           - [grel:input, "$(PARQUE)/surface"]
+
+
+
+  # siteSurface:
+  #   sources:
+  #     - access: data/inputs/Estado_arbolado_ParquesHistoricoSingularesForestales_2020.csv #df_3
+  #       referenceFormulation: csv
+  #       type: csv
+  #     - access: data/inputs/MasasParquesHistoricoSingularesForestales_2020.csv
+  #       referenceFormulation: csv
+  #       type: csv
+
+  #   # s: esgreen:Site/$(PARQUE)/surface
+  #   # s: 
+  #   #   function: idlab:random
+  #   s:
+  #     function: grel:string_sha1
+  #     parameters:
+  #       - [grel:input, "$(PARQUE)/surface"]
+  #   g: esgreen:graph/COLUMNS 
+  #   po:
+  #     - [a, sio:SurfaceArea]
+  #     - [sio:hasMeasurementValue, $(SUPERFICIE OCUPADA (m2))]
+
+
+  # district:
+  #   sources:
+  #     - access: data/inputs/EstadoZonasVerdesDistritosCalles_2020.csv #df_4
+  #       type: csv
+  #       referenceFormulation: csv
+
+  #   s: esgreen:district/$(Numero_Distrito)
+  #   po:
+  #     - [sio:similarTo, sio:Townnship] # not sure about this and below statements
+  #     - [sio:isPartOf, sio:City]
+  #     - [sio:isPartOf, sio:GeopoliticalRegion]
+  #     - [sio:Name, $(Nombre_distrito), es~lang]
+  #     - [sio:hasMeasurementValue, $(COLUMNS)] # TO CHECK!!!
+  #     - [sio:LifeStatus, $(COLUMNS)]
+  #     - [sio:memberCount, $(Num_Unidades)]
+  #     # - [sio:Geographical position, $(Location)] # map with georeferencing data
+  #     # we link with EstadoZonasVerdesDistritosCalles_2020 data to get information about life status of tree
+  #     - [sio:Height, $(Hmedia_J), xsd:float]
+  #     - [sio:Height, $(Altura Media (Hmedia)_RRLyNC), xsd:float]
+  #     - [sio:Height, $(Hmedia_J), xsd:float]
+  #     - [sio:Height, $(HMedia_V), xsd:float]
+  #     - [sio:Height, $(Hmedia_O), xsd:float]
+  #     - [sio:LifeStatus, $(LABELS)] # how can I annotate here different life status of a tree?
+  #     - [sio:memberCount, $(Joven (J)), xsd:integer]
+  #     - [sio:memberCount, $(Maduro (M)), xsd:integer]
+  #     - [sio:memberCount, $(Viejo (V)), xsd:integer]
+  #     - [sio:memberCount, $(Otros), xsd:integer]

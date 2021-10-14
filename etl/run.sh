@@ -3,7 +3,8 @@ yarrrml_mappings=$1
 
 if [ -z "$yarrrml_mappings" ]
 then
-    echo "Provide the path to a YARRRML file"
+    # echo "Provide the path to a YARRRML file"
+    yarrrml_mappings=mapping-esgreen.yarrr.yml
     exit
 fi
 mkdir -p data

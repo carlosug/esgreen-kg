@@ -1,0 +1,35 @@
+prefixes:
+  rdf: "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+  dc: "http://purl.org/dc/elements/1.1/"
+  rr: "http://www.w3.org/ns/r2rml#"
+  xsd: "http://www.w3.org/2001/XMLSchema#"
+  grel: "http://users.ugent.be/~bjdmeest/function/grel.ttl#"
+  idlab: "http://example.com/idlab/function/"
+  idsf: "https://w3id.org/um/ids/rmlfunctions.ttl#"
+  pubmed: "https://identifiers.org/pubmed:"
+  schema: "https://schema.org/"
+  sio: "http://semanticscience.org/resource/"
+  eol: "https://eol.org/pages/"
+  eunis: "https://eunis.eea.europa.eu/species/" 
+  esgreen: "https://w3id.org/esgreen/"
+
+# PARQUE;ESPECIE;UNIDADES 2020
+# JARDINES DEL BUEN RETIRO;Aesculus hippocastanum;5951
+# JARDINES DEL BUEN RETIRO;Platanus x hybrida;934
+# JARDINES DEL BUEN RETIRO;Cercis siliquastrum;720
+# JARDINES DEL BUEN RETIRO;Trachycarpus fortunei;532
+
+mappings:
+  habitatSpecies:
+    sources:
+      - access: data/inputs/ArboladoParquesHistoricoSingularesForestales_2020.csv #df_1
+        referenceFormulation: csv
+        delimiter: ;
+
+    s: esgreen:Trees/$(ESPECIE)
+    g: esgreen:graph/collectionOfTrees
+    po:
+      - [a, sio:AnatomicalEntity]
+      - [sio:ScientificName, $(ESPECIE), en~lang]
+    
