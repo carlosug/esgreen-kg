@@ -17,20 +17,22 @@ def prepareUri(uri):
     return esgreen + str(uri).replace(' ', '_').replace('"', '').lower()
 
 
-file_dates = [ '_2019', '_2020', '2017' ]
+file_dates = [ '_2019', '_2020', '_2017' ]
 
 
 for file_date in file_dates:
     # Read in the csv file
-    df = pd.read_csv(f'data/inputs/ArboladoParquesHistoricoSingularesForestales{file_date}.csv', sep = ';') 
+    df = pd.read_csv(f'data/inputs/ArboladoZonasVerdesDistritosCalles{file_date}.csv', sep = ';') 
 
-    if file_date == '2017':
-        count_col = 'N� de ejemplares'
-        especie_col = 'Especie'
+    if file_date == '2019' or '2020':
+        count_col = 'N_Unidades'
+        especie_col = 'NOMBRE_ESPECIE'
+        district_col = 'Nombre_distrito'
     else:
-        file_date = file_date.replace('_', '')
+        #file_date = file_date.replace('_', '')
         count_col = 'UNIDADES ' + file_date.replace('_', '')
         especie_col = 'ESPECIE'
+        district_col = 'DISTRITO'
 
     # Create the triples and add them to graph 'g'
     # def createAttr(g, predType, subject, obj, extra = {}):
@@ -57,14 +59,14 @@ for file_date in file_dates:
     # Iterate dataframe and generate RDF triples
     for index, row in df.iterrows():
 
-        park_uri = URIRef(prepareUri(row['PARQUE']))
+        district_uri = URIRef(prepareUri(row[district_col]))
         specie_uri = URIRef(prepareUri(row[especie_col]))
 
-        collection_uri = URIRef(prepareUri(f"collection-{row[especie_col]}-{row['PARQUE']}"))
-        count_uri = URIRef(prepareUri(f"count-{file_date}-{row[especie_col]}-{row['PARQUE']}"))
+        collection_uri = URIRef(prepareUri(f"collection-{row[especie_col]}-{row[district_col]}"))
+        count_uri = URIRef(prepareUri(f"count-{file_date}-{row[especie_col]}-{row[district_col]}"))
         
-        g.add((park_uri, RDF.type, sio.site))
-        g.add((park_uri, RDFS.label, Literal(str(row['PARQUE']).lower())))
+        g.add((district_uri, RDF.type, sio.site))
+        g.add((district_uri, RDFS.label, Literal(str(row[district_col]).lower())))
 
         g.add((collection_uri, RDF.type, sio.Collection))
         g.add((collection_uri, sio.hasMember, specie_uri))
@@ -86,38 +88,10 @@ for file_date in file_dates:
         # )
 
 
-## Example with columns header
-# :PARQUE rdf:type sio:Site .
-# :PARQUE sio:isLocatedIn District .
-# :PARQUE sio:contains :collection-of-ESPECIE .
 
-# :collection-of-ESPECIE rdf:type sio:Collection .
-# :collection-of-ESPECIE sio:hasMember :ESPECIE .
-# :collection-of-ESPECIE sio:has-attribute :UNIDADES .
-# :UNIDADES a sio:memberCount .
-# :UNIDADES sio:has-value "UNIDADES YEAR"
-
-# :ESPECIE a :habitatSpecies.
-# :ESPECIE sio:has-unique-identifier :ESPECIE-code .
-# :ESPECIE-Code sio:has-value "G3.74" .
-
-
-
-## Example with values
-# :Jardines-del-buen-retiro rdf:type :Park .
-# Park sio: isLocatedIn District .
-# :Jardines-del-buen-retiro sio:contains :collection-of-aesculus-hippocastanum .
-# :collection-of-aesculus-hippocastanum a sio:Collection .
-# :collection-of-aesculus-hippocastanum sio:hasMember :aesculus-hippocastanum .
-# :aesculus-hippocastanum a :habitatSpecies.
-# :aesculus-hippocastanum sio: has-unique-indentifier :EUNIS-code .
-# :EUNIS-Code sio:has-value "G3.74" .
-# :collection-of-aesculus-hippocastanum sio:has-attribute :UNIDADES .
-# :UNIDADES a sio:memberCount .
-# :UNIDADES sio:has-value "UNIDADES YEAR"
 
 
 
 
 # print(g.serialize(format='turtle'))
-g.serialize('outputs/rdflib-output.ttl', format='turtle')
+g.serialize('outputs/rdflib-output2.ttl', format='turtle')

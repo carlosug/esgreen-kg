@@ -1,0 +1,127 @@
+@prefix esgreen: <https://w3id.org/esgreen/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/esgreen/CU�AVERDEDEO�DONNELLYP.F.FUENTECARRANTONA> sio:Site "CU�A VERDE DE O�DONNELL Y P. F. FUENTE CARRANTONA" ;
+    sio:hasMeasurementValue <https://w3id.org/esgreen/CU�AVERDEDEO�DONNELLYP.F.FUENTECARRANTONA/location> .
+
+esgreen:ELCAPRICHODELAALAMEDADEOSUNA sio:Site "EL CAPRICHO DE LA ALAMEDA DE OSUNA" ;
+    sio:hasMeasurementValue <https://w3id.org/esgreen/ELCAPRICHODELAALAMEDADEOSUNA/location> .
+
+<https://w3id.org/esgreen/Enelep�grafeOtrosnosehanconsideradolos�rbolescorrespondientesatocones.> sio:Site "En el ep�grafe Otros no se han considerado los �rboles correspondientes a tocones." ;
+    sio:hasMeasurementValue <https://w3id.org/esgreen/Enelep�grafeOtrosnosehanconsideradolos�rbolescorrespondientesatocones./location> .
+
+<https://w3id.org/esgreen/Enelep�grafeOtrossehanconsideradolos�rbolesdecr�pitosylos�rbolestodav�anoclasificadosenlabasededatos.> sio:Site "En el ep�grafe Otros se han considerado los �rboles decr�pitos y los �rboles todav�a no clasificados en la base de datos." ;
+    sio:hasMeasurementValue <https://w3id.org/esgreen/Enelep�grafeOtrossehanconsideradolos�rbolesdecr�pitosylos�rbolestodav�anoclasificadosenlabasededatos./location> .
+
+esgreen:JARDINESDELBUENRETIRO sio:Site "JARDINES DEL BUEN RETIRO" ;
+    sio:hasMeasurementValue <https://w3id.org/esgreen/JARDINESDELBUENRETIRO/location> .
+
+esgreen:JARDINESDESABATINI sio:Site "JARDINES DE SABATINI" ;
+    sio:hasMeasurementValue <https://w3id.org/esgreen/JARDINESDESABATINI/location> .
+
+<https://w3id.org/esgreen/JARDINESPLAZADEORIENTE-JARD�NDELCABONOVAL-JARD�NDELEPANTO> sio:Site "JARDINES PLAZA DE ORIENTE-JARD�N DEL CABO NOVAL-JARD�N DE LEPANTO" ;
+    sio:hasMeasurementValue <https://w3id.org/esgreen/JARDINESPLAZADEORIENTE-JARD�NDELCABONOVAL-JARD�NDELEPANTO/location> .
+
+esgreen:PARQUEDELADEHESADELAVILLA sio:Site "PARQUE DE LA DEHESA DE LA VILLA" ;
+    sio:hasMeasurementValue <https://w3id.org/esgreen/PARQUEDELADEHESADELAVILLA/location> .
+
+esgreen:PARQUEDELOESTE-TEMPLODEDEBOD sio:Site "PARQUE DEL OESTE- TEMPLO DE DEBOD" ;
+    sio:hasMeasurementValue <https://w3id.org/esgreen/PARQUEDELOESTE-TEMPLODEDEBOD/location> .
+
+esgreen:PARQUEFORESTALDEVALDEBEBAS-FELIPEVI sio:Site "PARQUE FORESTAL DE VALDEBEBAS- FELIPE VI" ;
+    sio:hasMeasurementValue <https://w3id.org/esgreen/PARQUEFORESTALDEVALDEBEBAS-FELIPEVI/location> .
+
+esgreen:PARQUEJUANCARLOSI sio:Site "PARQUE JUAN CARLOS I" ;
+    sio:hasMeasurementValue <https://w3id.org/esgreen/PARQUEJUANCARLOSI/location> .
+
+esgreen:PARQUEJUANPABLOII sio:Site "PARQUE JUAN PABLO II" ;
+    sio:hasMeasurementValue <https://w3id.org/esgreen/PARQUEJUANPABLOII/location> .
+
+esgreen:PARQUELINEALDELMANZANARES sio:Site "PARQUE LINEAL DEL MANZANARES" ;
+    sio:hasMeasurementValue <https://w3id.org/esgreen/PARQUELINEALDELMANZANARES/location> .
+
+<https://w3id.org/esgreen/PARQUEMADRIDR�O> sio:Site "PARQUE MADRID R�O" ;
+    sio:hasMeasurementValue <https://w3id.org/esgreen/PARQUEMADRIDR�O/location> .
+
+esgreen:QUINTADELOSMOLINOS sio:Site "QUINTA DE LOS MOLINOS" ;
+    sio:hasMeasurementValue <https://w3id.org/esgreen/QUINTADELOSMOLINOS/location> .
+
+esgreen:QUINTAFUENTEDELBERRO sio:Site "QUINTA FUENTE DEL BERRO" ;
+    sio:hasMeasurementValue <https://w3id.org/esgreen/QUINTAFUENTEDELBERRO/location> .
+
+<https://w3id.org/esgreen/ROSALEDADEMADRID(PARQUEDELOESTE)> sio:Site "ROSALEDA DE MADRID (PARQUE DEL OESTE)" ;
+    sio:hasMeasurementValue <https://w3id.org/esgreen/ROSALEDADEMADRID(PARQUEDELOESTE)/location> .
+
+<https://w3id.org/esgreen/TOTAL:> sio:Site "TOTAL:" ;
+    sio:hasMeasurementValue <https://w3id.org/esgreen/TOTAL:/location> .
+
+esgreen:Z.V.DISTRITOC-LASTABLAS sio:Site "Z.V. DISTRITO C-LAS TABLAS" ;
+    sio:hasMeasurementValue <https://w3id.org/esgreen/Z.V.DISTRITOC-LASTABLAS/location> .
+
+<https://w3id.org/esgreen/CU�AVERDEDEO�DONNELLYP.F.FUENTECARRANTONA/location> a sio:isLocatedIn ;
+    sio:hasValue <https://w3id.org/esgreen/4,12> .
+
+<https://w3id.org/esgreen/ELCAPRICHODELAALAMEDADEOSUNA/location> a sio:isLocatedIn ;
+    sio:hasValue <https://w3id.org/esgreen/12,6> .
+
+<https://w3id.org/esgreen/Enelep�grafeOtrosnosehanconsideradolos�rbolescorrespondientesatocones./location> a sio:isLocatedIn ;
+    sio:hasValue esgreen:nan .
+
+<https://w3id.org/esgreen/Enelep�grafeOtrossehanconsideradolos�rbolesdecr�pitosylos�rbolestodav�anoclasificadosenlabasededatos./location> a sio:isLocatedIn ;
+    sio:hasValue esgreen:nan .
+
+<https://w3id.org/esgreen/JARDINESDELBUENRETIRO/location> a sio:isLocatedIn ;
+    sio:hasValue <https://w3id.org/esgreen/9,85> .
+
+<https://w3id.org/esgreen/JARDINESDESABATINI/location> a sio:isLocatedIn ;
+    sio:hasValue <https://w3id.org/esgreen/8,01> .
+
+<https://w3id.org/esgreen/JARDINESPLAZADEORIENTE-JARD�NDELCABONOVAL-JARD�NDELEPANTO/location> a sio:isLocatedIn ;
+    sio:hasValue <https://w3id.org/esgreen/10,22> .
+
+<https://w3id.org/esgreen/PARQUEDELADEHESADELAVILLA/location> a sio:isLocatedIn ;
+    sio:hasValue <https://w3id.org/esgreen/7,72> .
+
+<https://w3id.org/esgreen/PARQUEDELOESTE-TEMPLODEDEBOD/location> a sio:isLocatedIn ;
+    sio:hasValue <https://w3id.org/esgreen/13,06> .
+
+<https://w3id.org/esgreen/PARQUEFORESTALDEVALDEBEBAS-FELIPEVI/location> a sio:isLocatedIn ;
+    sio:hasValue <https://w3id.org/esgreen/3,87> .
+
+<https://w3id.org/esgreen/PARQUEJUANCARLOSI/location> a sio:isLocatedIn ;
+    sio:hasValue <https://w3id.org/esgreen/4,76> .
+
+<https://w3id.org/esgreen/PARQUEJUANPABLOII/location> a sio:isLocatedIn ;
+    sio:hasValue <https://w3id.org/esgreen/4,49> .
+
+<https://w3id.org/esgreen/PARQUELINEALDELMANZANARES/location> a sio:isLocatedIn ;
+    sio:hasValue <https://w3id.org/esgreen/4,77> .
+
+<https://w3id.org/esgreen/PARQUEMADRIDR�O/location> a sio:isLocatedIn ;
+    sio:hasValue <https://w3id.org/esgreen/5,58> .
+
+<https://w3id.org/esgreen/QUINTADELOSMOLINOS/location> a sio:isLocatedIn ;
+    sio:hasValue <https://w3id.org/esgreen/12,92> .
+
+<https://w3id.org/esgreen/QUINTAFUENTEDELBERRO/location> a sio:isLocatedIn ;
+    sio:hasValue <https://w3id.org/esgreen/10,13> .
+
+<https://w3id.org/esgreen/ROSALEDADEMADRID(PARQUEDELOESTE)/location> a sio:isLocatedIn ;
+    sio:hasValue <https://w3id.org/esgreen/13,65> .
+
+<https://w3id.org/esgreen/TOTAL:/location> a sio:isLocatedIn ;
+    sio:hasValue esgreen:nan .
+
+<https://w3id.org/esgreen/Z.V.DISTRITOC-LASTABLAS/location> a sio:isLocatedIn ;
+    sio:hasValue <https://w3id.org/esgreen/3,78> .
+
+<https://w3id.org/esgreen/nan/location> a sio:isLocatedIn ;
+    sio:hasValue esgreen:nan .
+
+esgreen:nan sio:Site "NaN"^^xsd:double ;
+    sio:hasMeasurementValue <https://w3id.org/esgreen/nan/location> .
+
