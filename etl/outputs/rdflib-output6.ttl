@@ -1,0 +1,611 @@
+@prefix esgreen: <https://w3id.org/esgreen/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+esgreen:arganzuela a sio:Township ;
+    rdfs:label "arganzuela" .
+
+esgreen:barajas a sio:Township ;
+    rdfs:label "barajas" .
+
+esgreen:carabanchel a sio:Township ;
+    rdfs:label "carabanchel" .
+
+esgreen:centro a sio:Township ;
+    rdfs:label "centro" .
+
+<https://w3id.org/esgreen/chamart�n> a sio:Township ;
+    rdfs:label "chamart�n" .
+
+<https://w3id.org/esgreen/chamber�> a sio:Township ;
+    rdfs:label "chamber�" .
+
+esgreen:ciudad_lineal a sio:Township ;
+    rdfs:label "ciudad lineal" .
+
+esgreen:collection-cupresus_arizonica-salamanca a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-cupresus_arizonica-salamanca,
+        esgreen:count-_2020-cupresus_arizonica-salamanca ;
+    sio:hasMember esgreen:cupresus_arizonica .
+
+esgreen:collection-nan-arganzuela a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-nan-arganzuela,
+        esgreen:count-_2020-nan-arganzuela ;
+    sio:hasMember esgreen:nan .
+
+esgreen:collection-nan-centro a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-nan-centro,
+        esgreen:count-_2020-nan-centro ;
+    sio:hasMember esgreen:nan .
+
+<https://w3id.org/esgreen/collection-nan-chamart�n> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2019-nan-chamart�n>,
+        <https://w3id.org/esgreen/count-_2020-nan-chamart�n> ;
+    sio:hasMember esgreen:nan .
+
+<https://w3id.org/esgreen/collection-nan-chamber�> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2019-nan-chamber�>,
+        <https://w3id.org/esgreen/count-_2020-nan-chamber�> ;
+    sio:hasMember esgreen:nan .
+
+<https://w3id.org/esgreen/collection-nan-en_estos_casos_se_ha_computado_la_totalidad_de_la_superficie_de_la_masa_al_distrito.> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-_2020-nan-en_estos_casos_se_ha_computado_la_totalidad_de_la_superficie_de_la_masa_al_distrito.> ;
+    sio:hasMember esgreen:nan .
+
+<https://w3id.org/esgreen/collection-nan-existen_algunos_casos_en_que_la_masa_arb�rea_no_se_ajusta_totalmente_a_los_l�mites_administrativos_del_distrito,_expandiendose_m�s_all�_de_estos.> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-_2020-nan-existen_algunos_casos_en_que_la_masa_arb�rea_no_se_ajusta_totalmente_a_los_l�mites_administrativos_del_distrito,_expandiendose_m�s_all�_de_estos.> ;
+    sio:hasMember esgreen:nan .
+
+esgreen:collection-nan-nan a sio:Collection ;
+    sio:hasAttribute esgreen:count-_2020-nan-nan ;
+    sio:hasMember esgreen:nan .
+
+<https://w3id.org/esgreen/collection-nan-no_se_ofrecen_datos_del_n�_de_unidades_existentes_en_cada_distrito_porque_los_datos_de_densidad_var�an_de_unas_a_otras,_incluso_dentro_de_un_distrito_(por_ejemplo,_la_densidad_aproximada_en_los_distritos_de_retiro_y_salamanca_es_de_270_uds._por__hect�rea,_valor_que_var�a_entre_las_masas_de_dichos_distritos_y_con_respecto_a_otros)> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-_2020-nan-no_se_ofrecen_datos_del_n�_de_unidades_existentes_en_cada_distrito_porque_los_datos_de_densidad_var�an_de_unas_a_otras,_incluso_dentro_de_un_distrito_(por_ejemplo,_la_densidad_aproximada_en_los_distritos_de_retiro_y_salamanca_es_de_270_uds._por__hect�rea,_valor_que_var�a_entre_las_masas_de_dichos_distritos_y_con_respecto_a_otros)> ;
+    sio:hasMember esgreen:nan .
+
+<https://w3id.org/esgreen/collection-nan-por_tanto,_los_datos_sobre_el_n�_de_unidades_pueden_ser_muy_imprecisos_cuando_se_quiere_dar_una_cifra_�nica_por_distrito._> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-_2020-nan-por_tanto,_los_datos_sobre_el_n�_de_unidades_pueden_ser_muy_imprecisos_cuando_se_quiere_dar_una_cifra_�nica_por_distrito._> ;
+    sio:hasMember esgreen:nan .
+
+<https://w3id.org/esgreen/collection-nan-totales:> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-_2020-nan-totales:> ;
+    sio:hasMember esgreen:nan .
+
+esgreen:collection-nan-usera a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-nan-usera,
+        esgreen:count-_2020-nan-usera ;
+    sio:hasMember esgreen:nan .
+
+esgreen:collection-pinus_halepensis-barajas a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-pinus_halepensis-barajas,
+        esgreen:count-_2020-pinus_halepensis-barajas ;
+    sio:hasMember esgreen:pinus_halepensis .
+
+esgreen:collection-pinus_halepensis-carabanchel a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-pinus_halepensis-carabanchel,
+        esgreen:count-_2020-pinus_halepensis-carabanchel ;
+    sio:hasMember esgreen:pinus_halepensis .
+
+esgreen:collection-pinus_halepensis-ciudad_lineal a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-pinus_halepensis-ciudad_lineal,
+        esgreen:count-_2020-pinus_halepensis-ciudad_lineal ;
+    sio:hasMember esgreen:pinus_halepensis .
+
+esgreen:collection-pinus_halepensis-moratalaz a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-pinus_halepensis-moratalaz,
+        esgreen:count-_2020-pinus_halepensis-moratalaz ;
+    sio:hasMember esgreen:pinus_halepensis .
+
+esgreen:collection-pinus_halepensis-puente_de_vallecas a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-pinus_halepensis-puente_de_vallecas,
+        esgreen:count-_2020-pinus_halepensis-puente_de_vallecas ;
+    sio:hasMember esgreen:pinus_halepensis .
+
+<https://w3id.org/esgreen/collection-pinus_halepensis-tetu�n> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2019-pinus_halepensis-tetu�n>,
+        <https://w3id.org/esgreen/count-_2020-pinus_halepensis-tetu�n> ;
+    sio:hasMember esgreen:pinus_halepensis .
+
+<https://w3id.org/esgreen/collection-pinus_halepensis-vic�lvaro> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2019-pinus_halepensis-vic�lvaro>,
+        <https://w3id.org/esgreen/count-_2020-pinus_halepensis-vic�lvaro> ;
+    sio:hasMember esgreen:pinus_halepensis .
+
+esgreen:collection-pinus_halepensis-villa_de_vallecas a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-pinus_halepensis-villa_de_vallecas,
+        esgreen:count-_2020-pinus_halepensis-villa_de_vallecas ;
+    sio:hasMember esgreen:pinus_halepensis .
+
+esgreen:collection-pinus_pinea-fuencarral_-_el_pardo a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-pinus_pinea-fuencarral_-_el_pardo,
+        esgreen:count-_2020-pinus_pinea-fuencarral_-_el_pardo ;
+    sio:hasMember esgreen:pinus_pinea .
+
+esgreen:collection-pinus_pinea-hortaleza a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-pinus_pinea-hortaleza,
+        esgreen:count-_2020-pinus_pinea-hortaleza ;
+    sio:hasMember esgreen:pinus_pinea .
+
+esgreen:collection-pinus_pinea-latina a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-pinus_pinea-latina,
+        esgreen:count-_2020-pinus_pinea-latina ;
+    sio:hasMember esgreen:pinus_pinea .
+
+esgreen:collection-pinus_pinea-moncloa-aravaca a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-pinus_pinea-moncloa-aravaca,
+        esgreen:count-_2020-pinus_pinea-moncloa-aravaca ;
+    sio:hasMember esgreen:pinus_pinea .
+
+esgreen:collection-pinus_pinea-retiro a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-pinus_pinea-retiro,
+        esgreen:count-_2020-pinus_pinea-retiro ;
+    sio:hasMember esgreen:pinus_pinea .
+
+esgreen:collection-pinus_pinea-san_blas_-_canillejas a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-pinus_pinea-san_blas_-_canillejas,
+        esgreen:count-_2020-pinus_pinea-san_blas_-_canillejas ;
+    sio:hasMember esgreen:pinus_pinea .
+
+esgreen:collection-pinus_pinea-villaverde a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-pinus_pinea-villaverde,
+        esgreen:count-_2020-pinus_pinea-villaverde ;
+    sio:hasMember esgreen:pinus_pinea .
+
+<https://w3id.org/esgreen/en_estos_casos_se_ha_computado_la_totalidad_de_la_superficie_de_la_masa_al_distrito.> a sio:Township ;
+    rdfs:label "en estos casos se ha computado la totalidad de la superficie de la masa al distrito." .
+
+<https://w3id.org/esgreen/existen_algunos_casos_en_que_la_masa_arb�rea_no_se_ajusta_totalmente_a_los_l�mites_administrativos_del_distrito,_expandiendose_m�s_all�_de_estos.> a sio:Township ;
+    rdfs:label "existen algunos casos en que la masa arb�rea no se ajusta totalmente a los l�mites administrativos del distrito, expandiendose m�s all� de estos." .
+
+esgreen:fuencarral_-_el_pardo a sio:Township ;
+    rdfs:label "fuencarral - el pardo" .
+
+esgreen:hortaleza a sio:Township ;
+    rdfs:label "hortaleza" .
+
+esgreen:latina a sio:Township ;
+    rdfs:label "latina" .
+
+esgreen:moncloa-aravaca a sio:Township ;
+    rdfs:label "moncloa-aravaca" .
+
+esgreen:moratalaz a sio:Township ;
+    rdfs:label "moratalaz" .
+
+<https://w3id.org/esgreen/no_se_ofrecen_datos_del_n�_de_unidades_existentes_en_cada_distrito_porque_los_datos_de_densidad_var�an_de_unas_a_otras,_incluso_dentro_de_un_distrito_(por_ejemplo,_la_densidad_aproximada_en_los_distritos_de_retiro_y_salamanca_es_de_270_uds._por__hect�rea,_valor_que_var�a_entre_las_masas_de_dichos_distritos_y_con_respecto_a_otros)> a sio:Township ;
+    rdfs:label "no se ofrecen datos del n� de unidades existentes en cada distrito porque los datos de densidad var�an de unas a otras, incluso dentro de un distrito (por ejemplo, la densidad aproximada en los distritos de retiro y salamanca es de 270 uds. por  hect�rea, valor que var�a entre las masas de dichos distritos y con respecto a otros)" .
+
+<https://w3id.org/esgreen/por_tanto,_los_datos_sobre_el_n�_de_unidades_pueden_ser_muy_imprecisos_cuando_se_quiere_dar_una_cifra_�nica_por_distrito._> a sio:Township ;
+    rdfs:label "por tanto, los datos sobre el n� de unidades pueden ser muy imprecisos cuando se quiere dar una cifra �nica por distrito. " .
+
+esgreen:puente_de_vallecas a sio:Township ;
+    rdfs:label "puente de vallecas" .
+
+esgreen:retiro a sio:Township ;
+    rdfs:label "retiro" .
+
+esgreen:salamanca a sio:Township ;
+    rdfs:label "salamanca" .
+
+esgreen:san_blas_-_canillejas a sio:Township ;
+    rdfs:label "san blas - canillejas" .
+
+<https://w3id.org/esgreen/tetu�n> a sio:Township ;
+    rdfs:label "tetu�n" .
+
+esgreen:total-surface-2019-cupresus_arizonica-salamanca a sio:SurfaceArea ;
+    sio:hasValue "2406,400183"^^xsd:Float ;
+    sio:measuredAt 2019 .
+
+esgreen:total-surface-2019-nan-arganzuela a sio:SurfaceArea ;
+    sio:hasValue "0"^^xsd:Float ;
+    sio:measuredAt 2019 .
+
+esgreen:total-surface-2019-nan-centro a sio:SurfaceArea ;
+    sio:hasValue "0"^^xsd:Float ;
+    sio:measuredAt 2019 .
+
+<https://w3id.org/esgreen/total-surface-2019-nan-chamart�n> a sio:SurfaceArea ;
+    sio:hasValue "0"^^xsd:Float ;
+    sio:measuredAt 2019 .
+
+<https://w3id.org/esgreen/total-surface-2019-nan-chamber�> a sio:SurfaceArea ;
+    sio:hasValue "0"^^xsd:Float ;
+    sio:measuredAt 2019 .
+
+esgreen:total-surface-2019-nan-usera a sio:SurfaceArea ;
+    sio:hasValue "0"^^xsd:Float ;
+    sio:measuredAt 2019 .
+
+esgreen:total-surface-2019-pinus_halepensis-barajas a sio:SurfaceArea ;
+    sio:hasValue "222432,4251"^^xsd:Float ;
+    sio:measuredAt 2019 .
+
+esgreen:total-surface-2019-pinus_halepensis-carabanchel a sio:SurfaceArea ;
+    sio:hasValue "291401,3404"^^xsd:Float ;
+    sio:measuredAt 2019 .
+
+esgreen:total-surface-2019-pinus_halepensis-ciudad_lineal a sio:SurfaceArea ;
+    sio:hasValue "159248,0262"^^xsd:Float ;
+    sio:measuredAt 2019 .
+
+esgreen:total-surface-2019-pinus_halepensis-moratalaz a sio:SurfaceArea ;
+    sio:hasValue "102469,0414"^^xsd:Float ;
+    sio:measuredAt 2019 .
+
+esgreen:total-surface-2019-pinus_halepensis-puente_de_vallecas a sio:SurfaceArea ;
+    sio:hasValue "687419,1454"^^xsd:Float ;
+    sio:measuredAt 2019 .
+
+<https://w3id.org/esgreen/total-surface-2019-pinus_halepensis-tetu�n> a sio:SurfaceArea ;
+    sio:hasValue "88674,20597"^^xsd:Float ;
+    sio:measuredAt 2019 .
+
+<https://w3id.org/esgreen/total-surface-2019-pinus_halepensis-vic�lvaro> a sio:SurfaceArea ;
+    sio:hasValue "430813,5629"^^xsd:Float ;
+    sio:measuredAt 2019 .
+
+esgreen:total-surface-2019-pinus_halepensis-villa_de_vallecas a sio:SurfaceArea ;
+    sio:hasValue "634922,3204"^^xsd:Float ;
+    sio:measuredAt 2019 .
+
+esgreen:total-surface-2019-pinus_pinea-fuencarral_-_el_pardo a sio:SurfaceArea ;
+    sio:hasValue "917797,3589"^^xsd:Float ;
+    sio:measuredAt 2019 .
+
+esgreen:total-surface-2019-pinus_pinea-hortaleza a sio:SurfaceArea ;
+    sio:hasValue "805070,8046"^^xsd:Float ;
+    sio:measuredAt 2019 .
+
+esgreen:total-surface-2019-pinus_pinea-latina a sio:SurfaceArea ;
+    sio:hasValue "645468,5313"^^xsd:Float ;
+    sio:measuredAt 2019 .
+
+esgreen:total-surface-2019-pinus_pinea-moncloa-aravaca a sio:SurfaceArea ;
+    sio:hasValue "601214,6035"^^xsd:Float ;
+    sio:measuredAt 2019 .
+
+esgreen:total-surface-2019-pinus_pinea-retiro a sio:SurfaceArea ;
+    sio:hasValue "486,11223"^^xsd:Float ;
+    sio:measuredAt 2019 .
+
+esgreen:total-surface-2019-pinus_pinea-san_blas_-_canillejas a sio:SurfaceArea ;
+    sio:hasValue "452323,662"^^xsd:Float ;
+    sio:measuredAt 2019 .
+
+esgreen:total-surface-2019-pinus_pinea-villaverde a sio:SurfaceArea ;
+    sio:hasValue "406414,0133"^^xsd:Float ;
+    sio:measuredAt 2019 .
+
+esgreen:total-surface-_2020-cupresus_arizonica-salamanca a sio:SurfaceArea ;
+    sio:hasValue "2406,40"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:total-surface-_2020-nan-arganzuela a sio:SurfaceArea ;
+    sio:hasValue "0,00"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:total-surface-_2020-nan-centro a sio:SurfaceArea ;
+    sio:hasValue "0,00"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+<https://w3id.org/esgreen/total-surface-_2020-nan-chamart�n> a sio:SurfaceArea ;
+    sio:hasValue "0,00"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+<https://w3id.org/esgreen/total-surface-_2020-nan-chamber�> a sio:SurfaceArea ;
+    sio:hasValue "0,00"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+<https://w3id.org/esgreen/total-surface-_2020-nan-en_estos_casos_se_ha_computado_la_totalidad_de_la_superficie_de_la_masa_al_distrito.> a sio:SurfaceArea ;
+    sio:hasValue "nan"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+<https://w3id.org/esgreen/total-surface-_2020-nan-existen_algunos_casos_en_que_la_masa_arb�rea_no_se_ajusta_totalmente_a_los_l�mites_administrativos_del_distrito,_expandiendose_m�s_all�_de_estos.> a sio:SurfaceArea ;
+    sio:hasValue "nan"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:total-surface-_2020-nan-nan a sio:SurfaceArea ;
+    sio:hasValue "nan"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+<https://w3id.org/esgreen/total-surface-_2020-nan-no_se_ofrecen_datos_del_n�_de_unidades_existentes_en_cada_distrito_porque_los_datos_de_densidad_var�an_de_unas_a_otras,_incluso_dentro_de_un_distrito_(por_ejemplo,_la_densidad_aproximada_en_los_distritos_de_retiro_y_salamanca_es_de_270_uds._por__hect�rea,_valor_que_var�a_entre_las_masas_de_dichos_distritos_y_con_respecto_a_otros)> a sio:SurfaceArea ;
+    sio:hasValue "nan"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+<https://w3id.org/esgreen/total-surface-_2020-nan-por_tanto,_los_datos_sobre_el_n�_de_unidades_pueden_ser_muy_imprecisos_cuando_se_quiere_dar_una_cifra_�nica_por_distrito._> a sio:SurfaceArea ;
+    sio:hasValue "nan"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+<https://w3id.org/esgreen/total-surface-_2020-nan-totales:> a sio:SurfaceArea ;
+    sio:hasValue "6139910,47"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:total-surface-_2020-nan-usera a sio:SurfaceArea ;
+    sio:hasValue "0,00"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:total-surface-_2020-pinus_halepensis-barajas a sio:SurfaceArea ;
+    sio:hasValue "222411,00"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:total-surface-_2020-pinus_halepensis-carabanchel a sio:SurfaceArea ;
+    sio:hasValue "291206,69"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:total-surface-_2020-pinus_halepensis-ciudad_lineal a sio:SurfaceArea ;
+    sio:hasValue "148195,13"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:total-surface-_2020-pinus_halepensis-moratalaz a sio:SurfaceArea ;
+    sio:hasValue "102464,99"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:total-surface-_2020-pinus_halepensis-puente_de_vallecas a sio:SurfaceArea ;
+    sio:hasValue "687559,53"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+<https://w3id.org/esgreen/total-surface-_2020-pinus_halepensis-tetu�n> a sio:SurfaceArea ;
+    sio:hasValue "88674,21"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+<https://w3id.org/esgreen/total-surface-_2020-pinus_halepensis-vic�lvaro> a sio:SurfaceArea ;
+    sio:hasValue "446509,84"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:total-surface-_2020-pinus_halepensis-villa_de_vallecas a sio:SurfaceArea ;
+    sio:hasValue "626758,16"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:total-surface-_2020-pinus_pinea-fuencarral_-_el_pardo a sio:SurfaceArea ;
+    sio:hasValue "916067,24"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:total-surface-_2020-pinus_pinea-hortaleza a sio:SurfaceArea ;
+    sio:hasValue "784231,99"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:total-surface-_2020-pinus_pinea-latina a sio:SurfaceArea ;
+    sio:hasValue "625688,63"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:total-surface-_2020-pinus_pinea-moncloa-aravaca a sio:SurfaceArea ;
+    sio:hasValue "601214,60"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:total-surface-_2020-pinus_pinea-retiro a sio:SurfaceArea ;
+    sio:hasValue "486,11"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:total-surface-_2020-pinus_pinea-san_blas_-_canillejas a sio:SurfaceArea ;
+    sio:hasValue "195820,29"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:total-surface-_2020-pinus_pinea-villaverde a sio:SurfaceArea ;
+    sio:hasValue "400215,64"^^xsd:Float ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+<https://w3id.org/esgreen/totales:> a sio:Township ;
+    rdfs:label "totales:" .
+
+esgreen:usera a sio:Township ;
+    rdfs:label "usera" .
+
+<https://w3id.org/esgreen/vic�lvaro> a sio:Township ;
+    rdfs:label "vic�lvaro" .
+
+esgreen:villa_de_vallecas a sio:Township ;
+    rdfs:label "villa de vallecas" .
+
+esgreen:villaverde a sio:Township ;
+    rdfs:label "villaverde" .
+
+esgreen:count-2019-cupresus_arizonica-salamanca a sio:MemberCount ;
+    sio:hasValue 65 ;
+    sio:measuredAt 2019 .
+
+esgreen:count-2019-nan-arganzuela a sio:MemberCount ;
+    sio:hasValue 0 ;
+    sio:measuredAt 2019 .
+
+esgreen:count-2019-nan-centro a sio:MemberCount ;
+    sio:hasValue 0 ;
+    sio:measuredAt 2019 .
+
+<https://w3id.org/esgreen/count-2019-nan-chamart�n> a sio:MemberCount ;
+    sio:hasValue 0 ;
+    sio:measuredAt 2019 .
+
+<https://w3id.org/esgreen/count-2019-nan-chamber�> a sio:MemberCount ;
+    sio:hasValue 0 ;
+    sio:measuredAt 2019 .
+
+esgreen:count-2019-nan-usera a sio:MemberCount ;
+    sio:hasValue 0 ;
+    sio:measuredAt 2019 .
+
+esgreen:count-2019-pinus_halepensis-barajas a sio:MemberCount ;
+    sio:hasValue 2102 ;
+    sio:measuredAt 2019 .
+
+esgreen:count-2019-pinus_halepensis-carabanchel a sio:MemberCount ;
+    sio:hasValue 28160 ;
+    sio:measuredAt 2019 .
+
+esgreen:count-2019-pinus_halepensis-ciudad_lineal a sio:MemberCount ;
+    sio:hasValue 6973 ;
+    sio:measuredAt 2019 .
+
+esgreen:count-2019-pinus_halepensis-moratalaz a sio:MemberCount ;
+    sio:hasValue 4452 ;
+    sio:measuredAt 2019 .
+
+esgreen:count-2019-pinus_halepensis-puente_de_vallecas a sio:MemberCount ;
+    sio:hasValue 30068 ;
+    sio:measuredAt 2019 .
+
+<https://w3id.org/esgreen/count-2019-pinus_halepensis-tetu�n> a sio:MemberCount ;
+    sio:hasValue 3310 ;
+    sio:measuredAt 2019 .
+
+<https://w3id.org/esgreen/count-2019-pinus_halepensis-vic�lvaro> a sio:MemberCount ;
+    sio:hasValue 16232 ;
+    sio:measuredAt 2019 .
+
+esgreen:count-2019-pinus_halepensis-villa_de_vallecas a sio:MemberCount ;
+    sio:hasValue 40785 ;
+    sio:measuredAt 2019 .
+
+esgreen:count-2019-pinus_pinea-fuencarral_-_el_pardo a sio:MemberCount ;
+    sio:hasValue 33826 ;
+    sio:measuredAt 2019 .
+
+esgreen:count-2019-pinus_pinea-hortaleza a sio:MemberCount ;
+    sio:hasValue 30819 ;
+    sio:measuredAt 2019 .
+
+esgreen:count-2019-pinus_pinea-latina a sio:MemberCount ;
+    sio:hasValue 33127 ;
+    sio:measuredAt 2019 .
+
+esgreen:count-2019-pinus_pinea-moncloa-aravaca a sio:MemberCount ;
+    sio:hasValue 36334 ;
+    sio:measuredAt 2019 .
+
+esgreen:count-2019-pinus_pinea-retiro a sio:MemberCount ;
+    sio:hasValue 13 ;
+    sio:measuredAt 2019 .
+
+esgreen:count-2019-pinus_pinea-san_blas_-_canillejas a sio:MemberCount ;
+    sio:hasValue 6480 ;
+    sio:measuredAt 2019 .
+
+esgreen:count-2019-pinus_pinea-villaverde a sio:MemberCount ;
+    sio:hasValue 13816 ;
+    sio:measuredAt 2019 .
+
+esgreen:count-_2020-cupresus_arizonica-salamanca a sio:MemberCount ;
+    sio:hasValue 1.0 ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:count-_2020-nan-arganzuela a sio:MemberCount ;
+    sio:hasValue 0.0 ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:count-_2020-nan-centro a sio:MemberCount ;
+    sio:hasValue 0.0 ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+<https://w3id.org/esgreen/count-_2020-nan-chamart�n> a sio:MemberCount ;
+    sio:hasValue 0.0 ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+<https://w3id.org/esgreen/count-_2020-nan-chamber�> a sio:MemberCount ;
+    sio:hasValue 0.0 ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+<https://w3id.org/esgreen/count-_2020-nan-en_estos_casos_se_ha_computado_la_totalidad_de_la_superficie_de_la_masa_al_distrito.> a sio:MemberCount ;
+    sio:hasValue nan ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+<https://w3id.org/esgreen/count-_2020-nan-existen_algunos_casos_en_que_la_masa_arb�rea_no_se_ajusta_totalmente_a_los_l�mites_administrativos_del_distrito,_expandiendose_m�s_all�_de_estos.> a sio:MemberCount ;
+    sio:hasValue nan ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:count-_2020-nan-nan a sio:MemberCount ;
+    sio:hasValue nan ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+<https://w3id.org/esgreen/count-_2020-nan-no_se_ofrecen_datos_del_n�_de_unidades_existentes_en_cada_distrito_porque_los_datos_de_densidad_var�an_de_unas_a_otras,_incluso_dentro_de_un_distrito_(por_ejemplo,_la_densidad_aproximada_en_los_distritos_de_retiro_y_salamanca_es_de_270_uds._por__hect�rea,_valor_que_var�a_entre_las_masas_de_dichos_distritos_y_con_respecto_a_otros)> a sio:MemberCount ;
+    sio:hasValue nan ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+<https://w3id.org/esgreen/count-_2020-nan-por_tanto,_los_datos_sobre_el_n�_de_unidades_pueden_ser_muy_imprecisos_cuando_se_quiere_dar_una_cifra_�nica_por_distrito._> a sio:MemberCount ;
+    sio:hasValue nan ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+<https://w3id.org/esgreen/count-_2020-nan-totales:> a sio:MemberCount ;
+    sio:hasValue 678.0 ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:count-_2020-nan-usera a sio:MemberCount ;
+    sio:hasValue 0.0 ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:count-_2020-pinus_halepensis-barajas a sio:MemberCount ;
+    sio:hasValue 8.0 ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:count-_2020-pinus_halepensis-carabanchel a sio:MemberCount ;
+    sio:hasValue 31.0 ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:count-_2020-pinus_halepensis-ciudad_lineal a sio:MemberCount ;
+    sio:hasValue 4.0 ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:count-_2020-pinus_halepensis-moratalaz a sio:MemberCount ;
+    sio:hasValue 14.0 ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:count-_2020-pinus_halepensis-puente_de_vallecas a sio:MemberCount ;
+    sio:hasValue 10.0 ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+<https://w3id.org/esgreen/count-_2020-pinus_halepensis-tetu�n> a sio:MemberCount ;
+    sio:hasValue 39.0 ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+<https://w3id.org/esgreen/count-_2020-pinus_halepensis-vic�lvaro> a sio:MemberCount ;
+    sio:hasValue 6.0 ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:count-_2020-pinus_halepensis-villa_de_vallecas a sio:MemberCount ;
+    sio:hasValue 5.0 ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:count-_2020-pinus_pinea-fuencarral_-_el_pardo a sio:MemberCount ;
+    sio:hasValue 202.0 ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:count-_2020-pinus_pinea-hortaleza a sio:MemberCount ;
+    sio:hasValue 31.0 ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:count-_2020-pinus_pinea-latina a sio:MemberCount ;
+    sio:hasValue 181.0 ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:count-_2020-pinus_pinea-moncloa-aravaca a sio:MemberCount ;
+    sio:hasValue 84.0 ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:count-_2020-pinus_pinea-retiro a sio:MemberCount ;
+    sio:hasValue 1.0 ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:count-_2020-pinus_pinea-san_blas_-_canillejas a sio:MemberCount ;
+    sio:hasValue 8.0 ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:count-_2020-pinus_pinea-villaverde a sio:MemberCount ;
+    sio:hasValue 53.0 ;
+    sio:measuredAt "_2020"^^xsd:integer .
+
+esgreen:cupresus_arizonica a sio:Specie ;
+    rdfs:label "cupresus arizonica" .
+
+esgreen:pinus_pinea a sio:Specie ;
+    rdfs:label "pinus pinea" .
+
+esgreen:pinus_halepensis a sio:Specie ;
+    rdfs:label "pinus halepensis" .
+
+esgreen:nan a sio:Specie,
+        sio:Township ;
+    rdfs:label "nan" .
+

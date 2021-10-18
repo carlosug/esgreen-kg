@@ -2019,8 +2019,8 @@ esgreen:count-2019-morus_alba-parque_juan_pablo_ii a sio:MemberCount ;
     sio:measuredAt 2019 .
 
 esgreen:count-2019-nan-nan a sio:MemberCount ;
-    sio:hasValue 785732.0,
-        nan ;
+    sio:hasValue nan,
+        785732.0 ;
     sio:measuredAt 2019 .
 
 esgreen:count-2019-olea_europaea-parque_forestal_valdebebas a sio:MemberCount ;

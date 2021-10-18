@@ -10,126 +10,122 @@ esgreen:capricho_de_la_alameda_de_osuna a sio:site ;
 
 esgreen:collection-of-trees-in-capricho_de_la_alameda_de_osuna a sio:Collection ;
     sio:hasAttribute esgreen:count-_2019-capricho_de_la_alameda_de_osuna ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_3,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 <https://w3id.org/esgreen/collection-of-trees-in-cuña_verde_de_o´donnell_y_p._f._fuente_carrantona> a sio:Collection ;
     sio:hasAttribute <https://w3id.org/esgreen/count-_2019-cuña_verde_de_o´donnell_y_p._f._fuente_carrantona> ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_0,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 <https://w3id.org/esgreen/collection-of-trees-in-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:Collection ;
     sio:hasAttribute <https://w3id.org/esgreen/count-_2020-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_0,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 esgreen:collection-of-trees-in-dehesa_de_la_villa a sio:Collection ;
     sio:hasAttribute esgreen:count-_2019-dehesa_de_la_villa ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_1,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 esgreen:collection-of-trees-in-el_capricho_de_la_alameda_de_osuna a sio:Collection ;
     sio:hasAttribute esgreen:count-_2020-el_capricho_de_la_alameda_de_osuna ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_3,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 <https://w3id.org/esgreen/collection-of-trees-in-en_el_ep�grafe_otros_no_se_han_considerado_los_�rboles_correspondientes_a_tocones.> a sio:Collection ;
     sio:hasAttribute <https://w3id.org/esgreen/count-_2020-en_el_ep�grafe_otros_no_se_han_considerado_los_�rboles_correspondientes_a_tocones.> ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_19,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 <https://w3id.org/esgreen/collection-of-trees-in-en_el_ep�grafe_otros_se_han_considerado_los_�rboles_decr�pitos_y_los_�rboles_todav�a_no_clasificados_en_la_base_de_datos.> a sio:Collection ;
     sio:hasAttribute <https://w3id.org/esgreen/count-_2020-en_el_ep�grafe_otros_se_han_considerado_los_�rboles_decr�pitos_y_los_�rboles_todav�a_no_clasificados_en_la_base_de_datos.> ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_18,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 esgreen:collection-of-trees-in-jardines_de_sabatini a sio:Collection ;
     sio:hasAttribute esgreen:count-_2019-jardines_de_sabatini,
         esgreen:count-_2020-jardines_de_sabatini ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_6,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 esgreen:collection-of-trees-in-jardines_del_buen_retiro a sio:Collection ;
     sio:hasAttribute esgreen:count-_2019-jardines_del_buen_retiro,
         esgreen:count-_2020-jardines_del_buen_retiro ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_4,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 <https://w3id.org/esgreen/collection-of-trees-in-jardines_plaza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:Collection ;
     sio:hasAttribute <https://w3id.org/esgreen/count-_2020-jardines_plaza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_5,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 esgreen:collection-of-trees-in-jardines_pza_de_oriente-jardín_del_cabo_noval-jardín_de_lepanto a sio:Collection ;
     sio:hasAttribute esgreen:count-_2019-jardines_pza_de_oriente-jardín_del_cabo_noval-jardín_de_lepanto ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_5,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 esgreen:collection-of-trees-in-madrid_río a sio:Collection ;
     sio:hasAttribute esgreen:count-_2019-madrid_río ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_14,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 esgreen:collection-of-trees-in-nan a sio:Collection ;
     sio:hasAttribute esgreen:count-_2019-nan,
         esgreen:count-_2020-nan ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_17,_dtype:_object)>,
-        <https://w3id.org/esgreen/series([],_name:_18,_dtype:_object)>,
-        <https://w3id.org/esgreen/series([],_name:_19,_dtype:_object)>,
-        <https://w3id.org/esgreen/series([],_name:_20,_dtype:_object)>,
-        <https://w3id.org/esgreen/series([],_name:_21,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 esgreen:collection-of-trees-in-parque_de_la_dehesa_de_la_villa a sio:Collection ;
     sio:hasAttribute esgreen:count-_2020-parque_de_la_dehesa_de_la_villa ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_1,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 esgreen:collection-of-trees-in-parque_del_oeste-_templo_de_debod a sio:Collection ;
     sio:hasAttribute esgreen:count-_2019-parque_del_oeste-_templo_de_debod,
         esgreen:count-_2020-parque_del_oeste-_templo_de_debod ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_7,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 esgreen:collection-of-trees-in-parque_forestal_de_valdebebas-_felipe_vi a sio:Collection ;
     sio:hasAttribute esgreen:count-_2020-parque_forestal_de_valdebebas-_felipe_vi ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_11,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 esgreen:collection-of-trees-in-parque_forestal_valdebebas a sio:Collection ;
     sio:hasAttribute esgreen:count-_2019-parque_forestal_valdebebas ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_11,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 esgreen:collection-of-trees-in-parque_juan_carlos_i a sio:Collection ;
     sio:hasAttribute esgreen:count-_2019-parque_juan_carlos_i,
         esgreen:count-_2020-parque_juan_carlos_i ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_12,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 esgreen:collection-of-trees-in-parque_juan_pablo_ii a sio:Collection ;
     sio:hasAttribute esgreen:count-_2019-parque_juan_pablo_ii,
         esgreen:count-_2020-parque_juan_pablo_ii ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_13,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 esgreen:collection-of-trees-in-parque_lineal_del_manzanares a sio:Collection ;
     sio:hasAttribute esgreen:count-_2019-parque_lineal_del_manzanares,
         esgreen:count-_2020-parque_lineal_del_manzanares ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_15,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 <https://w3id.org/esgreen/collection-of-trees-in-parque_madrid_r�o> a sio:Collection ;
     sio:hasAttribute <https://w3id.org/esgreen/count-_2020-parque_madrid_r�o> ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_14,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 esgreen:collection-of-trees-in-quinta_de_los_molinos a sio:Collection ;
     sio:hasAttribute esgreen:count-_2019-quinta_de_los_molinos,
         esgreen:count-_2020-quinta_de_los_molinos ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_9,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 esgreen:collection-of-trees-in-quinta_fuente_del_berro a sio:Collection ;
     sio:hasAttribute esgreen:count-_2019-quinta_fuente_del_berro,
         esgreen:count-_2020-quinta_fuente_del_berro ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_8,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 <https://w3id.org/esgreen/collection-of-trees-in-rosaleda_de_madrid_(parque_del_oeste)> a sio:Collection ;
     sio:hasAttribute <https://w3id.org/esgreen/count-_2019-rosaleda_de_madrid_(parque_del_oeste)>,
         <https://w3id.org/esgreen/count-_2020-rosaleda_de_madrid_(parque_del_oeste)> ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_10,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 <https://w3id.org/esgreen/collection-of-trees-in-total:> a sio:Collection ;
     sio:hasAttribute <https://w3id.org/esgreen/count-_2019-total:>,
         <https://w3id.org/esgreen/count-_2020-total:> ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_16,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 esgreen:collection-of-trees-in-z.v._distrito_c-las_tablas a sio:Collection ;
     sio:hasAttribute esgreen:count-_2020-z.v._distrito_c-las_tablas ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_2,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 esgreen:collection-of-trees-in-z.v.distrito_c-las_tablas a sio:Collection ;
     sio:hasAttribute esgreen:count-_2019-z.v.distrito_c-las_tablas ;
-    sio:hasQuality <https://w3id.org/esgreen/series([],_name:_2,_dtype:_object)> .
+    sio:hasQuality esgreen:nan .
 
 <https://w3id.org/esgreen/cuña_verde_de_o´donnell_y_p._f._fuente_carrantona> a sio:site ;
     rdfs:label "cuña verde de o´donnell y p. f. fuente carrantona" .
@@ -163,9 +159,6 @@ esgreen:jardines_pza_de_oriente-jardín_del_cabo_noval-jardín_de_lepanto a sio:
 
 esgreen:madrid_río a sio:site ;
     rdfs:label "madrid río" .
-
-esgreen:nan a sio:site ;
-    rdfs:label "nan" .
 
 esgreen:parque_de_la_dehesa_de_la_villa a sio:site ;
     rdfs:label "parque de la dehesa de la villa" .
@@ -361,69 +354,7 @@ esgreen:count-_2020-z.v._distrito_c-las_tablas a sio:MemberCount ;
     sio:hasValue "3,78"^^xsd:integer ;
     sio:measuredAt "_2020"^^xsd:integer .
 
-<https://w3id.org/esgreen/series([],_name:_10,_dtype:_object)> a sio:LifeStatus ;
-    rdfs:label "series([], name: 10, dtype: object)" .
-
-<https://w3id.org/esgreen/series([],_name:_12,_dtype:_object)> a sio:LifeStatus ;
-    rdfs:label "series([], name: 12, dtype: object)" .
-
-<https://w3id.org/esgreen/series([],_name:_13,_dtype:_object)> a sio:LifeStatus ;
-    rdfs:label "series([], name: 13, dtype: object)" .
-
-<https://w3id.org/esgreen/series([],_name:_15,_dtype:_object)> a sio:LifeStatus ;
-    rdfs:label "series([], name: 15, dtype: object)" .
-
-<https://w3id.org/esgreen/series([],_name:_16,_dtype:_object)> a sio:LifeStatus ;
-    rdfs:label "series([], name: 16, dtype: object)" .
-
-<https://w3id.org/esgreen/series([],_name:_17,_dtype:_object)> a sio:LifeStatus ;
-    rdfs:label "series([], name: 17, dtype: object)" .
-
-<https://w3id.org/esgreen/series([],_name:_20,_dtype:_object)> a sio:LifeStatus ;
-    rdfs:label "series([], name: 20, dtype: object)" .
-
-<https://w3id.org/esgreen/series([],_name:_21,_dtype:_object)> a sio:LifeStatus ;
-    rdfs:label "series([], name: 21, dtype: object)" .
-
-<https://w3id.org/esgreen/series([],_name:_4,_dtype:_object)> a sio:LifeStatus ;
-    rdfs:label "series([], name: 4, dtype: object)" .
-
-<https://w3id.org/esgreen/series([],_name:_6,_dtype:_object)> a sio:LifeStatus ;
-    rdfs:label "series([], name: 6, dtype: object)" .
-
-<https://w3id.org/esgreen/series([],_name:_7,_dtype:_object)> a sio:LifeStatus ;
-    rdfs:label "series([], name: 7, dtype: object)" .
-
-<https://w3id.org/esgreen/series([],_name:_8,_dtype:_object)> a sio:LifeStatus ;
-    rdfs:label "series([], name: 8, dtype: object)" .
-
-<https://w3id.org/esgreen/series([],_name:_9,_dtype:_object)> a sio:LifeStatus ;
-    rdfs:label "series([], name: 9, dtype: object)" .
-
-<https://w3id.org/esgreen/series([],_name:_0,_dtype:_object)> a sio:LifeStatus ;
-    rdfs:label "series([], name: 0, dtype: object)" .
-
-<https://w3id.org/esgreen/series([],_name:_1,_dtype:_object)> a sio:LifeStatus ;
-    rdfs:label "series([], name: 1, dtype: object)" .
-
-<https://w3id.org/esgreen/series([],_name:_11,_dtype:_object)> a sio:LifeStatus ;
-    rdfs:label "series([], name: 11, dtype: object)" .
-
-<https://w3id.org/esgreen/series([],_name:_14,_dtype:_object)> a sio:LifeStatus ;
-    rdfs:label "series([], name: 14, dtype: object)" .
-
-<https://w3id.org/esgreen/series([],_name:_18,_dtype:_object)> a sio:LifeStatus ;
-    rdfs:label "series([], name: 18, dtype: object)" .
-
-<https://w3id.org/esgreen/series([],_name:_19,_dtype:_object)> a sio:LifeStatus ;
-    rdfs:label "series([], name: 19, dtype: object)" .
-
-<https://w3id.org/esgreen/series([],_name:_2,_dtype:_object)> a sio:LifeStatus ;
-    rdfs:label "series([], name: 2, dtype: object)" .
-
-<https://w3id.org/esgreen/series([],_name:_3,_dtype:_object)> a sio:LifeStatus ;
-    rdfs:label "series([], name: 3, dtype: object)" .
-
-<https://w3id.org/esgreen/series([],_name:_5,_dtype:_object)> a sio:LifeStatus ;
-    rdfs:label "series([], name: 5, dtype: object)" .
+esgreen:nan a sio:LifeStatus,
+        sio:site ;
+    rdfs:label "nan" .
 

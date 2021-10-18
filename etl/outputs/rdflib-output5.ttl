@@ -1,0 +1,257 @@
+@prefix esgreen: <https://w3id.org/esgreen/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+esgreen:casa_de_campo a sio:site ;
+    rdfs:label "casa de campo" .
+
+<https://w3id.org/esgreen/casa_de_campo_(total)> a sio:site ;
+    rdfs:label "casa de campo (total)" .
+
+<https://w3id.org/esgreen/casa_de_campo_(zona_forestal)> a sio:site ;
+    rdfs:label "casa de campo (zona forestal)" .
+
+<https://w3id.org/esgreen/casa_de_campo_(zona_urbana)> a sio:site ;
+    rdfs:label "casa de campo (zona urbana)" .
+
+<https://w3id.org/esgreen/collection-ailanthus_altissima_(ailanto)-parque_lineal_del_manzanares> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2019-ailanthus_altissima_(ailanto)-parque_lineal_del_manzanares> ;
+    sio:hasMember <https://w3id.org/esgreen/ailanthus_altissima_(ailanto)> .
+
+esgreen:collection-nan-nan a sio:Collection ;
+    sio:hasAttribute esgreen:count-2020-nan-nan ;
+    sio:hasMember esgreen:nan .
+
+<https://w3id.org/esgreen/collection-nan-nota_1:_para_calcular_el_n�_de_pies_de_las_diferentes_masas_forestales_y_�rboreas_de_los__parques_se_ha_utilizado_el_dato_de_densidad_(ud/ha)_de_cada_masa,_valor_diferente_para_cada_una_de_ellas._> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2020-nan-nota_1:_para_calcular_el_n�_de_pies_de_las_diferentes_masas_forestales_y_�rboreas_de_los__parques_se_ha_utilizado_el_dato_de_densidad_(ud/ha)_de_cada_masa,_valor_diferente_para_cada_una_de_ellas._> ;
+    sio:hasMember esgreen:nan .
+
+<https://w3id.org/esgreen/collection-nan-nota_2:_los_datos_de_superficie_se_refieren_a_la_superfice_ocupada_por_la_masas_forestales/arb�reas_dentro_de_cada_parque,_valor_que_difiere_de_la_superficie_total_del_parque> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2020-nan-nota_2:_los_datos_de_superficie_se_refieren_a_la_superfice_ocupada_por_la_masas_forestales/arb�reas_dentro_de_cada_parque,_valor_que_difiere_de_la_superficie_total_del_parque> ;
+    sio:hasMember esgreen:nan .
+
+<https://w3id.org/esgreen/collection-nan-nota_3:_los_datos_siempre_se_refieren_a_las_zonas_actualmente_en_conservaci�n_por_parte_del_ayuntamiento> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2020-nan-nota_3:_los_datos_siempre_se_refieren_a_las_zonas_actualmente_en_conservaci�n_por_parte_del_ayuntamiento> ;
+    sio:hasMember esgreen:nan .
+
+esgreen:collection-nan-parque_lineal_del_manzanares a sio:Collection ;
+    sio:hasAttribute esgreen:count-2020-nan-parque_lineal_del_manzanares ;
+    sio:hasMember esgreen:nan .
+
+esgreen:collection-otros-parque_lineal_del_manzanares a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-otros-parque_lineal_del_manzanares,
+        esgreen:count-2020-otros-parque_lineal_del_manzanares ;
+    sio:hasMember esgreen:otros .
+
+esgreen:collection-pinus_halepensis-parque_lineal_del_manzanares a sio:Collection ;
+    sio:hasAttribute esgreen:count-2020-pinus_halepensis-parque_lineal_del_manzanares ;
+    sio:hasMember esgreen:pinus_halepensis .
+
+<https://w3id.org/esgreen/collection-pinus_halepensis-parque_madrid_r�o> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2020-pinus_halepensis-parque_madrid_r�o> ;
+    sio:hasMember esgreen:pinus_halepensis .
+
+<https://w3id.org/esgreen/collection-pinus_halepensis_(pino_carrasco)-parque_lineal_del_manzanares> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2019-pinus_halepensis_(pino_carrasco)-parque_lineal_del_manzanares> ;
+    sio:hasMember <https://w3id.org/esgreen/pinus_halepensis_(pino_carrasco)> .
+
+<https://w3id.org/esgreen/collection-pinus_halepensis_-parque_juan_pablo_ii_(pinar)> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2020-pinus_halepensis_-parque_juan_pablo_ii_(pinar)> ;
+    sio:hasMember esgreen:pinus_halepensis_ .
+
+esgreen:collection-pinus_pinea-casa_de_campo a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-pinus_pinea-casa_de_campo ;
+    sio:hasMember esgreen:pinus_pinea .
+
+<https://w3id.org/esgreen/collection-pinus_pinea-casa_de_campo_(total)> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2020-pinus_pinea-casa_de_campo_(total)> ;
+    sio:hasMember esgreen:pinus_pinea .
+
+<https://w3id.org/esgreen/collection-pinus_pinea-casa_de_campo_(zona_forestal)> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2020-pinus_pinea-casa_de_campo_(zona_forestal)> ;
+    sio:hasMember esgreen:pinus_pinea .
+
+<https://w3id.org/esgreen/collection-pinus_pinea-casa_de_campo_(zona_urbana)> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2020-pinus_pinea-casa_de_campo_(zona_urbana)> ;
+    sio:hasMember esgreen:pinus_pinea .
+
+esgreen:collection-pinus_pinea-parque_forestal_de_valdebebas-_felipe_vi a sio:Collection ;
+    sio:hasAttribute esgreen:count-2020-pinus_pinea-parque_forestal_de_valdebebas-_felipe_vi ;
+    sio:hasMember esgreen:pinus_pinea .
+
+esgreen:collection-pinus_pinea-parque_forestal_valdebebas a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-pinus_pinea-parque_forestal_valdebebas ;
+    sio:hasMember esgreen:pinus_pinea .
+
+esgreen:collection-pinus_pinea-parque_lineal_del_manzanares a sio:Collection ;
+    sio:hasAttribute esgreen:count-2020-pinus_pinea-parque_lineal_del_manzanares ;
+    sio:hasMember esgreen:pinus_pinea .
+
+<https://w3id.org/esgreen/collection-pinus_sp.-madrid_r�o> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2019-pinus_sp.-madrid_r�o> ;
+    sio:hasMember <https://w3id.org/esgreen/pinus_sp.> .
+
+<https://w3id.org/esgreen/collection-ulmus_sp_(olmos)-parque_lineal_del_manzanares> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2019-ulmus_sp_(olmos)-parque_lineal_del_manzanares> ;
+    sio:hasMember <https://w3id.org/esgreen/ulmus_sp_(olmos)> .
+
+<https://w3id.org/esgreen/madrid_r�o> a sio:site ;
+    rdfs:label "madrid r�o" .
+
+<https://w3id.org/esgreen/nota_1:_para_calcular_el_n�_de_pies_de_las_diferentes_masas_forestales_y_�rboreas_de_los__parques_se_ha_utilizado_el_dato_de_densidad_(ud/ha)_de_cada_masa,_valor_diferente_para_cada_una_de_ellas._> a sio:site ;
+    rdfs:label "nota 1: para calcular el n� de pies de las diferentes masas forestales y �rboreas de los  parques se ha utilizado el dato de densidad (ud/ha) de cada masa, valor diferente para cada una de ellas. " .
+
+<https://w3id.org/esgreen/nota_2:_los_datos_de_superficie_se_refieren_a_la_superfice_ocupada_por_la_masas_forestales/arb�reas_dentro_de_cada_parque,_valor_que_difiere_de_la_superficie_total_del_parque> a sio:site ;
+    rdfs:label "nota 2: los datos de superficie se refieren a la superfice ocupada por la masas forestales/arb�reas dentro de cada parque, valor que difiere de la superficie total del parque" .
+
+<https://w3id.org/esgreen/nota_3:_los_datos_siempre_se_refieren_a_las_zonas_actualmente_en_conservaci�n_por_parte_del_ayuntamiento> a sio:site ;
+    rdfs:label "nota 3: los datos siempre se refieren a las zonas actualmente en conservaci�n por parte del ayuntamiento" .
+
+esgreen:parque_forestal_de_valdebebas-_felipe_vi a sio:site ;
+    rdfs:label "parque forestal de valdebebas- felipe vi" .
+
+esgreen:parque_forestal_valdebebas a sio:site ;
+    rdfs:label "parque forestal valdebebas" .
+
+<https://w3id.org/esgreen/parque_juan_pablo_ii_(pinar)> a sio:site ;
+    rdfs:label "parque juan pablo ii (pinar)" .
+
+esgreen:parque_lineal_del_manzanares a sio:site ;
+    rdfs:label "parque lineal del manzanares" .
+
+<https://w3id.org/esgreen/parque_madrid_r�o> a sio:site ;
+    rdfs:label "parque madrid r�o" .
+
+<https://w3id.org/esgreen/ailanthus_altissima_(ailanto)> a sio:Specie ;
+    rdfs:label "ailanthus altissima (ailanto)" .
+
+<https://w3id.org/esgreen/count-2019-ailanthus_altissima_(ailanto)-parque_lineal_del_manzanares> a sio:MemberCount ;
+    sio:hasValue "113413,725"^^xsd:integer,
+        45 ;
+    sio:measuredAt 2019 .
+
+esgreen:count-2019-otros-parque_lineal_del_manzanares a sio:MemberCount ;
+    sio:hasValue 126,
+        "191277,626"^^xsd:integer ;
+    sio:measuredAt 2019 .
+
+<https://w3id.org/esgreen/count-2019-pinus_halepensis_(pino_carrasco)-parque_lineal_del_manzanares> a sio:MemberCount ;
+    sio:hasValue 309,
+        "60252,584"^^xsd:integer ;
+    sio:measuredAt 2019 .
+
+esgreen:count-2019-pinus_pinea-casa_de_campo a sio:MemberCount ;
+    sio:hasValue 671836,
+        "9488441,924"^^xsd:integer ;
+    sio:measuredAt 2019 .
+
+esgreen:count-2019-pinus_pinea-parque_forestal_valdebebas a sio:MemberCount ;
+    sio:hasValue 14552,
+        "385600,5825"^^xsd:integer ;
+    sio:measuredAt 2019 .
+
+<https://w3id.org/esgreen/count-2019-pinus_sp.-madrid_r�o> a sio:MemberCount ;
+    sio:hasValue 2257,
+        "92970,56"^^xsd:integer ;
+    sio:measuredAt 2019 .
+
+<https://w3id.org/esgreen/count-2019-ulmus_sp_(olmos)-parque_lineal_del_manzanares> a sio:MemberCount ;
+    sio:hasValue "201244,097"^^xsd:integer,
+        423 ;
+    sio:measuredAt 2019 .
+
+esgreen:count-2020-nan-nan a sio:MemberCount ;
+    sio:hasValue "(Comprende las zonas en conservaci�n y con bajo mantenimiento)"^^xsd:integer,
+        nan ;
+    sio:measuredAt 2020 .
+
+<https://w3id.org/esgreen/count-2020-nan-nota_1:_para_calcular_el_n�_de_pies_de_las_diferentes_masas_forestales_y_�rboreas_de_los__parques_se_ha_utilizado_el_dato_de_densidad_(ud/ha)_de_cada_masa,_valor_diferente_para_cada_una_de_ellas._> a sio:MemberCount ;
+    sio:hasValue nan ;
+    sio:measuredAt 2020 .
+
+<https://w3id.org/esgreen/count-2020-nan-nota_2:_los_datos_de_superficie_se_refieren_a_la_superfice_ocupada_por_la_masas_forestales/arb�reas_dentro_de_cada_parque,_valor_que_difiere_de_la_superficie_total_del_parque> a sio:MemberCount ;
+    sio:hasValue nan ;
+    sio:measuredAt 2020 .
+
+<https://w3id.org/esgreen/count-2020-nan-nota_3:_los_datos_siempre_se_refieren_a_las_zonas_actualmente_en_conservaci�n_por_parte_del_ayuntamiento> a sio:MemberCount ;
+    sio:hasValue nan ;
+    sio:measuredAt 2020 .
+
+esgreen:count-2020-nan-parque_lineal_del_manzanares a sio:MemberCount ;
+    sio:hasValue 2.335,
+        "334.491,63"^^xsd:integer ;
+    sio:measuredAt 2020 .
+
+esgreen:count-2020-otros-parque_lineal_del_manzanares a sio:MemberCount ;
+    sio:hasValue 38.0,
+        nan ;
+    sio:measuredAt 2020 .
+
+esgreen:count-2020-pinus_halepensis-parque_lineal_del_manzanares a sio:MemberCount ;
+    sio:hasValue nan,
+        1726.0 ;
+    sio:measuredAt 2020 .
+
+<https://w3id.org/esgreen/count-2020-pinus_halepensis-parque_madrid_r�o> a sio:MemberCount ;
+    sio:hasValue 2.881,
+        "92.970,17"^^xsd:integer ;
+    sio:measuredAt 2020 .
+
+<https://w3id.org/esgreen/count-2020-pinus_halepensis_-parque_juan_pablo_ii_(pinar)> a sio:MemberCount ;
+    sio:hasValue "148.793,57"^^xsd:integer,
+        8.473 ;
+    sio:measuredAt 2020 .
+
+<https://w3id.org/esgreen/count-2020-pinus_pinea-casa_de_campo_(total)> a sio:MemberCount ;
+    sio:hasValue "13.534.503,24"^^xsd:integer,
+        692.995 ;
+    sio:measuredAt 2020 .
+
+<https://w3id.org/esgreen/count-2020-pinus_pinea-casa_de_campo_(zona_forestal)> a sio:MemberCount ;
+    sio:hasValue 482.175,
+        "9.463.245,76"^^xsd:integer ;
+    sio:measuredAt 2020 .
+
+<https://w3id.org/esgreen/count-2020-pinus_pinea-casa_de_campo_(zona_urbana)> a sio:MemberCount ;
+    sio:hasValue 210.82,
+        "4.071.257,49"^^xsd:integer ;
+    sio:measuredAt 2020 .
+
+esgreen:count-2020-pinus_pinea-parque_forestal_de_valdebebas-_felipe_vi a sio:MemberCount ;
+    sio:hasValue "2.900.300,05"^^xsd:integer,
+        53.241 ;
+    sio:measuredAt 2020 .
+
+esgreen:count-2020-pinus_pinea-parque_lineal_del_manzanares a sio:MemberCount ;
+    sio:hasValue nan,
+        571.0 ;
+    sio:measuredAt 2020 .
+
+esgreen:otros a sio:Specie ;
+    rdfs:label "otros" .
+
+esgreen:pinus_halepensis_ a sio:Specie ;
+    rdfs:label "pinus halepensis " .
+
+<https://w3id.org/esgreen/pinus_halepensis_(pino_carrasco)> a sio:Specie ;
+    rdfs:label "pinus halepensis (pino carrasco)" .
+
+<https://w3id.org/esgreen/pinus_sp.> a sio:Specie ;
+    rdfs:label "pinus sp." .
+
+<https://w3id.org/esgreen/ulmus_sp_(olmos)> a sio:Specie ;
+    rdfs:label "ulmus sp (olmos)" .
+
+esgreen:pinus_halepensis a sio:Specie ;
+    rdfs:label "pinus halepensis" .
+
+esgreen:nan a sio:Specie,
+        sio:site ;
+    rdfs:label "nan" .
+
+esgreen:pinus_pinea a sio:Specie ;
+    rdfs:label "pinus pinea" .
+
