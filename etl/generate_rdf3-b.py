@@ -26,30 +26,27 @@ file_dates = ['_2017', '_2019', '_2020']
 
 for file_date in file_dates:
     # Read in the csv file
-    df = pd.read_csv(f'data/inputs/Estado_arbolado_ParquesHistoricoSingularesForestales{file_date}.csv', sep = ';')
-    file_date = file_date.replace('_', '')   
+    df = pd.read_csv(f'data/inputs/Estado_arbolado_ParquesHistoricoSingularesForestales{file_date}.csv', sep = ';')   
     df = df.loc[:, ~df.columns.str.contains('^Unnamed')] # remove unnamed cols
     df.columns = df.columns.str.replace(" ", "_")
     print(df.columns)
     # cols = df.columns.to_list()
     #statuses = ['Recien-plantado-y-no-consolidado','Joven', 'Maduro', 'Viejo', 'Otros']
     if file_date == '2017':
-        df.rename(columns={'Reci�n_plantado':'Recien_plantado_y_no_consolidado', 'Altura_media':'Altura_Promedio_(m)', 'Per�metro_medio': 'Perimetro_Promedio_(cm)'}, inplace = True)
-        stats_col = ['Altura_Promedio_(m)','Perimetro_Promedio_(cm)']
-        statuses = ['Recien_plantado_y_no_consolidado','Joven', 'Maduro', 'Viejo', 'Otros']
-
-       # stats_col = 'Altura_media'
+        count_col = 'N� de ejemplares'
+        statuses = ['Joven', 'Maduro', 'Viejo', 'Otros']
     else:
-        stats_col = ['Altura_Promedio_(m)','Perimetro_Promedio_(cm)']
-        statuses = ['Recien_plantado_y_no_consolidado','Joven', 'Maduro', 'Viejo', 'Otros']
-   # print(f'after',df.columns)
-# #     # print(cols)
-# #     # for (idx, row) in df.iterrows():
-# #     #     cols = df.columns
-# #     #     #cols = cols.replace('�', '')
-# #     #     #print(cols)
+        file_date = file_date.replace('_', '')
+        count_col = 'UNIDADES ' + file_date.replace('_', '')
+        statuses = ['Joven', 'Maduro', 'Viejo', 'Otros']
+
+#     # print(cols)
+#     # for (idx, row) in df.iterrows():
+#     #     cols = df.columns
+#     #     #cols = cols.replace('�', '')
+#     #     #print(cols)
     
-#     # Iterate dataframe and generate RDF triples
+    # Iterate dataframe and generate RDF triples
     for index, row in df.iterrows():
         park_uri = URIRef(prepareUri(row['PARQUE']))
 
@@ -57,9 +54,8 @@ for file_date in file_dates:
         # for age_status in statuses:
         #     status_uris[age_status] = URIRef(prepareUri(age_status))
         print(status_uris)
-        collection_uri = URIRef(prepareUri(f"collection-of-trees-LocatedIn-{row['PARQUE']}"))
-        stats_uri = URIRef(prepareUri(f"measures-{file_date}-{row['PARQUE']}"))
-
+        collection_uri = URIRef(prepareUri(f"collection-of-trees-in-{row['PARQUE']}"))
+        count_uri = URIRef(prepareUri(f"count-{file_date}-{row['PARQUE']}"))
         
         g.add((park_uri, RDF.type, sio.site))
         g.add((park_uri, RDFS.label, Literal(str(row['PARQUE']).lower())))
@@ -68,25 +64,15 @@ for file_date in file_dates:
         for age_status in statuses:
             print('toto')
             # age_status_uri = URIRef(prepareUri(age_status))
-            age_status_uri = URIRef(str(collection_uri) + '-Status-' + age_status.lower())
+            age_status_uri = URIRef(str(collection_uri) + '-' + age_status.lower())
             print(age_status_uri)
             g.add((age_status_uri, RDF.type, sio.LifeStatus))
             g.add((age_status_uri, sio.hasQuality, Literal(age_status)))
-            g.add((age_status_uri, RDF.type, sio.MemberCount))
-            g.add((age_status_uri, sio.hasValue, Literal(row[age_status], datatype=XSD.integer)))
-            g.add((age_status_uri, sio.measuredAt, Literal(file_date, datatype=XSD.date)))
+            g.add((age_status_uri, sio.hasAttribute, Literal(row[age_status], datatype=XSD.integer)))
 
-
-        for statistics in stats_col:
-            print('toto')
-            # age_status_uri = URIRef(prepareUri(age_status))
-            statistics_uri = URIRef(str(stats_uri) + '-DimensionalQuality-' + statistics.lower())
-            print(statistics_uri)
-            g.add((statistics_uri, RDF.type, sio.DimensionalQuantity))
-            g.add((statistics_uri, sio.hasQuality, Literal(age_status)))
-            g.add((statistics_uri, sio.hasValue, Literal(row[age_status], datatype=XSD.integer)))
-            g.add((statistics_uri, sio.measuredAt, Literal(file_date, datatype=XSD.date)))
-        
+        g.add((count_uri, RDF.type, sio.MemberCount))
+        g.add((count_uri, sio.hasValue, Literal(row[age_status], datatype=XSD.integer)))
+        g.add((count_uri, sio.measuredAt, Literal(file_date, datatype=XSD.integer)))
 
         # g.add((status_uri, RDF.type, sio.LifeStatus))
         # g.add((status_uri, RDFS.label, Literal(str(row[age_status]).lower())))
@@ -94,7 +80,7 @@ for file_date in file_dates:
 
 
 # print(g.serialize(format='turtle'))
-g.serialize('outputs/rdflib-output3.ttl', format='turtle')
+g.serialize('outputs/rdflib-output-3.ttl', format='turtle')
 
 
 
