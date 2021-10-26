@@ -1,5 +1,4 @@
 .ipynb_checkpoints
-/etl/data/
 /etl/output/
 *.jar
 .Trash-*

@@ -1411,31 +1411,31 @@ esgreen:cedrus_libani a sio:Specie ;
     rdfs:label "celtis australis (almez)" .
 
 esgreen:count-2017-acacia_dealbata-quinta_de_la_fuente_del_berro a sio:MemberCount ;
-    sio:hasValue 48.0 ;
+    sio:hasValue "48.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-aesculus_hippocastanum-jardin_el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
-    sio:hasValue 108.0 ;
+    sio:hasValue "108.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-aesculus_hippocastanum-jardines_del_buen_retiro a sio:MemberCount ;
-    sio:hasValue 6.377 ;
+    sio:hasValue "6.377"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-aesculus_hippocastanum-quinta_de_la_fuente_del_berro a sio:MemberCount ;
-    sio:hasValue 87.0 ;
+    sio:hasValue "87.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-cedrus_atlantica-parque_del_oeste a sio:MemberCount ;
-    sio:hasValue 272.0 ;
+    sio:hasValue "272.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-cedrus_deodara-parque_del_oeste a sio:MemberCount ;
-    sio:hasValue 417.0 ;
+    sio:hasValue "417.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-cedrus_deodara-quinta_de_la_fuente_del_berro a sio:MemberCount ;
-    sio:hasValue 59.0 ;
+    sio:hasValue "59.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-cedrus_deodara-quinta_de_los_molinos a sio:MemberCount ;
@@ -1447,7 +1447,7 @@ esgreen:count-2017-celtis_australis-jardines_del_buen_retiro a sio:MemberCount ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-celtis_australis-parque_del_oeste a sio:MemberCount ;
-    sio:hasValue 287.0 ;
+    sio:hasValue "287.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-celtis_australis-quinta_de_la_fuente_del_berro a sio:MemberCount ;
@@ -1455,7 +1455,7 @@ esgreen:count-2017-celtis_australis-quinta_de_la_fuente_del_berro a sio:MemberCo
     sio:measuredAt 2017 .
 
 esgreen:count-2017-celtis_australis-quinta_de_los_molinos a sio:MemberCount ;
-    sio:hasValue 193.0 ;
+    sio:hasValue "193.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-cercis_siliquastrum-jardin_el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
@@ -1463,23 +1463,23 @@ esgreen:count-2017-cercis_siliquastrum-jardin_el_capricho_de_la_alameda_de_osuna
     sio:measuredAt 2017 .
 
 esgreen:count-2017-cercis_siliquastrum-jardines_del_buen_retiro a sio:MemberCount ;
-    sio:hasValue 734.0 ;
+    sio:hasValue "734.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-cupressus_arizonica-casa_de_campo a sio:MemberCount ;
-    sio:hasValue 53.326 ;
+    sio:hasValue "53.326"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-cupressus_sempervirens-casa_de_campo a sio:MemberCount ;
-    sio:hasValue 3.686 ;
+    sio:hasValue "3.686"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-cupressus_sempervirens-jardin_el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
-    sio:hasValue 326.0 ;
+    sio:hasValue "326.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-cupressus_sempervirens-jardines_del_buen_retiro a sio:MemberCount ;
-    sio:hasValue 574.0 ;
+    sio:hasValue "574.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-cupressus_sempervirens-quinta_de_la_fuente_del_berro a sio:MemberCount ;
@@ -1487,35 +1487,35 @@ esgreen:count-2017-cupressus_sempervirens-quinta_de_la_fuente_del_berro a sio:Me
     sio:measuredAt 2017 .
 
 esgreen:count-2017-cupressus_sempervirens-quinta_de_los_molinos a sio:MemberCount ;
-    sio:hasValue 605.0 ;
+    sio:hasValue "605.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-eucalyptus_sp-quinta_de_los_molinos a sio:MemberCount ;
-    sio:hasValue 436.0 ;
+    sio:hasValue "436.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-fraxinus_angustifolia-casa_de_campo a sio:MemberCount ;
-    sio:hasValue 13.575 ;
+    sio:hasValue "13.575"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-fraxinus_angustifolia-jardin_el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
-    sio:hasValue 182.0 ;
+    sio:hasValue "182.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-gleditsia_triacanthos-jardin_el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
-    sio:hasValue 225.0 ;
+    sio:hasValue "225.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-gleditsia_triacanthos-jardines_del_buen_retiro a sio:MemberCount ;
-    sio:hasValue 545.0 ;
+    sio:hasValue "545.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-gleditsia_triacanthos-quinta_de_los_molinos a sio:MemberCount ;
-    sio:hasValue 221.0 ;
+    sio:hasValue "221.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-ligustrum_japonicum-parque_del_oeste a sio:MemberCount ;
-    sio:hasValue 511.0 ;
+    sio:hasValue "511.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-ligustrum_lucidum-quinta_de_la_fuente_del_berro a sio:MemberCount ;
@@ -1523,43 +1523,43 @@ esgreen:count-2017-ligustrum_lucidum-quinta_de_la_fuente_del_berro a sio:MemberC
     sio:measuredAt 2017 .
 
 esgreen:count-2017-otros-casa_de_campo a sio:MemberCount ;
-    sio:hasValue 5.383 ;
+    sio:hasValue "5.383"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-otros-jardin_el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
-    sio:hasValue 1.288 ;
+    sio:hasValue "1.288"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-otros-jardines_del_buen_retiro a sio:MemberCount ;
-    sio:hasValue 6.609 ;
+    sio:hasValue "6.609"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-otros-parque_del_oeste a sio:MemberCount ;
-    sio:hasValue 2.573 ;
+    sio:hasValue "2.573"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-otros-quinta_de_la_fuente_del_berro a sio:MemberCount ;
-    sio:hasValue 359.0 ;
+    sio:hasValue "359.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-otros-quinta_de_los_molinos a sio:MemberCount ;
-    sio:hasValue 1.528 ;
+    sio:hasValue "1.528"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-pinus_halepensis-casa_de_campo a sio:MemberCount ;
-    sio:hasValue 9.081 ;
+    sio:hasValue "9.081"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-pinus_halepensis-parque_del_oeste a sio:MemberCount ;
-    sio:hasValue 438.0 ;
+    sio:hasValue "438.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-pinus_halepensis-quinta_de_los_molinos a sio:MemberCount ;
-    sio:hasValue 1.459 ;
+    sio:hasValue "1.459"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-pinus_pinea-casa_de_campo a sio:MemberCount ;
-    sio:hasValue 281.931 ;
+    sio:hasValue "281.931"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-pinus_pinea-jardin_el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
@@ -1567,11 +1567,11 @@ esgreen:count-2017-pinus_pinea-jardin_el_capricho_de_la_alameda_de_osuna a sio:M
     sio:measuredAt 2017 .
 
 esgreen:count-2017-pinus_pinea-jardines_del_buen_retiro a sio:MemberCount ;
-    sio:hasValue 528.0 ;
+    sio:hasValue "528.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-pinus_pinea-parque_del_oeste a sio:MemberCount ;
-    sio:hasValue 1.389 ;
+    sio:hasValue "1.389"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-pinus_pinea-quinta_de_los_molinos a sio:MemberCount ;
@@ -1579,7 +1579,7 @@ esgreen:count-2017-pinus_pinea-quinta_de_los_molinos a sio:MemberCount ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-platanus_hispanica-casa_de_campo a sio:MemberCount ;
-    sio:hasValue 2.49 ;
+    sio:hasValue "2.49"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-platanus_hispanica-jardin_el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
@@ -1587,11 +1587,11 @@ esgreen:count-2017-platanus_hispanica-jardin_el_capricho_de_la_alameda_de_osuna 
     sio:measuredAt 2017 .
 
 esgreen:count-2017-platanus_hispanica-jardines_del_buen_retiro a sio:MemberCount ;
-    sio:hasValue 941.0 ;
+    sio:hasValue "941.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-platanus_hispanica-parque_del_oeste a sio:MemberCount ;
-    sio:hasValue 631.0 ;
+    sio:hasValue "631.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-platanus_hispanica-quinta_de_la_fuente_del_berro a sio:MemberCount ;
@@ -1599,11 +1599,11 @@ esgreen:count-2017-platanus_hispanica-quinta_de_la_fuente_del_berro a sio:Member
     sio:measuredAt 2017 .
 
 esgreen:count-2017-platanus_hispanica-quinta_de_los_molinos a sio:MemberCount ;
-    sio:hasValue 272.0 ;
+    sio:hasValue "272.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-populus_alba_bolleana-parque_del_oeste a sio:MemberCount ;
-    sio:hasValue 412.0 ;
+    sio:hasValue "412.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-populus_alba_bolleana-quinta_de_la_fuente_del_berro a sio:MemberCount ;
@@ -1611,19 +1611,19 @@ esgreen:count-2017-populus_alba_bolleana-quinta_de_la_fuente_del_berro a sio:Mem
     sio:measuredAt 2017 .
 
 esgreen:count-2017-populus_nigra-casa_de_campo a sio:MemberCount ;
-    sio:hasValue 1.263 ;
+    sio:hasValue "1.263"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-prunus_cerasifera_pissardii-parque_del_oeste a sio:MemberCount ;
-    sio:hasValue 333.0 ;
+    sio:hasValue "333.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-prunus_cerasifera_pissardii-quinta_de_la_fuente_del_berro a sio:MemberCount ;
-    sio:hasValue 62.0 ;
+    sio:hasValue "62.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-prunus_dulcis-quinta_de_los_molinos a sio:MemberCount ;
-    sio:hasValue 1.479 ;
+    sio:hasValue "1.479"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-quercus_robur-jardin_el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
@@ -1631,35 +1631,35 @@ esgreen:count-2017-quercus_robur-jardin_el_capricho_de_la_alameda_de_osuna a sio
     sio:measuredAt 2017 .
 
 esgreen:count-2017-quercux_ilex-casa_de_campo a sio:MemberCount ;
-    sio:hasValue 228.654 ;
+    sio:hasValue "228.654"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-robinia_pseudoacacia-jardin_el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
-    sio:hasValue 121.0 ;
+    sio:hasValue "121.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-salix_sp-casa_de_campo a sio:MemberCount ;
-    sio:hasValue 1.493 ;
+    sio:hasValue "1.493"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-sophora_japonica-parque_del_oeste a sio:MemberCount ;
-    sio:hasValue 783.0 ;
+    sio:hasValue "783.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-trachycarpus_fortunei-jardines_del_buen_retiro a sio:MemberCount ;
-    sio:hasValue 652.0 ;
+    sio:hasValue "652.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-trachycarpus_fortunei-quinta_de_la_fuente_del_berro a sio:MemberCount ;
-    sio:hasValue 41.0 ;
+    sio:hasValue "41.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-ulmus_minor-jardines_del_buen_retiro a sio:MemberCount ;
-    sio:hasValue 467.0 ;
+    sio:hasValue "467.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-ulmus_pumila-jardin_el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
-    sio:hasValue 95.0 ;
+    sio:hasValue "95.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-ulmus_pumila-jardines_del_buen_retiro a sio:MemberCount ;
@@ -1667,11 +1667,11 @@ esgreen:count-2017-ulmus_pumila-jardines_del_buen_retiro a sio:MemberCount ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-ulmus_sp-casa_de_campo a sio:MemberCount ;
-    sio:hasValue 30.996 ;
+    sio:hasValue "30.996"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2017-ulmus_sp-quinta_de_los_molinos a sio:MemberCount ;
-    sio:hasValue 295.0 ;
+    sio:hasValue "295.0"^^xsd:integer ;
     sio:measuredAt 2017 .
 
 esgreen:count-2019-abies_nordmanniana-jardines_de_sabatini a sio:MemberCount ;
@@ -2019,8 +2019,8 @@ esgreen:count-2019-morus_alba-parque_juan_pablo_ii a sio:MemberCount ;
     sio:measuredAt 2019 .
 
 esgreen:count-2019-nan-nan a sio:MemberCount ;
-    sio:hasValue nan,
-        785732.0 ;
+    sio:hasValue 785732.0,
+        nan ;
     sio:measuredAt 2019 .
 
 esgreen:count-2019-olea_europaea-parque_forestal_valdebebas a sio:MemberCount ;
