@@ -14,22 +14,23 @@ This module describes the data elements related to [tree inventory dataset](http
 ### Example RDF (turtle):
 
 ```ttl
-
 @prefix : <http://purl.org/ejp-rd/cde/v020/example-rdf/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> . 
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix wiki: <http://en.wikipedia.org/wiki/> .
+@prefix gbif: <https://www.gbif.org/species/> .
+@prefix esgreen: <https://w3id.org/esgreen/> .
 
-:parque_name a sio:Site ;
-    sio:isLocatedIn :parque_name ;
+:parque a sio:Site ;
+    sio:isLocatedIn esgreen:parque_name ;
     dc:title "Retiro"^^xsd:string ;
-    sio:collection  :parque_name_especie_name ; # new variable
+    sio:collection  :parque_name_especie_name_Collection ;
     sio:contains :especie_name ;
     sio:hasMember :especie_name .
 
-:parque_name_especie_names a sio:collection ;
+:parque_name_especie_name_Collection a sio:collection ;
     dc:title "Retiro-Populus_nigra"^^xsd:string ;
     sio:hasAttribute :unidades .
 
@@ -41,11 +42,11 @@ This module describes the data elements related to [tree inventory dataset](http
 
 # <!-- map UniqueIdentifier with WIKI and gbif database -->
 
-:especie a :habitatSpecies ;
+:especie a sio:BiologicalEntity ;
 # :especie a sio:Object .
-    sio:UniqueIdentifier :key ; # from external dataset : https://github.com/carlosug/opengov-kg/blob/main/etl/data/inputs/preprocessing/normalized.csv
+    sio:UniqueIdentifier gbif:key ; # from external dataset : https://github.com/carlosug/opengov-kg/blob/main/etl/data/inputs/preprocessing/normalized.csv
     sio:label :especie_name ;
-    :seeAlso wiki:especie_name .
+    sio:equivalentTo wiki:especie_name .
 
 ```
 
