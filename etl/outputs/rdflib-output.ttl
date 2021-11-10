@@ -5,17 +5,17 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/esgreen/(1)_el_n�mero_de_arboles_de_cada_especie_seg�n_figura_en_el_plan_de_ordenacion> a sio:site ;
-    rdfs:label "(1) el n�mero de arboles de cada especie seg�n figura en el plan de ordenacion" .
+<https://w3id.org/esgreen/(1)_el_numero_de_arboles_de_cada_especie_segun_figura_en_el_plan_de_ordenacion> a sio:site ;
+    rdfs:label "(1)_el_numero_de_arboles_de_cada_especie_segun_figura_en_el_plan_de_ordenacion" .
 
 esgreen:capricho_de_la_alameda_de_osuna a sio:site ;
-    rdfs:label "capricho de la alameda de osuna" .
+    rdfs:label "capricho_de_la_alameda_de_osuna" .
 
 esgreen:casa_de_campo a sio:site ;
-    rdfs:label "casa de campo" .
+    rdfs:label "casa_de_campo" .
 
 <https://w3id.org/esgreen/casa_de_campo_(1)> a sio:site ;
-    rdfs:label "casa de campo (1)" .
+    rdfs:label "casa_de_campo_(1)" .
 
 esgreen:collection-abies_nordmanniana-jardines_de_sabatini a sio:Collection ;
     sio:hasAttribute esgreen:count-2019-abies_nordmanniana-jardines_de_sabatini,
@@ -59,12 +59,12 @@ esgreen:collection-acer_pseudoplatanus-jardines_de_sabatini a sio:Collection ;
         esgreen:count-2020-acer_pseudoplatanus-jardines_de_sabatini ;
     sio:hasMember esgreen:acer_pseudoplatanus .
 
-<https://w3id.org/esgreen/collection-acer_x_freemanii-parque_madrid_r�o> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2020-acer_x_freemanii-parque_madrid_r�o> ;
+esgreen:collection-acer_x_freemanii-parque_madrid_rio a sio:Collection ;
+    sio:hasAttribute esgreen:count-2020-acer_x_freemanii-parque_madrid_rio ;
     sio:hasMember esgreen:acer_x_freemanii .
 
-<https://w3id.org/esgreen/collection-acer_x_freemanii_(arce)-madrid_r�o> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-acer_x_freemanii_(arce)-madrid_r�o> ;
+<https://w3id.org/esgreen/collection-acer_x_freemanii_(arce)-madrid_rio> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2019-acer_x_freemanii_(arce)-madrid_rio> ;
     sio:hasMember <https://w3id.org/esgreen/acer_x_freemanii_(arce)> .
 
 esgreen:collection-aesculus_hippocastanum-capricho_de_la_alameda_de_osuna a sio:Collection ;
@@ -98,8 +98,8 @@ esgreen:collection-aesculus_hippocastanum-parque_juan_pablo_ii a sio:Collection 
         esgreen:count-2020-aesculus_hippocastanum-parque_juan_pablo_ii ;
     sio:hasMember esgreen:aesculus_hippocastanum .
 
-<https://w3id.org/esgreen/collection-aesculus_hippocastanum-parque_madrid_r�o> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2020-aesculus_hippocastanum-parque_madrid_r�o> ;
+esgreen:collection-aesculus_hippocastanum-parque_madrid_rio a sio:Collection ;
+    sio:hasAttribute esgreen:count-2020-aesculus_hippocastanum-parque_madrid_rio ;
     sio:hasMember esgreen:aesculus_hippocastanum .
 
 esgreen:collection-aesculus_hippocastanum-quinta_de_la_fuente_del_berro a sio:Collection ;
@@ -115,9 +115,9 @@ esgreen:collection-aesculus_hippocastanum-z.v.distrito_c-las_tablas a sio:Collec
     sio:hasAttribute esgreen:count-2020-aesculus_hippocastanum-z.v.distrito_c-las_tablas ;
     sio:hasMember esgreen:aesculus_hippocastanum .
 
-<https://w3id.org/esgreen/collection-aesculus_hippocastanum_(casta�o_de_indias)-madrid_r�o> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-aesculus_hippocastanum_(casta�o_de_indias)-madrid_r�o> ;
-    sio:hasMember <https://w3id.org/esgreen/aesculus_hippocastanum_(casta�o_de_indias)> .
+<https://w3id.org/esgreen/collection-aesculus_hippocastanum_(castano_de_indias)-madrid_rio> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2019-aesculus_hippocastanum_(castano_de_indias)-madrid_rio> ;
+    sio:hasMember <https://w3id.org/esgreen/aesculus_hippocastanum_(castano_de_indias)> .
 
 esgreen:collection-ailanthus_altissima-dehesa_de_la_villa a sio:Collection ;
     sio:hasAttribute esgreen:count-2019-ailanthus_altissima-dehesa_de_la_villa ;
@@ -146,9 +146,9 @@ esgreen:collection-cedrus_atlantica-parque_del_oeste-_templo_de_debod a sio:Coll
         esgreen:count-2020-cedrus_atlantica-parque_del_oeste-_templo_de_debod ;
     sio:hasMember esgreen:cedrus_atlantica .
 
-<https://w3id.org/esgreen/collection-cedrus_deodara-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-cedrus_deodara-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona>,
-        <https://w3id.org/esgreen/count-2020-cedrus_deodara-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> ;
+esgreen:collection-cedrus_deodara-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-cedrus_deodara-cuna_verde_de_odonnell_y_p._f._fuente_carrantona,
+        esgreen:count-2020-cedrus_deodara-cuna_verde_de_odonnell_y_p._f._fuente_carrantona ;
     sio:hasMember esgreen:cedrus_deodara .
 
 esgreen:collection-cedrus_deodara-jardines_de_sabatini a sio:Collection ;
@@ -156,9 +156,9 @@ esgreen:collection-cedrus_deodara-jardines_de_sabatini a sio:Collection ;
         esgreen:count-2020-cedrus_deodara-jardines_de_sabatini ;
     sio:hasMember esgreen:cedrus_deodara .
 
-<https://w3id.org/esgreen/collection-cedrus_deodara-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-cedrus_deodara-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto>,
-        <https://w3id.org/esgreen/count-2020-cedrus_deodara-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> ;
+esgreen:collection-cedrus_deodara-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-cedrus_deodara-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto,
+        esgreen:count-2020-cedrus_deodara-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto ;
     sio:hasMember esgreen:cedrus_deodara .
 
 esgreen:collection-cedrus_deodara-parque_del_oeste a sio:Collection ;
@@ -200,14 +200,14 @@ esgreen:collection-cedrus_deodara-z.v.distrito_c-las_tablas a sio:Collection ;
         <https://w3id.org/esgreen/count-2020-cedrus_libani-rosaleda_de_madrid_(parque_del_oeste)> ;
     sio:hasMember esgreen:cedrus_libani .
 
-<https://w3id.org/esgreen/collection-cedrus�atlantica�'glauca'-rosaleda_de_madrid_(parque_del_oeste)> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-cedrus�atlantica�'glauca'-rosaleda_de_madrid_(parque_del_oeste)>,
-        <https://w3id.org/esgreen/count-2020-cedrus�atlantica�'glauca'-rosaleda_de_madrid_(parque_del_oeste)> ;
-    sio:hasMember <https://w3id.org/esgreen/cedrus�atlantica�'glauca'> .
+<https://w3id.org/esgreen/collection-cedrusatlantica'glauca'-rosaleda_de_madrid_(parque_del_oeste)> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2019-cedrusatlantica'glauca'-rosaleda_de_madrid_(parque_del_oeste)>,
+        <https://w3id.org/esgreen/count-2020-cedrusatlantica'glauca'-rosaleda_de_madrid_(parque_del_oeste)> ;
+    sio:hasMember <https://w3id.org/esgreen/cedrusatlantica'glauca'> .
 
-<https://w3id.org/esgreen/collection-celtis_australis-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-celtis_australis-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona>,
-        <https://w3id.org/esgreen/count-2020-celtis_australis-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> ;
+esgreen:collection-celtis_australis-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-celtis_australis-cuna_verde_de_odonnell_y_p._f._fuente_carrantona,
+        esgreen:count-2020-celtis_australis-cuna_verde_de_odonnell_y_p._f._fuente_carrantona ;
     sio:hasMember esgreen:celtis_australis .
 
 esgreen:collection-celtis_australis-dehesa_de_la_villa a sio:Collection ;
@@ -304,8 +304,8 @@ esgreen:collection-cupressocyparis_leilandii-parque_juan_carlos_i a sio:Collecti
     sio:hasAttribute esgreen:count-2019-cupressocyparis_leilandii-parque_juan_carlos_i ;
     sio:hasMember esgreen:cupressocyparis_leilandii .
 
-<https://w3id.org/esgreen/collection-cupressocyparis_leylandii-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-cupressocyparis_leylandii-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> ;
+esgreen:collection-cupressocyparis_leylandii-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-cupressocyparis_leylandii-cuna_verde_de_odonnell_y_p._f._fuente_carrantona ;
     sio:hasMember esgreen:cupressocyparis_leylandii .
 
 esgreen:collection-cupressocyparis_leylandii-z.v.distrito_c-las_tablas a sio:Collection ;
@@ -316,9 +316,9 @@ esgreen:collection-cupressus_arizonica-casa_de_campo a sio:Collection ;
     sio:hasAttribute esgreen:count-2017-cupressus_arizonica-casa_de_campo ;
     sio:hasMember esgreen:cupressus_arizonica .
 
-<https://w3id.org/esgreen/collection-cupressus_macrocarpa-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-cupressus_macrocarpa-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto>,
-        <https://w3id.org/esgreen/count-2020-cupressus_macrocarpa-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> ;
+esgreen:collection-cupressus_macrocarpa-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-cupressus_macrocarpa-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto,
+        esgreen:count-2020-cupressus_macrocarpa-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto ;
     sio:hasMember esgreen:cupressus_macrocarpa .
 
 esgreen:collection-cupressus_sempervirens-capricho_de_la_alameda_de_osuna a sio:Collection ;
@@ -348,9 +348,9 @@ esgreen:collection-cupressus_sempervirens-jardines_del_buen_retiro a sio:Collect
         esgreen:count-2020-cupressus_sempervirens-jardines_del_buen_retiro ;
     sio:hasMember esgreen:cupressus_sempervirens .
 
-<https://w3id.org/esgreen/collection-cupressus_sempervirens-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-cupressus_sempervirens-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto>,
-        <https://w3id.org/esgreen/count-2020-cupressus_sempervirens-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> ;
+esgreen:collection-cupressus_sempervirens-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-cupressus_sempervirens-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto,
+        esgreen:count-2020-cupressus_sempervirens-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto ;
     sio:hasMember esgreen:cupressus_sempervirens .
 
 esgreen:collection-cupressus_sempervirens-parque_juan_carlos_i a sio:Collection ;
@@ -432,12 +432,12 @@ esgreen:collection-fraxinus_angustifolia-parque_juan_carlos_i a sio:Collection ;
     sio:hasAttribute esgreen:count-2019-fraxinus_angustifolia-parque_juan_carlos_i ;
     sio:hasMember esgreen:fraxinus_angustifolia .
 
-<https://w3id.org/esgreen/collection-fraxinus_angustifolia-parque_madrid_r�o> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2020-fraxinus_angustifolia-parque_madrid_r�o> ;
+esgreen:collection-fraxinus_angustifolia-parque_madrid_rio a sio:Collection ;
+    sio:hasAttribute esgreen:count-2020-fraxinus_angustifolia-parque_madrid_rio ;
     sio:hasMember esgreen:fraxinus_angustifolia .
 
-<https://w3id.org/esgreen/collection-fraxinus_angustifolia_(fresno_de_la_tierra)-madrid_r�o> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-fraxinus_angustifolia_(fresno_de_la_tierra)-madrid_r�o> ;
+<https://w3id.org/esgreen/collection-fraxinus_angustifolia_(fresno_de_la_tierra)-madrid_rio> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2019-fraxinus_angustifolia_(fresno_de_la_tierra)-madrid_rio> ;
     sio:hasMember <https://w3id.org/esgreen/fraxinus_angustifolia_(fresno_de_la_tierra)> .
 
 <https://w3id.org/esgreen/collection-fraxinus_angustifolia_(fresno_de_la_tierra)-parque_lineal_del_manzanares> a sio:Collection ;
@@ -450,12 +450,12 @@ esgreen:collection-fraxinus_excelsior-parque_juan_carlos_i a sio:Collection ;
         esgreen:count-2020-fraxinus_excelsior-parque_juan_carlos_i ;
     sio:hasMember esgreen:fraxinus_excelsior .
 
-<https://w3id.org/esgreen/collection-ginkgo_biloba-parque_madrid_r�o> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2020-ginkgo_biloba-parque_madrid_r�o> ;
+esgreen:collection-ginkgo_biloba-parque_madrid_rio a sio:Collection ;
+    sio:hasAttribute esgreen:count-2020-ginkgo_biloba-parque_madrid_rio ;
     sio:hasMember esgreen:ginkgo_biloba .
 
-<https://w3id.org/esgreen/collection-ginkgo_biloba_(gingo)-madrid_r�o> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-ginkgo_biloba_(gingo)-madrid_r�o> ;
+<https://w3id.org/esgreen/collection-ginkgo_biloba_(gingo)-madrid_rio> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2019-ginkgo_biloba_(gingo)-madrid_rio> ;
     sio:hasMember <https://w3id.org/esgreen/ginkgo_biloba_(gingo)> .
 
 esgreen:collection-gleditsia_triacanthos-capricho_de_la_alameda_de_osuna a sio:Collection ;
@@ -530,9 +530,9 @@ esgreen:collection-ligustrum_japonicum-quinta_de_los_molinos a sio:Collection ;
         <https://w3id.org/esgreen/count-2020-ligustrum_japonicum-rosaleda_de_madrid_(parque_del_oeste)> ;
     sio:hasMember esgreen:ligustrum_japonicum .
 
-<https://w3id.org/esgreen/collection-ligustrum_lucidum-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-ligustrum_lucidum-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto>,
-        <https://w3id.org/esgreen/count-2020-ligustrum_lucidum-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> ;
+esgreen:collection-ligustrum_lucidum-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-ligustrum_lucidum-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto,
+        esgreen:count-2020-ligustrum_lucidum-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto ;
     sio:hasMember esgreen:ligustrum_lucidum .
 
 esgreen:collection-ligustrum_lucidum-quinta_de_la_fuente_del_berro a sio:Collection ;
@@ -559,21 +559,21 @@ esgreen:collection-magnolia_grandiflora-jardines_de_sabatini a sio:Collection ;
         esgreen:count-2020-magnolia_grandiflora-jardines_de_sabatini ;
     sio:hasMember esgreen:magnolia_grandiflora .
 
-<https://w3id.org/esgreen/collection-magnolia_grandiflora-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-magnolia_grandiflora-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto>,
-        <https://w3id.org/esgreen/count-2020-magnolia_grandiflora-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> ;
+esgreen:collection-magnolia_grandiflora-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-magnolia_grandiflora-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto,
+        esgreen:count-2020-magnolia_grandiflora-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto ;
     sio:hasMember esgreen:magnolia_grandiflora .
 
-<https://w3id.org/esgreen/collection-melia_azedarach-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2020-melia_azedarach-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> ;
+esgreen:collection-melia_azedarach-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:Collection ;
+    sio:hasAttribute esgreen:count-2020-melia_azedarach-cuna_verde_de_odonnell_y_p._f._fuente_carrantona ;
     sio:hasMember esgreen:melia_azedarach .
 
-<https://w3id.org/esgreen/collection-melia_azedarach-parque_madrid_r�o> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2020-melia_azedarach-parque_madrid_r�o> ;
+esgreen:collection-melia_azedarach-parque_madrid_rio a sio:Collection ;
+    sio:hasAttribute esgreen:count-2020-melia_azedarach-parque_madrid_rio ;
     sio:hasMember esgreen:melia_azedarach .
 
-<https://w3id.org/esgreen/collection-melia_azedarach_(cinamomo)-madrid_r�o> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-melia_azedarach_(cinamomo)-madrid_r�o> ;
+<https://w3id.org/esgreen/collection-melia_azedarach_(cinamomo)-madrid_rio> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2019-melia_azedarach_(cinamomo)-madrid_rio> ;
     sio:hasMember <https://w3id.org/esgreen/melia_azedarach_(cinamomo)> .
 
 esgreen:collection-melia_azederach-z.v.distrito_c-las_tablas a sio:Collection ;
@@ -598,8 +598,8 @@ esgreen:collection-morus_alba-parque_juan_pablo_ii a sio:Collection ;
     sio:hasAttribute <https://w3id.org/esgreen/count-2019-morus_alba_'fruitless'-parque_forestal_valdebebas> ;
     sio:hasMember <https://w3id.org/esgreen/morus_alba_'fruitless'> .
 
-<https://w3id.org/esgreen/collection-nan-(1)_el_n�mero_de_arboles_de_cada_especie_seg�n_figura_en_el_plan_de_ordenacion> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2020-nan-(1)_el_n�mero_de_arboles_de_cada_especie_seg�n_figura_en_el_plan_de_ordenacion> ;
+<https://w3id.org/esgreen/collection-nan-(1)_el_numero_de_arboles_de_cada_especie_segun_figura_en_el_plan_de_ordenacion> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2020-nan-(1)_el_numero_de_arboles_de_cada_especie_segun_figura_en_el_plan_de_ordenacion> ;
     sio:hasMember esgreen:nan .
 
 esgreen:collection-nan-nan a sio:Collection ;
@@ -640,9 +640,9 @@ esgreen:collection-otros-casa_de_campo a sio:Collection ;
         esgreen:count-2020-otros-casa_de_campo ;
     sio:hasMember esgreen:otros .
 
-<https://w3id.org/esgreen/collection-otros-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-otros-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona>,
-        <https://w3id.org/esgreen/count-2020-otros-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> ;
+esgreen:collection-otros-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-otros-cuna_verde_de_odonnell_y_p._f._fuente_carrantona,
+        esgreen:count-2020-otros-cuna_verde_de_odonnell_y_p._f._fuente_carrantona ;
     sio:hasMember esgreen:otros .
 
 esgreen:collection-otros-dehesa_de_la_villa a sio:Collection ;
@@ -668,8 +668,8 @@ esgreen:collection-otros-jardines_del_buen_retiro a sio:Collection ;
         esgreen:count-2020-otros-jardines_del_buen_retiro ;
     sio:hasMember esgreen:otros .
 
-<https://w3id.org/esgreen/collection-otros-madrid_r�o> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-otros-madrid_r�o> ;
+esgreen:collection-otros-madrid_rio a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-otros-madrid_rio ;
     sio:hasMember esgreen:otros .
 
 esgreen:collection-otros-parque_de_la_dehesa_de_la_villa a sio:Collection ;
@@ -708,8 +708,8 @@ esgreen:collection-otros-parque_lineal_del_manzanares a sio:Collection ;
         esgreen:count-2020-otros-parque_lineal_del_manzanares ;
     sio:hasMember esgreen:otros .
 
-<https://w3id.org/esgreen/collection-otros-parque_madrid_r�o> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2020-otros-parque_madrid_r�o> ;
+esgreen:collection-otros-parque_madrid_rio a sio:Collection ;
+    sio:hasAttribute esgreen:count-2020-otros-parque_madrid_rio ;
     sio:hasMember esgreen:otros .
 
 esgreen:collection-otros-quinta_de_la_fuente_del_berro a sio:Collection ;
@@ -743,18 +743,18 @@ esgreen:collection-pinus_halepensis-casa_de_campo a sio:Collection ;
         esgreen:count-2020-pinus_halepensis-casa_de_campo ;
     sio:hasMember esgreen:pinus_halepensis .
 
-<https://w3id.org/esgreen/collection-pinus_halepensis-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-pinus_halepensis-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona>,
-        <https://w3id.org/esgreen/count-2020-pinus_halepensis-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> ;
+esgreen:collection-pinus_halepensis-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-pinus_halepensis-cuna_verde_de_odonnell_y_p._f._fuente_carrantona,
+        esgreen:count-2020-pinus_halepensis-cuna_verde_de_odonnell_y_p._f._fuente_carrantona ;
     sio:hasMember esgreen:pinus_halepensis .
 
 esgreen:collection-pinus_halepensis-dehesa_de_la_villa a sio:Collection ;
     sio:hasAttribute esgreen:count-2019-pinus_halepensis-dehesa_de_la_villa ;
     sio:hasMember esgreen:pinus_halepensis .
 
-<https://w3id.org/esgreen/collection-pinus_halepensis-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-pinus_halepensis-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto>,
-        <https://w3id.org/esgreen/count-2020-pinus_halepensis-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> ;
+esgreen:collection-pinus_halepensis-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-pinus_halepensis-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto,
+        esgreen:count-2020-pinus_halepensis-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto ;
     sio:hasMember esgreen:pinus_halepensis .
 
 esgreen:collection-pinus_halepensis-parque_de_la_dehesa_de_la_villa a sio:Collection ;
@@ -774,8 +774,8 @@ esgreen:collection-pinus_halepensis-parque_lineal_del_manzanares a sio:Collectio
     sio:hasAttribute esgreen:count-2020-pinus_halepensis-parque_lineal_del_manzanares ;
     sio:hasMember esgreen:pinus_halepensis .
 
-<https://w3id.org/esgreen/collection-pinus_halepensis-parque_madrid_r�o> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2020-pinus_halepensis-parque_madrid_r�o> ;
+esgreen:collection-pinus_halepensis-parque_madrid_rio a sio:Collection ;
+    sio:hasAttribute esgreen:count-2020-pinus_halepensis-parque_madrid_rio ;
     sio:hasMember esgreen:pinus_halepensis .
 
 esgreen:collection-pinus_halepensis-quinta_de_los_molinos a sio:Collection ;
@@ -784,8 +784,8 @@ esgreen:collection-pinus_halepensis-quinta_de_los_molinos a sio:Collection ;
         esgreen:count-2020-pinus_halepensis-quinta_de_los_molinos ;
     sio:hasMember esgreen:pinus_halepensis .
 
-<https://w3id.org/esgreen/collection-pinus_halepensis_(pino_carrasco)-madrid_r�o> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-pinus_halepensis_(pino_carrasco)-madrid_r�o> ;
+<https://w3id.org/esgreen/collection-pinus_halepensis_(pino_carrasco)-madrid_rio> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2019-pinus_halepensis_(pino_carrasco)-madrid_rio> ;
     sio:hasMember <https://w3id.org/esgreen/pinus_halepensis_(pino_carrasco)> .
 
 esgreen:collection-pinus_pinea-capricho_de_la_alameda_de_osuna a sio:Collection ;
@@ -801,9 +801,9 @@ esgreen:collection-pinus_pinea-casa_de_campo a sio:Collection ;
     sio:hasAttribute <https://w3id.org/esgreen/count-2020-pinus_pinea-casa_de_campo_(1)> ;
     sio:hasMember esgreen:pinus_pinea .
 
-<https://w3id.org/esgreen/collection-pinus_pinea-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-pinus_pinea-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona>,
-        <https://w3id.org/esgreen/count-2020-pinus_pinea-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> ;
+esgreen:collection-pinus_pinea-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-pinus_pinea-cuna_verde_de_odonnell_y_p._f._fuente_carrantona,
+        esgreen:count-2020-pinus_pinea-cuna_verde_de_odonnell_y_p._f._fuente_carrantona ;
     sio:hasMember esgreen:pinus_pinea .
 
 esgreen:collection-pinus_pinea-dehesa_de_la_villa a sio:Collection ;
@@ -860,8 +860,8 @@ esgreen:collection-pinus_pinea-parque_juan_pablo_ii a sio:Collection ;
         esgreen:count-2020-pinus_pinea-parque_juan_pablo_ii ;
     sio:hasMember esgreen:pinus_pinea .
 
-<https://w3id.org/esgreen/collection-pinus_pinea-parque_madrid_r�o> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2020-pinus_pinea-parque_madrid_r�o> ;
+esgreen:collection-pinus_pinea-parque_madrid_rio a sio:Collection ;
+    sio:hasAttribute esgreen:count-2020-pinus_pinea-parque_madrid_rio ;
     sio:hasMember esgreen:pinus_pinea .
 
 esgreen:collection-pinus_pinea-quinta_de_los_molinos a sio:Collection ;
@@ -875,14 +875,14 @@ esgreen:collection-pinus_pinea-z.v.distrito_c-las_tablas a sio:Collection ;
         esgreen:count-2020-pinus_pinea-z.v.distrito_c-las_tablas ;
     sio:hasMember esgreen:pinus_pinea .
 
-<https://w3id.org/esgreen/collection-pinus_pinea_(pino_pi�onero)-madrid_r�o> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-pinus_pinea_(pino_pi�onero)-madrid_r�o> ;
-    sio:hasMember <https://w3id.org/esgreen/pinus_pinea_(pino_pi�onero)> .
+<https://w3id.org/esgreen/collection-pinus_pinea_(pino_pinonero)-madrid_rio> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2019-pinus_pinea_(pino_pinonero)-madrid_rio> ;
+    sio:hasMember <https://w3id.org/esgreen/pinus_pinea_(pino_pinonero)> .
 
-<https://w3id.org/esgreen/collection-pinus_pinea_(pino_pi�onero)-parque_lineal_del_manzanares> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-pinus_pinea_(pino_pi�onero)-parque_lineal_del_manzanares>,
-        <https://w3id.org/esgreen/count-2020-pinus_pinea_(pino_pi�onero)-parque_lineal_del_manzanares> ;
-    sio:hasMember <https://w3id.org/esgreen/pinus_pinea_(pino_pi�onero)> .
+<https://w3id.org/esgreen/collection-pinus_pinea_(pino_pinonero)-parque_lineal_del_manzanares> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2019-pinus_pinea_(pino_pinonero)-parque_lineal_del_manzanares>,
+        <https://w3id.org/esgreen/count-2020-pinus_pinea_(pino_pinonero)-parque_lineal_del_manzanares> ;
+    sio:hasMember <https://w3id.org/esgreen/pinus_pinea_(pino_pinonero)> .
 
 esgreen:collection-platanus_hispanica-casa_de_campo a sio:Collection ;
     sio:hasAttribute esgreen:count-2017-platanus_hispanica-casa_de_campo ;
@@ -908,26 +908,26 @@ esgreen:collection-platanus_hispanica-quinta_de_los_molinos a sio:Collection ;
     sio:hasAttribute esgreen:count-2017-platanus_hispanica-quinta_de_los_molinos ;
     sio:hasMember esgreen:platanus_hispanica .
 
-<https://w3id.org/esgreen/collection-platanus_hybrida-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-platanus_hybrida-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> ;
+esgreen:collection-platanus_hybrida-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-platanus_hybrida-cuna_verde_de_odonnell_y_p._f._fuente_carrantona ;
     sio:hasMember esgreen:platanus_hybrida .
 
 esgreen:collection-platanus_hybrida-parque_juan_carlos_i a sio:Collection ;
     sio:hasAttribute esgreen:count-2019-platanus_hybrida-parque_juan_carlos_i ;
     sio:hasMember esgreen:platanus_hybrida .
 
+<https://w3id.org/esgreen/collection-platanus_hybrida_(platano_de_sombra)-madrid_rio> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2019-platanus_hybrida_(platano_de_sombra)-madrid_rio> ;
+    sio:hasMember <https://w3id.org/esgreen/platanus_hybrida_(platano_de_sombra)> .
+
 <https://w3id.org/esgreen/collection-platanus_hybrida_(platano_de_sombra)-parque_lineal_del_manzanares> a sio:Collection ;
     sio:hasAttribute <https://w3id.org/esgreen/count-2019-platanus_hybrida_(platano_de_sombra)-parque_lineal_del_manzanares>,
         <https://w3id.org/esgreen/count-2020-platanus_hybrida_(platano_de_sombra)-parque_lineal_del_manzanares> ;
     sio:hasMember <https://w3id.org/esgreen/platanus_hybrida_(platano_de_sombra)> .
 
-<https://w3id.org/esgreen/collection-platanus_hybrida_(pl�tano_de_sombra)-madrid_r�o> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-platanus_hybrida_(pl�tano_de_sombra)-madrid_r�o> ;
-    sio:hasMember <https://w3id.org/esgreen/platanus_hybrida_(pl�tano_de_sombra)> .
-
-<https://w3id.org/esgreen/collection-platanus_orientalis-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-platanus_orientalis-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona>,
-        <https://w3id.org/esgreen/count-2020-platanus_orientalis-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> ;
+esgreen:collection-platanus_orientalis-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-platanus_orientalis-cuna_verde_de_odonnell_y_p._f._fuente_carrantona,
+        esgreen:count-2020-platanus_orientalis-cuna_verde_de_odonnell_y_p._f._fuente_carrantona ;
     sio:hasMember esgreen:platanus_orientalis .
 
 esgreen:collection-platanus_x_hybrida-capricho_de_la_alameda_de_osuna a sio:Collection ;
@@ -947,9 +947,9 @@ esgreen:collection-platanus_x_hybrida-jardines_del_buen_retiro a sio:Collection 
         esgreen:count-2020-platanus_x_hybrida-jardines_del_buen_retiro ;
     sio:hasMember esgreen:platanus_x_hybrida .
 
-<https://w3id.org/esgreen/collection-platanus_x_hybrida-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-platanus_x_hybrida-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto>,
-        <https://w3id.org/esgreen/count-2020-platanus_x_hybrida-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> ;
+esgreen:collection-platanus_x_hybrida-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-platanus_x_hybrida-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto,
+        esgreen:count-2020-platanus_x_hybrida-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto ;
     sio:hasMember esgreen:platanus_x_hybrida .
 
 esgreen:collection-platanus_x_hybrida-parque_de_la_dehesa_de_la_villa a sio:Collection ;
@@ -965,8 +965,8 @@ esgreen:collection-platanus_x_hybrida-parque_juan_carlos_i a sio:Collection ;
     sio:hasAttribute esgreen:count-2020-platanus_x_hybrida-parque_juan_carlos_i ;
     sio:hasMember esgreen:platanus_x_hybrida .
 
-<https://w3id.org/esgreen/collection-platanus_x_hybrida-parque_madrid_r�o> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2020-platanus_x_hybrida-parque_madrid_r�o> ;
+esgreen:collection-platanus_x_hybrida-parque_madrid_rio a sio:Collection ;
+    sio:hasAttribute esgreen:count-2020-platanus_x_hybrida-parque_madrid_rio ;
     sio:hasMember esgreen:platanus_x_hybrida .
 
 esgreen:collection-platanus_x_hybrida-quinta_de_los_molinos a sio:Collection ;
@@ -1013,12 +1013,12 @@ esgreen:collection-populus_nigra-casa_de_campo a sio:Collection ;
         esgreen:count-2020-populus_nigra-casa_de_campo ;
     sio:hasMember esgreen:populus_nigra .
 
-<https://w3id.org/esgreen/collection-populus_nigra-parque_madrid_r�o> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2020-populus_nigra-parque_madrid_r�o> ;
+esgreen:collection-populus_nigra-parque_madrid_rio a sio:Collection ;
+    sio:hasAttribute esgreen:count-2020-populus_nigra-parque_madrid_rio ;
     sio:hasMember esgreen:populus_nigra .
 
-<https://w3id.org/esgreen/collection-populus_nigra_(chopo_negro)-madrid_r�o> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-populus_nigra_(chopo_negro)-madrid_r�o> ;
+<https://w3id.org/esgreen/collection-populus_nigra_(chopo_negro)-madrid_rio> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2019-populus_nigra_(chopo_negro)-madrid_rio> ;
     sio:hasMember <https://w3id.org/esgreen/populus_nigra_(chopo_negro)> .
 
 <https://w3id.org/esgreen/collection-populus_nigra_(chopo_negro)-parque_lineal_del_manzanares> a sio:Collection ;
@@ -1026,13 +1026,13 @@ esgreen:collection-populus_nigra-casa_de_campo a sio:Collection ;
         <https://w3id.org/esgreen/count-2020-populus_nigra_(chopo_negro)-parque_lineal_del_manzanares> ;
     sio:hasMember <https://w3id.org/esgreen/populus_nigra_(chopo_negro)> .
 
-<https://w3id.org/esgreen/collection-populus�nigra�var.�italica-parque_forestal_de_valdebebas-_felipe_vi> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2020-populus�nigra�var.�italica-parque_forestal_de_valdebebas-_felipe_vi> ;
-    sio:hasMember <https://w3id.org/esgreen/populus�nigra�var.�italica> .
+esgreen:collection-populusnigravar.italica-parque_forestal_de_valdebebas-_felipe_vi a sio:Collection ;
+    sio:hasAttribute esgreen:count-2020-populusnigravar.italica-parque_forestal_de_valdebebas-_felipe_vi ;
+    sio:hasMember esgreen:populusnigravar.italica .
 
-<https://w3id.org/esgreen/collection-populus�nigra�var.�italica-parque_forestal_valdebebas> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-populus�nigra�var.�italica-parque_forestal_valdebebas> ;
-    sio:hasMember <https://w3id.org/esgreen/populus�nigra�var.�italica> .
+esgreen:collection-populusnigravar.italica-parque_forestal_valdebebas a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-populusnigravar.italica-parque_forestal_valdebebas ;
+    sio:hasMember esgreen:populusnigravar.italica .
 
 esgreen:collection-prunus_amygdalus-parque_forestal_de_valdebebas-_felipe_vi a sio:Collection ;
     sio:hasAttribute esgreen:count-2020-prunus_amygdalus-parque_forestal_de_valdebebas-_felipe_vi ;
@@ -1107,9 +1107,9 @@ esgreen:collection-quercus_ilex-casa_de_campo a sio:Collection ;
         esgreen:count-2020-quercus_ilex-casa_de_campo ;
     sio:hasMember esgreen:quercus_ilex .
 
-<https://w3id.org/esgreen/collection-quercus_ilex-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-quercus_ilex-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona>,
-        <https://w3id.org/esgreen/count-2020-quercus_ilex-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> ;
+esgreen:collection-quercus_ilex-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-quercus_ilex-cuna_verde_de_odonnell_y_p._f._fuente_carrantona,
+        esgreen:count-2020-quercus_ilex-cuna_verde_de_odonnell_y_p._f._fuente_carrantona ;
     sio:hasMember esgreen:quercus_ilex .
 
 esgreen:collection-quercus_ilex-dehesa_de_la_villa a sio:Collection ;
@@ -1124,9 +1124,9 @@ esgreen:collection-quercus_robur-capricho_de_la_alameda_de_osuna a sio:Collectio
     sio:hasAttribute esgreen:count-2019-quercus_robur-capricho_de_la_alameda_de_osuna ;
     sio:hasMember esgreen:quercus_robur .
 
-<https://w3id.org/esgreen/collection-quercus_robur-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-quercus_robur-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona>,
-        <https://w3id.org/esgreen/count-2020-quercus_robur-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> ;
+esgreen:collection-quercus_robur-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-quercus_robur-cuna_verde_de_odonnell_y_p._f._fuente_carrantona,
+        esgreen:count-2020-quercus_robur-cuna_verde_de_odonnell_y_p._f._fuente_carrantona ;
     sio:hasMember esgreen:quercus_robur .
 
 esgreen:collection-quercus_robur-el_capricho_de_la_alameda_de_osuna a sio:Collection ;
@@ -1142,8 +1142,8 @@ esgreen:collection-quercus_robur-jardin_el_capricho_de_la_alameda_de_osuna a sio
         <https://w3id.org/esgreen/count-2020-quercus_robur-rosaleda_de_madrid_(parque_del_oeste)> ;
     sio:hasMember esgreen:quercus_robur .
 
-<https://w3id.org/esgreen/collection-quercus_suber-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2020-quercus_suber-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> ;
+esgreen:collection-quercus_suber-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:Collection ;
+    sio:hasAttribute esgreen:count-2020-quercus_suber-cuna_verde_de_odonnell_y_p._f._fuente_carrantona ;
     sio:hasMember esgreen:quercus_suber .
 
 esgreen:collection-quercux_ilex-casa_de_campo a sio:Collection ;
@@ -1195,9 +1195,9 @@ esgreen:collection-sophora_japonica-parque_juan_carlos_i a sio:Collection ;
         esgreen:count-2020-sophora_japonica-parque_juan_carlos_i ;
     sio:hasMember esgreen:sophora_japonica .
 
-<https://w3id.org/esgreen/collection-taxus_baccata-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-taxus_baccata-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto>,
-        <https://w3id.org/esgreen/count-2020-taxus_baccata-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> ;
+esgreen:collection-taxus_baccata-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-taxus_baccata-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto,
+        esgreen:count-2020-taxus_baccata-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto ;
     sio:hasMember esgreen:taxus_baccata .
 
 esgreen:collection-thuja_occidentalis-jardines_de_sabatini a sio:Collection ;
@@ -1215,12 +1215,12 @@ esgreen:collection-tilia_platyphyllos-parque_juan_pablo_ii a sio:Collection ;
         esgreen:count-2020-tilia_platyphyllos-parque_juan_pablo_ii ;
     sio:hasMember esgreen:tilia_platyphyllos .
 
-<https://w3id.org/esgreen/collection-tilia_platyphyllos-parque_madrid_r�o> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2020-tilia_platyphyllos-parque_madrid_r�o> ;
+esgreen:collection-tilia_platyphyllos-parque_madrid_rio a sio:Collection ;
+    sio:hasAttribute esgreen:count-2020-tilia_platyphyllos-parque_madrid_rio ;
     sio:hasMember esgreen:tilia_platyphyllos .
 
-<https://w3id.org/esgreen/collection-tilia_platyphyllos_(tilo_de_hojas_grandes)-madrid_r�o> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-tilia_platyphyllos_(tilo_de_hojas_grandes)-madrid_r�o> ;
+<https://w3id.org/esgreen/collection-tilia_platyphyllos_(tilo_de_hojas_grandes)-madrid_rio> a sio:Collection ;
+    sio:hasAttribute <https://w3id.org/esgreen/count-2019-tilia_platyphyllos_(tilo_de_hojas_grandes)-madrid_rio> ;
     sio:hasMember <https://w3id.org/esgreen/tilia_platyphyllos_(tilo_de_hojas_grandes)> .
 
 <https://w3id.org/esgreen/collection-tilia_platyphyllos_(tilo_de_hojas_grandes)-parque_lineal_del_manzanares> a sio:Collection ;
@@ -1264,9 +1264,9 @@ esgreen:collection-ulmus_minor-jardines_del_buen_retiro a sio:Collection ;
     sio:hasAttribute esgreen:count-2017-ulmus_minor-jardines_del_buen_retiro ;
     sio:hasMember esgreen:ulmus_minor .
 
-<https://w3id.org/esgreen/collection-ulmus_pumila-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:Collection ;
-    sio:hasAttribute <https://w3id.org/esgreen/count-2019-ulmus_pumila-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona>,
-        <https://w3id.org/esgreen/count-2020-ulmus_pumila-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> ;
+esgreen:collection-ulmus_pumila-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:Collection ;
+    sio:hasAttribute esgreen:count-2019-ulmus_pumila-cuna_verde_de_odonnell_y_p._f._fuente_carrantona,
+        esgreen:count-2020-ulmus_pumila-cuna_verde_de_odonnell_y_p._f._fuente_carrantona ;
     sio:hasMember esgreen:ulmus_pumila .
 
 esgreen:collection-ulmus_pumila-dehesa_de_la_villa a sio:Collection ;
@@ -1314,1804 +1314,2250 @@ esgreen:collection-x_cupressocyparis_leylandii-z.v.distrito_c-las_tablas a sio:C
     sio:hasAttribute esgreen:count-2020-x_cupressocyparis_leylandii-z.v.distrito_c-las_tablas ;
     sio:hasMember esgreen:x_cupressocyparis_leylandii .
 
-<https://w3id.org/esgreen/cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:site ;
-    rdfs:label "cu�a verde de o�donnell y p. f. fuente carrantona" .
+esgreen:cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:site ;
+    rdfs:label "cuna_verde_de_odonnell_y_p._f._fuente_carrantona" .
 
 esgreen:dehesa_de_la_villa a sio:site ;
-    rdfs:label "dehesa de la villa" .
+    rdfs:label "dehesa_de_la_villa" .
 
 esgreen:el_capricho_de_la_alameda_de_osuna a sio:site ;
-    rdfs:label "el capricho de la alameda de osuna" .
+    rdfs:label "el_capricho_de_la_alameda_de_osuna" .
 
 esgreen:jardin_el_capricho_de_la_alameda_de_osuna a sio:site ;
-    rdfs:label "jardin \"el capricho\" de la alameda de osuna" .
+    rdfs:label "jardin_\"el_capricho\"_de_la_alameda_de_osuna" .
 
 esgreen:jardines_de_sabatini a sio:site ;
-    rdfs:label "jardines de sabatini" .
+    rdfs:label "jardines_de_sabatini" .
 
 esgreen:jardines_del_buen_retiro a sio:site ;
-    rdfs:label "jardines del buen retiro" .
+    rdfs:label "jardines_del_buen_retiro" .
 
-<https://w3id.org/esgreen/jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:site ;
-    rdfs:label "jardines pza de oriente-jard�n del cabo noval-jard�n de lepanto" .
+esgreen:jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:site ;
+    rdfs:label "jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto" .
 
-<https://w3id.org/esgreen/madrid_r�o> a sio:site ;
-    rdfs:label "madrid r�o" .
+esgreen:madrid_rio a sio:site ;
+    rdfs:label "madrid_rio" .
 
 esgreen:parque_de_la_dehesa_de_la_villa a sio:site ;
-    rdfs:label "parque de la dehesa de la villa" .
+    rdfs:label "parque_de_la_dehesa_de_la_villa" .
 
 esgreen:parque_del_oeste a sio:site ;
-    rdfs:label "parque del oeste" .
+    rdfs:label "parque_del_oeste" .
 
 esgreen:parque_del_oeste-_templo_de_debod a sio:site ;
-    rdfs:label "parque del oeste- templo de debod" .
+    rdfs:label "parque_del_oeste-_templo_de_debod" .
 
 esgreen:parque_forestal_de_valdebebas-_felipe_vi a sio:site ;
-    rdfs:label "parque forestal de valdebebas- felipe vi" .
+    rdfs:label "parque_forestal_de_valdebebas-_felipe_vi" .
 
 esgreen:parque_forestal_valdebebas a sio:site ;
-    rdfs:label "parque forestal valdebebas" .
+    rdfs:label "parque_forestal_valdebebas" .
 
 esgreen:parque_juan_carlos_i a sio:site ;
-    rdfs:label "parque juan carlos i" .
+    rdfs:label "parque_juan_carlos_i" .
 
 esgreen:parque_juan_pablo_ii a sio:site ;
-    rdfs:label "parque juan pablo ii" .
+    rdfs:label "parque_juan_pablo_ii" .
 
 esgreen:parque_lineal_del_manzanares a sio:site ;
-    rdfs:label "parque lineal del manzanares" .
+    rdfs:label "parque_lineal_del_manzanares" .
 
-<https://w3id.org/esgreen/parque_madrid_r�o> a sio:site ;
-    rdfs:label "parque madrid r�o" .
+esgreen:parque_madrid_rio a sio:site ;
+    rdfs:label "parque_madrid_rio" .
 
 esgreen:quinta_de_la_fuente_del_berro a sio:site ;
-    rdfs:label "quinta de la fuente del berro" .
+    rdfs:label "quinta_de_la_fuente_del_berro" .
 
 esgreen:quinta_de_los_molinos a sio:site ;
-    rdfs:label "quinta de los molinos" .
+    rdfs:label "quinta_de_los_molinos" .
 
 esgreen:quinta_fuente_del_berro a sio:site ;
-    rdfs:label "quinta fuente del berro" .
+    rdfs:label "quinta_fuente_del_berro" .
 
 <https://w3id.org/esgreen/rosaleda_de_madrid_(parque_del_oeste)> a sio:site ;
-    rdfs:label "rosaleda de madrid (parque del oeste)" .
+    rdfs:label "rosaleda_de_madrid_(parque_del_oeste)" .
 
 esgreen:z.v.distrito_c-las_tablas a sio:site ;
-    rdfs:label "z.v.distrito c-las tablas" .
+    rdfs:label "z.v.distrito_c-las_tablas" .
 
-esgreen:abies_nordmanniana a sio:Specie ;
-    rdfs:label "abies nordmanniana" .
+esgreen:abies_nordmanniana a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "abies_nordmanniana" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Abies_nordmanniana> .
 
-esgreen:acer_pseudoplatanus a sio:Specie ;
-    rdfs:label "acer pseudoplatanus" .
+esgreen:acer_pseudoplatanus a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "acer_pseudoplatanus" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Acer_pseudoplatanus> .
 
-esgreen:acer_x_freemanii a sio:Specie ;
-    rdfs:label "acer x freemanii" .
+esgreen:acer_x_freemanii a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "acer_x_freemanii" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Acer_x_freemanii> .
 
-<https://w3id.org/esgreen/acer_x_freemanii_(arce)> a sio:Specie ;
-    rdfs:label "acer x freemanii (arce)" .
+<https://w3id.org/esgreen/acer_x_freemanii_(arce)> a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "acer_x_freemanii_(arce)" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Acer_x_freemanii_(arce)> .
 
-<https://w3id.org/esgreen/aesculus_hippocastanum_(casta�o_de_indias)> a sio:Specie ;
-    rdfs:label "aesculus hippocastanum (casta�o de indias)" .
+<https://w3id.org/esgreen/aesculus_hippocastanum_(castano_de_indias)> a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "aesculus_hippocastanum_(castano_de_indias)" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Aesculus_hippocastanum_(castano_de_indias)> .
 
-esgreen:betula_utilis a sio:Specie ;
-    rdfs:label "betula utilis" .
+esgreen:betula_utilis a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "betula_utilis" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Betula_utilis> .
 
-esgreen:catalpa_bignonioides a sio:Specie ;
-    rdfs:label "catalpa bignonioides" .
+esgreen:catalpa_bignonioides a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "catalpa_bignonioides" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Catalpa_bignonioides> .
 
-esgreen:cedrus_libani a sio:Specie ;
-    rdfs:label "cedrus libani" .
+esgreen:cedrus_libani a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "cedrus_libani" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Cedrus_libani> .
 
-<https://w3id.org/esgreen/cedrus�atlantica�'glauca'> a sio:Specie ;
-    rdfs:label "cedrus�atlantica�'glauca'" .
+<https://w3id.org/esgreen/cedrusatlantica'glauca'> a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "cedrusatlantica'glauca'" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Cedrusatlantica'glauca'> .
 
-<https://w3id.org/esgreen/celtis_australis_(almez)> a sio:Specie ;
-    rdfs:label "celtis australis (almez)" .
+<https://w3id.org/esgreen/celtis_australis_(almez)> a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "celtis_australis_(almez)" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Celtis_australis_(almez)> .
 
 esgreen:count-2017-acacia_dealbata-quinta_de_la_fuente_del_berro a sio:MemberCount ;
-    sio:hasValue "48.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 48.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-aesculus_hippocastanum-jardin_el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
-    sio:hasValue "108.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 108.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-aesculus_hippocastanum-jardines_del_buen_retiro a sio:MemberCount ;
-    sio:hasValue "6.377"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 6.377 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-aesculus_hippocastanum-quinta_de_la_fuente_del_berro a sio:MemberCount ;
-    sio:hasValue "87.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 87.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-cedrus_atlantica-parque_del_oeste a sio:MemberCount ;
-    sio:hasValue "272.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 272.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-cedrus_deodara-parque_del_oeste a sio:MemberCount ;
-    sio:hasValue "417.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 417.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-cedrus_deodara-quinta_de_la_fuente_del_berro a sio:MemberCount ;
-    sio:hasValue "59.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 59.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-cedrus_deodara-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 253.0 ;
-    sio:measuredAt 2017 .
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-celtis_australis-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 543.0 ;
-    sio:measuredAt 2017 .
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-celtis_australis-parque_del_oeste a sio:MemberCount ;
-    sio:hasValue "287.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 287.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-celtis_australis-quinta_de_la_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 27.0 ;
-    sio:measuredAt 2017 .
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-celtis_australis-quinta_de_los_molinos a sio:MemberCount ;
-    sio:hasValue "193.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 193.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-cercis_siliquastrum-jardin_el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 735.0 ;
-    sio:measuredAt 2017 .
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-cercis_siliquastrum-jardines_del_buen_retiro a sio:MemberCount ;
-    sio:hasValue "734.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 734.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-cupressus_arizonica-casa_de_campo a sio:MemberCount ;
-    sio:hasValue "53.326"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 53.326 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-cupressus_sempervirens-casa_de_campo a sio:MemberCount ;
-    sio:hasValue "3.686"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 3.686 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-cupressus_sempervirens-jardin_el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
-    sio:hasValue "326.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 326.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-cupressus_sempervirens-jardines_del_buen_retiro a sio:MemberCount ;
-    sio:hasValue "574.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 574.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-cupressus_sempervirens-quinta_de_la_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 138.0 ;
-    sio:measuredAt 2017 .
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-cupressus_sempervirens-quinta_de_los_molinos a sio:MemberCount ;
-    sio:hasValue "605.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 605.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-eucalyptus_sp-quinta_de_los_molinos a sio:MemberCount ;
-    sio:hasValue "436.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 436.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-fraxinus_angustifolia-casa_de_campo a sio:MemberCount ;
-    sio:hasValue "13.575"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 13.575 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-fraxinus_angustifolia-jardin_el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
-    sio:hasValue "182.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 182.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-gleditsia_triacanthos-jardin_el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
-    sio:hasValue "225.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 225.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-gleditsia_triacanthos-jardines_del_buen_retiro a sio:MemberCount ;
-    sio:hasValue "545.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 545.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-gleditsia_triacanthos-quinta_de_los_molinos a sio:MemberCount ;
-    sio:hasValue "221.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 221.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-ligustrum_japonicum-parque_del_oeste a sio:MemberCount ;
-    sio:hasValue "511.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 511.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-ligustrum_lucidum-quinta_de_la_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 335.0 ;
-    sio:measuredAt 2017 .
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-otros-casa_de_campo a sio:MemberCount ;
-    sio:hasValue "5.383"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 5.383 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-otros-jardin_el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
-    sio:hasValue "1.288"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 1.288 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-otros-jardines_del_buen_retiro a sio:MemberCount ;
-    sio:hasValue "6.609"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 6.609 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-otros-parque_del_oeste a sio:MemberCount ;
-    sio:hasValue "2.573"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 2.573 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-otros-quinta_de_la_fuente_del_berro a sio:MemberCount ;
-    sio:hasValue "359.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 359.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-otros-quinta_de_los_molinos a sio:MemberCount ;
-    sio:hasValue "1.528"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 1.528 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-pinus_halepensis-casa_de_campo a sio:MemberCount ;
-    sio:hasValue "9.081"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 9.081 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-pinus_halepensis-parque_del_oeste a sio:MemberCount ;
-    sio:hasValue "438.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 438.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-pinus_halepensis-quinta_de_los_molinos a sio:MemberCount ;
-    sio:hasValue "1.459"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 1.459 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-pinus_pinea-casa_de_campo a sio:MemberCount ;
-    sio:hasValue "281.931"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 281.931 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-pinus_pinea-jardin_el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 249.0 ;
-    sio:measuredAt 2017 .
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-pinus_pinea-jardines_del_buen_retiro a sio:MemberCount ;
-    sio:hasValue "528.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 528.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-pinus_pinea-parque_del_oeste a sio:MemberCount ;
-    sio:hasValue "1.389"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 1.389 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-pinus_pinea-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 510.0 ;
-    sio:measuredAt 2017 .
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-platanus_hispanica-casa_de_campo a sio:MemberCount ;
-    sio:hasValue "2.49"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 2.49 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-platanus_hispanica-jardin_el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 139.0 ;
-    sio:measuredAt 2017 .
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-platanus_hispanica-jardines_del_buen_retiro a sio:MemberCount ;
-    sio:hasValue "941.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 941.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-platanus_hispanica-parque_del_oeste a sio:MemberCount ;
-    sio:hasValue "631.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 631.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-platanus_hispanica-quinta_de_la_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 26.0 ;
-    sio:measuredAt 2017 .
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-platanus_hispanica-quinta_de_los_molinos a sio:MemberCount ;
-    sio:hasValue "272.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 272.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-populus_alba_bolleana-parque_del_oeste a sio:MemberCount ;
-    sio:hasValue "412.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 412.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-populus_alba_bolleana-quinta_de_la_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 31.0 ;
-    sio:measuredAt 2017 .
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-populus_nigra-casa_de_campo a sio:MemberCount ;
-    sio:hasValue "1.263"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 1.263 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-prunus_cerasifera_pissardii-parque_del_oeste a sio:MemberCount ;
-    sio:hasValue "333.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 333.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-prunus_cerasifera_pissardii-quinta_de_la_fuente_del_berro a sio:MemberCount ;
-    sio:hasValue "62.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 62.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-prunus_dulcis-quinta_de_los_molinos a sio:MemberCount ;
-    sio:hasValue "1.479"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 1.479 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-quercus_robur-jardin_el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 137.0 ;
-    sio:measuredAt 2017 .
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-quercux_ilex-casa_de_campo a sio:MemberCount ;
-    sio:hasValue "228.654"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 228.654 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-robinia_pseudoacacia-jardin_el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
-    sio:hasValue "121.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 121.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-salix_sp-casa_de_campo a sio:MemberCount ;
-    sio:hasValue "1.493"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 1.493 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-sophora_japonica-parque_del_oeste a sio:MemberCount ;
-    sio:hasValue "783.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 783.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-trachycarpus_fortunei-jardines_del_buen_retiro a sio:MemberCount ;
-    sio:hasValue "652.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 652.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-trachycarpus_fortunei-quinta_de_la_fuente_del_berro a sio:MemberCount ;
-    sio:hasValue "41.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 41.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-ulmus_minor-jardines_del_buen_retiro a sio:MemberCount ;
-    sio:hasValue "467.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 467.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-ulmus_pumila-jardin_el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
-    sio:hasValue "95.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 95.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-ulmus_pumila-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 462.0 ;
-    sio:measuredAt 2017 .
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-ulmus_sp-casa_de_campo a sio:MemberCount ;
-    sio:hasValue "30.996"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 30.996 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2017-ulmus_sp-quinta_de_los_molinos a sio:MemberCount ;
-    sio:hasValue "295.0"^^xsd:integer ;
-    sio:measuredAt 2017 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 295.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
 
 esgreen:count-2019-abies_nordmanniana-jardines_de_sabatini a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 8.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-acacia_dealbata-quinta_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 47.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-acer_campestre-capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 114.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-acer_negundo-casa_de_campo a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 922.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-acer_negundo-jardines_de_sabatini a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 26.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2019-acer_negundo-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 18.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-acer_pseudoplatanus-jardines_de_sabatini a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 3.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-acer_x_freemanii_(arce)-madrid_r�o> a sio:MemberCount ;
+<https://w3id.org/esgreen/count-2019-acer_x_freemanii_(arce)-madrid_rio> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 694.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-aesculus_hippocastanum-capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 79.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-aesculus_hippocastanum-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 6008.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-aesculus_hippocastanum-parque_forestal_valdebebas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 112.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-aesculus_hippocastanum-parque_juan_pablo_ii a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 133.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-aesculus_hippocastanum-quinta_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 82.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-aesculus_hippocastanum_(casta�o_de_indias)-madrid_r�o> a sio:MemberCount ;
+<https://w3id.org/esgreen/count-2019-aesculus_hippocastanum_(castano_de_indias)-madrid_rio> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 534.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-ailanthus_altissima-dehesa_de_la_villa a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 205.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2019-betula_utilis-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 2.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-catalpa_bignonioides-parque_juan_carlos_i a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 980.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-cedrus_atlantica-parque_del_oeste-_templo_de_debod a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 268.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-cedrus_deodara-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:MemberCount ;
+esgreen:count-2019-cedrus_deodara-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 494.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-cedrus_deodara-jardines_de_sabatini a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 22.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-cedrus_deodara-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:MemberCount ;
+esgreen:count-2019-cedrus_deodara-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 8.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-cedrus_deodara-parque_del_oeste-_templo_de_debod a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 357.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-cedrus_deodara-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 249.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-cedrus_deodara-quinta_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 58.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2019-cedrus_deodara-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 55.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-cedrus_deodara-z.v.distrito_c-las_tablas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 45.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2019-cedrus_libani-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 2.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-cedrus�atlantica�'glauca'-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+<https://w3id.org/esgreen/count-2019-cedrusatlantica'glauca'-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 2.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-celtis_australis-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:MemberCount ;
+esgreen:count-2019-celtis_australis-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1040.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-celtis_australis-dehesa_de_la_villa a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 115.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-celtis_australis-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 547.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-celtis_australis-parque_del_oeste-_templo_de_debod a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 288.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-celtis_australis-parque_forestal_valdebebas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1630.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-celtis_australis-parque_juan_pablo_ii a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 104.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-celtis_australis-quinta_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 26.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-celtis_australis-z.v.distrito_c-las_tablas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 315.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2019-celtis_australis_(almez)-parque_lineal_del_manzanares> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 2105.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-cercis_siliquastrum-capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 747.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-cercis_siliquastrum-jardines_de_sabatini a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-cercis_siliquastrum-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 724.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-cercis_siliquastrum-parque_forestal_valdebebas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 119.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-cupressocyparis_leilandii-parque_juan_carlos_i a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 566.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-cupressocyparis_leylandii-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:MemberCount ;
+esgreen:count-2019-cupressocyparis_leylandii-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 255.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-cupressocyparis_leylandii-z.v.distrito_c-las_tablas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 60.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-cupressus_macrocarpa-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:MemberCount ;
+esgreen:count-2019-cupressus_macrocarpa-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 7.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-cupressus_sempervirens-capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 367.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-cupressus_sempervirens-jardines_de_sabatini a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 85.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-cupressus_sempervirens-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 552.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-cupressus_sempervirens-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:MemberCount ;
+esgreen:count-2019-cupressus_sempervirens-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 33.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-cupressus_sempervirens-parque_juan_carlos_i a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 494.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-cupressus_sempervirens-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 609.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-cupressus_sempervirens-quinta_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 134.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2019-cupressus_sempervirens_(cipres_comun)-parque_lineal_del_manzanares> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 409.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-cupresus_arizonica-casa_de_campo a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 33826.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-cupresus_sempervirens-casa_de_campo a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 3686.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-eucalyptus_sp-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 401.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-fraxinus_angustifolia-capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 187.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-fraxinus_angustifolia-casa_de_campo a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 13575.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-fraxinus_angustifolia-dehesa_de_la_villa a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 164.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-fraxinus_angustifolia-parque_forestal_valdebebas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 209.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-fraxinus_angustifolia-parque_juan_carlos_i a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 314.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-fraxinus_angustifolia_(fresno_de_la_tierra)-madrid_r�o> a sio:MemberCount ;
+<https://w3id.org/esgreen/count-2019-fraxinus_angustifolia_(fresno_de_la_tierra)-madrid_rio> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 448.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2019-fraxinus_angustifolia_(fresno_de_la_tierra)-parque_lineal_del_manzanares> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1128.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-fraxinus_excelsior-parque_juan_carlos_i a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 499.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-ginkgo_biloba_(gingo)-madrid_r�o> a sio:MemberCount ;
+<https://w3id.org/esgreen/count-2019-ginkgo_biloba_(gingo)-madrid_rio> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 434.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-gleditsia_triacanthos-capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 216.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-gleditsia_triacanthos-dehesa_de_la_villa a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 131.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-gleditsia_triacanthos-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 517.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-gleditsia_triacanthos-parque_juan_pablo_ii a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 66.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-gleditsia_triacanthos-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 220.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2019-gleditsia_triacanthos_(acacia_de_tres_espinas)-parque_lineal_del_manzanares> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 250.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-gleditsia_triacanthos_inermes-z.v.distrito_c-las_tablas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 30.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-koelreuteria_paniculata-parque_forestal_valdebebas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 342.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-ligustrum_japonicum-parque_del_oeste-_templo_de_debod a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 508.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-ligustrum_japonicum-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 178.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2019-ligustrum_japonicum-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 3.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-ligustrum_lucidum-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:MemberCount ;
+esgreen:count-2019-ligustrum_lucidum-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 39.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-ligustrum_lucidum-quinta_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 321.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-liquidambar_styraciflua-parque_juan_pablo_ii a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 80.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-liquidambar_styraciflua-z.v.distrito_c-las_tablas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 46.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-magnolia_grandiflora-jardines_de_sabatini a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 16.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-magnolia_grandiflora-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:MemberCount ;
+esgreen:count-2019-magnolia_grandiflora-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 9.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-melia_azedarach_(cinamomo)-madrid_r�o> a sio:MemberCount ;
+<https://w3id.org/esgreen/count-2019-melia_azedarach_(cinamomo)-madrid_rio> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 504.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-melia_azederach-z.v.distrito_c-las_tablas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 61.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-morus_alba-parque_juan_pablo_ii a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 100.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2019-morus_alba_'fruitless'-parque_forestal_valdebebas> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 393.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-nan-nan a sio:MemberCount ;
-    sio:hasValue 785732.0,
-        nan ;
-    sio:measuredAt 2019 .
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue nan,
+        785732.0 ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-olea_europaea-parque_forestal_valdebebas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 159.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-olea_europaea-parque_juan_carlos_i a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 2377.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-olea_europaea-z.v.distrito_c-las_tablas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 38.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2019-olea_europaea_(olivo)-parque_lineal_del_manzanares> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 499.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-otros-capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1273.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-otros-casa_de_campo a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 66751.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-otros-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:MemberCount ;
+esgreen:count-2019-otros-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 3403.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-otros-dehesa_de_la_villa a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1200.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-otros-jardines_de_sabatini a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-otros-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 6423.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-otros-madrid_r�o> a sio:MemberCount ;
+esgreen:count-2019-otros-madrid_rio a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 4727.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-otros-parque_del_oeste-_templo_de_debod a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 2490.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-otros-parque_forestal_valdebebas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 2210.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-otros-parque_juan_carlos_i a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 6539.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-otros-parque_juan_pablo_ii a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 788.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-otros-parque_lineal_del_manzanares a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 2464.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-otros-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1503.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-otros-quinta_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 345.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2019-otros-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 11.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-otros-z.v.distrito_c-las_tablas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 172.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-pinus_halepensis-casa_de_campo a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 9081.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-pinus_halepensis-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:MemberCount ;
+esgreen:count-2019-pinus_halepensis-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 3228.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-pinus_halepensis-dehesa_de_la_villa a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 742.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-pinus_halepensis-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:MemberCount ;
+esgreen:count-2019-pinus_halepensis-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-pinus_halepensis-parque_del_oeste-_templo_de_debod a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 372.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-pinus_halepensis-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1313.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-pinus_halepensis_(pino_carrasco)-madrid_r�o> a sio:MemberCount ;
+<https://w3id.org/esgreen/count-2019-pinus_halepensis_(pino_carrasco)-madrid_rio> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 2776.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-pinus_pinea-capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 220.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-pinus_pinea-casa_de_campo a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 301689.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-pinus_pinea-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:MemberCount ;
+esgreen:count-2019-pinus_pinea-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 2786.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-pinus_pinea-dehesa_de_la_villa a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 4904.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-pinus_pinea-jardines_de_sabatini a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 52.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-pinus_pinea-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 416.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-pinus_pinea-parque_del_oeste-_templo_de_debod a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1205.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-pinus_pinea-parque_forestal_valdebebas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 136.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-pinus_pinea-parque_juan_carlos_i a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1243.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-pinus_pinea-parque_juan_pablo_ii a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 123.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-pinus_pinea-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 462.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-pinus_pinea-z.v.distrito_c-las_tablas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 400.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-pinus_pinea_(pino_pi�onero)-madrid_r�o> a sio:MemberCount ;
+<https://w3id.org/esgreen/count-2019-pinus_pinea_(pino_pinonero)-madrid_rio> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 3094.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-pinus_pinea_(pino_pi�onero)-parque_lineal_del_manzanares> a sio:MemberCount ;
+<https://w3id.org/esgreen/count-2019-pinus_pinea_(pino_pinonero)-parque_lineal_del_manzanares> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 3143.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-platanus_hybrida-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:MemberCount ;
+esgreen:count-2019-platanus_hybrida-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 254.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-platanus_hybrida-parque_juan_carlos_i a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 432.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/count-2019-platanus_hybrida_(platano_de_sombra)-madrid_rio> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
+    sio:hasValue 1481.0 ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2019-platanus_hybrida_(platano_de_sombra)-parque_lineal_del_manzanares> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 634.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-platanus_hybrida_(pl�tano_de_sombra)-madrid_r�o> a sio:MemberCount ;
-    sio:hasValue 1481.0 ;
-    sio:measuredAt 2019 .
-
-<https://w3id.org/esgreen/count-2019-platanus_orientalis-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:MemberCount ;
+esgreen:count-2019-platanus_orientalis-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 393.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-platanus_x_hybrida-capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 140.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-platanus_x_hybrida-dehesa_de_la_villa a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 144.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-platanus_x_hybrida-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 925.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-platanus_x_hybrida-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:MemberCount ;
+esgreen:count-2019-platanus_x_hybrida-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 127.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-platanus_x_hybrida-parque_del_oeste-_templo_de_debod a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 627.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-platanus_x_hybrida-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 277.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-platanus_x_hybrida-quinta_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 27.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-populus_alba-parque_juan_carlos_i a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 289.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2019-populus_alba_'bolleana'-parque_del_oeste-_templo_de_debod> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 369.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-populus_alba_bolleana-quinta_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 31.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2019-populus_alba_bolleana-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 5.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-populus_nigra-casa_de_campo a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1263.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-populus_nigra_(chopo_negro)-madrid_r�o> a sio:MemberCount ;
+<https://w3id.org/esgreen/count-2019-populus_nigra_(chopo_negro)-madrid_rio> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 687.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2019-populus_nigra_(chopo_negro)-parque_lineal_del_manzanares> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 3961.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-populus�nigra�var.�italica-parque_forestal_valdebebas> a sio:MemberCount ;
+esgreen:count-2019-populusnigravar.italica-parque_forestal_valdebebas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 375.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-prunus_amygdalus-parque_forestal_valdebebas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 139.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2019-prunus_cerasifera_pisardii-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 7.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-prunus_cerasifera_pissardii-z.v.distrito_c-las_tablas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 110.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-prunus_cerasifera_subsp._pissartii-parque_del_oeste-_templo_de_debod a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 317.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-prunus_cerasifera_subsp._pissartii-quinta_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 60.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-prunus_dulcis-dehesa_de_la_villa a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 578.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-prunus_dulcis-parque_juan_pablo_ii a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 63.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-prunus_dulcis-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1674.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-punica_granatum-parque_juan_pablo_ii a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 47.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-pyrus_calleryana-z.v.distrito_c-las_tablas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 26.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-quercus_ilex-casa_de_campo a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 208792.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-quercus_ilex-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:MemberCount ;
+esgreen:count-2019-quercus_ilex-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 833.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-quercus_ilex-dehesa_de_la_villa a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 218.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-quercus_robur-capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 145.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-quercus_robur-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:MemberCount ;
+esgreen:count-2019-quercus_robur-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 357.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2019-quercus_robur-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 3.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-robinia_pseudoacacia-capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 111.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2019-salix_alba_(sauce_blanco)-parque_lineal_del_manzanares> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 446.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-salix_sp.-casa_de_campo a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1493.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-sophora_japonica-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 396.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-sophora_japonica-parque_del_oeste-_templo_de_debod a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 830.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-sophora_japonica-parque_juan_carlos_i a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 581.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-taxus_baccata-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:MemberCount ;
+esgreen:count-2019-taxus_baccata-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 30.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-thuja_occidentalis-jardines_de_sabatini a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 5.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2019-thuja_occidentalis-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 7.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-tilia_platyphyllos-parque_juan_pablo_ii a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 46.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-tilia_platyphyllos_(tilo_de_hojas_grandes)-madrid_r�o> a sio:MemberCount ;
+<https://w3id.org/esgreen/count-2019-tilia_platyphyllos_(tilo_de_hojas_grandes)-madrid_rio> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 414.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2019-tilia_platyphyllos_(tilo_de_hojas_grandes)-parque_lineal_del_manzanares> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 271.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-trachycarpus_fortunei-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 604.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-trachycarpus_fortunei-parque_juan_pablo_ii a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 58.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-trachycarpus_fortunei-quinta_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 37.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-ulmus_minor-jardines_de_sabatini a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2019-ulmus_pumila-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:MemberCount ;
+esgreen:count-2019-ulmus_pumila-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 395.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-ulmus_pumila-dehesa_de_la_villa a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 271.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-ulmus_pumila-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 396.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-ulmus_sp-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 253.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2019-ulmus_sp.-casa_de_campo a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 30758.0 ;
-    sio:measuredAt 2019 .
+    sio:measuredAt "2019-01-01"^^xsd:date .
 
 esgreen:count-2020-abies_nordmanniana-jardines_de_sabatini a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 8.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-acacia_dealbata-quinta_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 47.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-acer_campestre-el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 114.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-acer_negundo-casa_de_campo a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 922.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-acer_negundo-jardines_de_sabatini a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 26.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2020-acer_negundo-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 18.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-acer_pseudoplatanus-jardines_de_sabatini a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 3.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-acer_x_freemanii-parque_madrid_r�o> a sio:MemberCount ;
+esgreen:count-2020-acer_x_freemanii-parque_madrid_rio a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 668.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-aesculus_hippocastanum-el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 77.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-aesculus_hippocastanum-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 5951.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-aesculus_hippocastanum-parque_forestal_de_valdebebas-_felipe_vi a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 113.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-aesculus_hippocastanum-parque_juan_pablo_ii a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 134.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-aesculus_hippocastanum-parque_madrid_r�o> a sio:MemberCount ;
+esgreen:count-2020-aesculus_hippocastanum-parque_madrid_rio a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 510.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-aesculus_hippocastanum-quinta_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 82.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-aesculus_hippocastanum-z.v.distrito_c-las_tablas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 27.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-ailanthus_altissima-parque_de_la_dehesa_de_la_villa a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 200.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2020-betula_utilis-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 2.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-catalpa_bignonioides-parque_juan_carlos_i a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 978.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-cedrus_atlantica-parque_del_oeste-_templo_de_debod a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 266.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-cedrus_deodara-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:MemberCount ;
+esgreen:count-2020-cedrus_deodara-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 529.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-cedrus_deodara-jardines_de_sabatini a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 21.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-cedrus_deodara-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:MemberCount ;
+esgreen:count-2020-cedrus_deodara-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 8.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-cedrus_deodara-parque_del_oeste-_templo_de_debod a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 346.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-cedrus_deodara-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 244.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-cedrus_deodara-quinta_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 55.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2020-cedrus_deodara-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 55.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-cedrus_deodara-z.v.distrito_c-las_tablas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 47.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2020-cedrus_libani-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 2.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-cedrus�atlantica�'glauca'-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+<https://w3id.org/esgreen/count-2020-cedrusatlantica'glauca'-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 2.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-celtis_australis-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:MemberCount ;
+esgreen:count-2020-celtis_australis-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1093.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-celtis_australis-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 541.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-celtis_australis-parque_de_la_dehesa_de_la_villa a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 115.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-celtis_australis-parque_del_oeste-_templo_de_debod a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 293.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-celtis_australis-parque_forestal_de_valdebebas-_felipe_vi a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1725.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-celtis_australis-parque_juan_pablo_ii a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 106.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-celtis_australis-quinta_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 25.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-celtis_australis-z.v.distrito_c-las_tablas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 335.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2020-celtis_australis_(almez)-parque_lineal_del_manzanares> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 2120.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-cercis_siliquastrum-el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 748.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-cercis_siliquastrum-jardines_de_sabatini a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-cercis_siliquastrum-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 720.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-cercis_siliquastrum-parque_forestal_de_valdebebas-_felipe_vi a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 118.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-cupressus_macrocarpa-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:MemberCount ;
+esgreen:count-2020-cupressus_macrocarpa-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 7.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-cupressus_sempervirens-el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 365.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-cupressus_sempervirens-jardines_de_sabatini a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 85.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-cupressus_sempervirens-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 553.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-cupressus_sempervirens-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:MemberCount ;
+esgreen:count-2020-cupressus_sempervirens-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 32.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-cupressus_sempervirens-parque_juan_carlos_i a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 513.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-cupressus_sempervirens-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 607.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-cupressus_sempervirens-quinta_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 134.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2020-cupressus_sempervirens_(cipres_comun)-parque_lineal_del_manzanares> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 409.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-cupresus_arizonica-casa_de_campo a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 53326.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-cupresus_sempervirens-casa_de_campo a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 3686.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-eucalyptus_sp-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 382.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-fraxinus_angustifolia-casa_de_campo a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 13575.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-fraxinus_angustifolia-el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 185.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-fraxinus_angustifolia-parque_de_la_dehesa_de_la_villa a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 162.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-fraxinus_angustifolia-parque_forestal_de_valdebebas-_felipe_vi a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 210.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-fraxinus_angustifolia-parque_madrid_r�o> a sio:MemberCount ;
+esgreen:count-2020-fraxinus_angustifolia-parque_madrid_rio a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 735.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2020-fraxinus_angustifolia_(fresno_de_la_tierra)-parque_lineal_del_manzanares> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1132.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-fraxinus_excelsior-parque_juan_carlos_i a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 509.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-ginkgo_biloba-parque_madrid_r�o> a sio:MemberCount ;
+esgreen:count-2020-ginkgo_biloba-parque_madrid_rio a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 426.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-gleditsia_triacanthos-el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 214.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-gleditsia_triacanthos-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 510.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-gleditsia_triacanthos-parque_de_la_dehesa_de_la_villa a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 129.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-gleditsia_triacanthos-parque_juan_pablo_ii a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 88.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-gleditsia_triacanthos-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 217.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-koelreuteria_paniculata-parque_forestal_de_valdebebas-_felipe_vi a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 350.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-ligustrum_japonicum-parque_del_oeste-_templo_de_debod a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 502.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-ligustrum_japonicum-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 170.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2020-ligustrum_japonicum-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 3.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-ligustrum_lucidum-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:MemberCount ;
+esgreen:count-2020-ligustrum_lucidum-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 39.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-ligustrum_lucidum-quinta_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 313.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-liquidambar_styraciflua-parque_juan_pablo_ii a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 80.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-liquidambar_styraciflua-z.v.distrito_c-las_tablas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 51.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-magnolia_grandiflora-jardines_de_sabatini a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 16.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-magnolia_grandiflora-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:MemberCount ;
+esgreen:count-2020-magnolia_grandiflora-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 9.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-melia_azedarach-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:MemberCount ;
+esgreen:count-2020-melia_azedarach-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 252.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-melia_azedarach-parque_madrid_r�o> a sio:MemberCount ;
+esgreen:count-2020-melia_azedarach-parque_madrid_rio a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 517.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-melia_azederach-z.v.distrito_c-las_tablas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 107.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-morus_alba-parque_juan_carlos_i a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 388.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-morus_alba-parque_juan_pablo_ii a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 114.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2020-morus_alba_'fruitless'-parque_forestal_de_valdebebas-_felipe_vi> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 399.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-nan-(1)_el_n�mero_de_arboles_de_cada_especie_seg�n_figura_en_el_plan_de_ordenacion> a sio:MemberCount ;
+<https://w3id.org/esgreen/count-2020-nan-(1)_el_numero_de_arboles_de_cada_especie_segun_figura_en_el_plan_de_ordenacion> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue nan ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-nan-nan a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue nan ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-olea_europaea-parque_forestal_de_valdebebas-_felipe_vi a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 160.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-olea_europaea-parque_juan_carlos_i a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 2385.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-olea_europaea-z.v.distrito_c-las_tablas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 45.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2020-olea_europaea_(olivo)-parque_lineal_del_manzanares> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 501.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-otros-casa_de_campo a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 68410.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-otros-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:MemberCount ;
+esgreen:count-2020-otros-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 3126.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-otros-el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1238.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-otros-jardines_de_sabatini a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-otros-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 6425.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-otros-parque_de_la_dehesa_de_la_villa a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1188.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-otros-parque_del_oeste-_templo_de_debod a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 2465.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-otros-parque_forestal_de_valdebebas-_felipe_vi a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 2175.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-otros-parque_juan_carlos_i a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 6201.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-otros-parque_juan_pablo_ii a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 768.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-otros-parque_lineal_del_manzanares a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 3119.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-otros-parque_madrid_r�o> a sio:MemberCount ;
+esgreen:count-2020-otros-parque_madrid_rio a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 4326.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-otros-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1463.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-otros-quinta_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 338.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2020-otros-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 14.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-otros-z.v.distrito_c-las_tablas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 330.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-pinus_halepensis-casa_de_campo a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 9081.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-pinus_halepensis-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:MemberCount ;
+esgreen:count-2020-pinus_halepensis-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 2973.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-pinus_halepensis-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:MemberCount ;
+esgreen:count-2020-pinus_halepensis-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-pinus_halepensis-parque_de_la_dehesa_de_la_villa a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 726.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-pinus_halepensis-parque_del_oeste-_templo_de_debod a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 356.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-pinus_halepensis-parque_lineal_del_manzanares a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 311.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-pinus_halepensis-parque_madrid_r�o> a sio:MemberCount ;
+esgreen:count-2020-pinus_halepensis-parque_madrid_rio a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 2685.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-pinus_halepensis-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1281.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2020-pinus_pinea-casa_de_campo_(1)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 301689.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-pinus_pinea-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:MemberCount ;
+esgreen:count-2020-pinus_pinea-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 2818.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-pinus_pinea-el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 215.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-pinus_pinea-jardines_de_sabatini a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 51.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-pinus_pinea-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 414.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-pinus_pinea-parque_de_la_dehesa_de_la_villa a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 4844.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-pinus_pinea-parque_del_oeste-_templo_de_debod a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1167.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-pinus_pinea-parque_forestal_de_valdebebas-_felipe_vi a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 137.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-pinus_pinea-parque_juan_carlos_i a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1239.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-pinus_pinea-parque_juan_pablo_ii a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 138.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-pinus_pinea-parque_madrid_r�o> a sio:MemberCount ;
+esgreen:count-2020-pinus_pinea-parque_madrid_rio a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 3219.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-pinus_pinea-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 447.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-pinus_pinea-z.v.distrito_c-las_tablas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 510.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-pinus_pinea_(pino_pi�onero)-parque_lineal_del_manzanares> a sio:MemberCount ;
+<https://w3id.org/esgreen/count-2020-pinus_pinea_(pino_pinonero)-parque_lineal_del_manzanares> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 3104.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2020-platanus_hybrida_(platano_de_sombra)-parque_lineal_del_manzanares> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 636.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-platanus_orientalis-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:MemberCount ;
+esgreen:count-2020-platanus_orientalis-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 395.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-platanus_x_hybrida-el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 139.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-platanus_x_hybrida-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 934.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-platanus_x_hybrida-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:MemberCount ;
+esgreen:count-2020-platanus_x_hybrida-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 127.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-platanus_x_hybrida-parque_de_la_dehesa_de_la_villa a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 142.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-platanus_x_hybrida-parque_del_oeste-_templo_de_debod a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 618.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-platanus_x_hybrida-parque_juan_carlos_i a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 460.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-platanus_x_hybrida-parque_madrid_r�o> a sio:MemberCount ;
+esgreen:count-2020-platanus_x_hybrida-parque_madrid_rio a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1515.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-platanus_x_hybrida-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 277.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-platanus_x_hybrida-quinta_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 26.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-populus_alba-parque_juan_carlos_i a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 372.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2020-populus_alba_'bolleana'-parque_del_oeste-_templo_de_debod> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 364.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-populus_alba_bolleana-quinta_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 30.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2020-populus_alba_bolleana-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 5.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-populus_nigra-casa_de_campo a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1263.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-populus_nigra-parque_madrid_r�o> a sio:MemberCount ;
+esgreen:count-2020-populus_nigra-parque_madrid_rio a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 644.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2020-populus_nigra_(chopo_negro)-parque_lineal_del_manzanares> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 3778.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-populus�nigra�var.�italica-parque_forestal_de_valdebebas-_felipe_vi> a sio:MemberCount ;
+esgreen:count-2020-populusnigravar.italica-parque_forestal_de_valdebebas-_felipe_vi a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 294.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-prunus_amygdalus-parque_forestal_de_valdebebas-_felipe_vi a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 137.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2020-prunus_cerasifera_pisardii-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 7.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-prunus_cerasifera_pissardii-z.v.distrito_c-las_tablas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 143.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-prunus_cerasifera_subsp._pissartii-parque_del_oeste-_templo_de_debod a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 316.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-prunus_cerasifera_subsp._pissartii-quinta_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 60.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-prunus_dulcis-parque_de_la_dehesa_de_la_villa a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 569.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-prunus_dulcis-parque_juan_pablo_ii a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 64.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-prunus_dulcis-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1671.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-punica_granatum-parque_juan_pablo_ii a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 54.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2020-pyrus_calleryana_'chanticleer'-z.v.distrito_c-las_tablas> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 51.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-quercus_ilex-casa_de_campo a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 208792.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-quercus_ilex-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:MemberCount ;
+esgreen:count-2020-quercus_ilex-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 825.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-quercus_ilex-parque_de_la_dehesa_de_la_villa a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 217.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-quercus_robur-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:MemberCount ;
+esgreen:count-2020-quercus_robur-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 346.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-quercus_robur-el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 146.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2020-quercus_robur-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-quercus_suber-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:MemberCount ;
+esgreen:count-2020-quercus_suber-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 246.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-robinia_pseudoacacia-el_capricho_de_la_alameda_de_osuna a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 105.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2020-salix_alba_(sauce_blanco)-parque_lineal_del_manzanares> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 446.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-salix_sp.-casa_de_campo a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1493.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-sophora_japonica-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 383.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-sophora_japonica-parque_del_oeste-_templo_de_debod a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 849.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-sophora_japonica-parque_juan_carlos_i a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 603.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-taxus_baccata-jardines_pza_de_oriente-jard�n_del_cabo_noval-jard�n_de_lepanto> a sio:MemberCount ;
+esgreen:count-2020-taxus_baccata-jardines_pza_de_oriente-jardin_del_cabo_noval-jardin_de_lepanto a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 30.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-thuja_occidentalis-jardines_de_sabatini a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 5.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2020-thuja_occidentalis-rosaleda_de_madrid_(parque_del_oeste)> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 7.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-tilia_platyphyllos-parque_juan_pablo_ii a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 47.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-tilia_platyphyllos-parque_madrid_r�o> a sio:MemberCount ;
+esgreen:count-2020-tilia_platyphyllos-parque_madrid_rio a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 408.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 <https://w3id.org/esgreen/count-2020-total:-nan> a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 116.0,
         218.0,
         253.0,
@@ -3129,313 +3575,491 @@ esgreen:count-2020-tilia_platyphyllos-parque_juan_pablo_ii a sio:MemberCount ;
         16009.0,
         17335.0,
         692995.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-total_general-nan a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 806730.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-trachycarpus_fortunei-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 532.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-trachycarpus_fortunei-parque_juan_pablo_ii a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 55.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-trachycarpus_fortunei-quinta_fuente_del_berro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 36.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-ulmus_minor-jardines_de_sabatini a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 1.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/count-2020-ulmus_pumila-cu�a_verde_de_o�donnell_y_p._f._fuente_carrantona> a sio:MemberCount ;
+esgreen:count-2020-ulmus_pumila-cuna_verde_de_odonnell_y_p._f._fuente_carrantona a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 389.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-ulmus_pumila-jardines_del_buen_retiro a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 372.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-ulmus_pumila-parque_de_la_dehesa_de_la_villa a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 265.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-ulmus_sp-parque_lineal_del_manzanares a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 453.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-ulmus_sp-quinta_de_los_molinos a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 237.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-ulmus_sp.-casa_de_campo a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 30758.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-x_cupressocyparis_leylandii-parque_juan_carlos_i a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 543.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
 esgreen:count-2020-x_cupressocyparis_leylandii-z.v.distrito_c-las_tablas a sio:MemberCount ;
+    sio:hasUnit <http://purl.obolibrary.org/obo/UO_0000189> ;
     sio:hasValue 69.0 ;
-    sio:measuredAt 2020 .
+    sio:measuredAt "2020-01-01"^^xsd:date .
 
-esgreen:cupressocyparis_leilandii a sio:Specie ;
-    rdfs:label "cupressocyparis leilandii" .
+esgreen:cupressocyparis_leilandii a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "cupressocyparis_leilandii" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Cupressocyparis_leilandii> .
 
-esgreen:cupressus_arizonica a sio:Specie ;
-    rdfs:label "cupressus arizonica" .
+esgreen:cupressus_arizonica a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "cupressus_arizonica" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Cupressus_arizonica> .
 
-esgreen:cupressus_macrocarpa a sio:Specie ;
-    rdfs:label "cupressus macrocarpa" .
+esgreen:cupressus_macrocarpa a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "cupressus_macrocarpa" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Cupressus_macrocarpa> .
 
-<https://w3id.org/esgreen/cupressus_sempervirens_(cipres_comun)> a sio:Specie ;
-    rdfs:label "cupressus sempervirens (cipres comun)" .
+<https://w3id.org/esgreen/cupressus_sempervirens_(cipres_comun)> a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "cupressus_sempervirens_(cipres_comun)" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Cupressus_sempervirens_(cipres_comun)> .
 
-esgreen:cupresus_arizonica a sio:Specie ;
-    rdfs:label "cupresus arizonica" .
+esgreen:cupresus_arizonica a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "cupresus_arizonica" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Cupresus_arizonica> .
 
-esgreen:cupresus_sempervirens a sio:Specie ;
-    rdfs:label "cupresus sempervirens" .
+esgreen:cupresus_sempervirens a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "cupresus_sempervirens" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Cupresus_sempervirens> .
 
-esgreen:eucalyptus_sp a sio:Specie ;
-    rdfs:label "eucalyptus sp" .
+esgreen:eucalyptus_sp a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "eucalyptus_sp" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Eucalyptus_sp> .
 
-esgreen:fraxinus_excelsior a sio:Specie ;
-    rdfs:label "fraxinus excelsior" .
+esgreen:fraxinus_excelsior a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "fraxinus_excelsior" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Fraxinus_excelsior> .
 
-esgreen:ginkgo_biloba a sio:Specie ;
-    rdfs:label "ginkgo biloba" .
+esgreen:ginkgo_biloba a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "ginkgo_biloba" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Ginkgo_biloba> .
 
-<https://w3id.org/esgreen/ginkgo_biloba_(gingo)> a sio:Specie ;
-    rdfs:label "ginkgo biloba (gingo)" .
+<https://w3id.org/esgreen/ginkgo_biloba_(gingo)> a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "ginkgo_biloba_(gingo)" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Ginkgo_biloba_(gingo)> .
 
-<https://w3id.org/esgreen/gleditsia_triacanthos_(acacia_de_tres_espinas)> a sio:Specie ;
-    rdfs:label "gleditsia triacanthos (acacia de tres espinas)" .
+<https://w3id.org/esgreen/gleditsia_triacanthos_(acacia_de_tres_espinas)> a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "gleditsia_triacanthos_(acacia_de_tres_espinas)" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Gleditsia_triacanthos_(acacia_de_tres_espinas)> .
 
-esgreen:gleditsia_triacanthos_inermes a sio:Specie ;
-    rdfs:label "gleditsia triacanthos inermes" .
+esgreen:gleditsia_triacanthos_inermes a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "gleditsia_triacanthos_inermes" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Gleditsia_triacanthos_inermes> .
 
-<https://w3id.org/esgreen/melia_azedarach_(cinamomo)> a sio:Specie ;
-    rdfs:label "melia azedarach (cinamomo)" .
+<https://w3id.org/esgreen/melia_azedarach_(cinamomo)> a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "melia_azedarach_(cinamomo)" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Melia_azedarach_(cinamomo)> .
 
-esgreen:melia_azederach a sio:Specie ;
-    rdfs:label "melia azederach" .
+esgreen:melia_azederach a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "melia_azederach" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Melia_azederach> .
 
-<https://w3id.org/esgreen/olea_europaea_(olivo)> a sio:Specie ;
-    rdfs:label "olea europaea (olivo)" .
+<https://w3id.org/esgreen/olea_europaea_(olivo)> a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "olea_europaea_(olivo)" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Olea_europaea_(olivo)> .
 
-<https://w3id.org/esgreen/pinus_halepensis_(pino_carrasco)> a sio:Specie ;
-    rdfs:label "pinus halepensis (pino carrasco)" .
+<https://w3id.org/esgreen/pinus_halepensis_(pino_carrasco)> a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "pinus_halepensis_(pino_carrasco)" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Pinus_halepensis_(pino_carrasco)> .
 
-<https://w3id.org/esgreen/platanus_hybrida_(platano_de_sombra)> a sio:Specie ;
-    rdfs:label "platanus hybrida (platano de sombra)" .
+esgreen:platanus_orientalis a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "platanus_orientalis" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Platanus_orientalis> .
 
-<https://w3id.org/esgreen/platanus_hybrida_(pl�tano_de_sombra)> a sio:Specie ;
-    rdfs:label "platanus hybrida (pl�tano de sombra)" .
+esgreen:populus_alba a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "populus_alba" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Populus_alba> .
 
-esgreen:platanus_orientalis a sio:Specie ;
-    rdfs:label "platanus orientalis" .
+<https://w3id.org/esgreen/populus_alba_'bolleana'> a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "populus_alba_'bolleana'" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Populus_alba_'bolleana'> .
 
-esgreen:populus_alba a sio:Specie ;
-    rdfs:label "populus alba" .
+esgreen:prunus_cerasifera_pisardii a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "prunus_cerasifera_pisardii" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Prunus_cerasifera_pisardii> .
 
-<https://w3id.org/esgreen/populus_alba_'bolleana'> a sio:Specie ;
-    rdfs:label "populus alba 'bolleana'" .
+esgreen:punica_granatum a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "punica_granatum" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Punica_granatum> .
 
-esgreen:prunus_cerasifera_pisardii a sio:Specie ;
-    rdfs:label "prunus cerasifera pisardii" .
+esgreen:pyrus_calleryana a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "pyrus_calleryana" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Pyrus_calleryana> .
 
-esgreen:punica_granatum a sio:Specie ;
-    rdfs:label "punica granatum" .
+<https://w3id.org/esgreen/pyrus_calleryana_'chanticleer'> a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "pyrus_calleryana_'chanticleer'" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Pyrus_calleryana_'chanticleer'> .
 
-esgreen:pyrus_calleryana a sio:Specie ;
-    rdfs:label "pyrus calleryana" .
+esgreen:quercus_suber a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "quercus_suber" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Quercus_suber> .
 
-<https://w3id.org/esgreen/pyrus_calleryana_'chanticleer'> a sio:Specie ;
-    rdfs:label "pyrus calleryana 'chanticleer'" .
+esgreen:quercux_ilex a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "quercux_ilex" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Quercux_ilex> .
 
-esgreen:quercus_suber a sio:Specie ;
-    rdfs:label "quercus suber" .
+<https://w3id.org/esgreen/salix_alba_(sauce_blanco)> a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "salix_alba_(sauce_blanco)" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Salix_alba_(sauce_blanco)> .
 
-esgreen:quercux_ilex a sio:Specie ;
-    rdfs:label "quercux ilex" .
+esgreen:salix_sp a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "salix_sp" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Salix_sp> .
 
-<https://w3id.org/esgreen/salix_alba_(sauce_blanco)> a sio:Specie ;
-    rdfs:label "salix alba (sauce blanco)" .
+<https://w3id.org/esgreen/salix_sp.> a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "salix_sp." ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Salix_sp.> .
 
-esgreen:salix_sp a sio:Specie ;
-    rdfs:label "salix sp" .
+esgreen:taxus_baccata a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "taxus_baccata" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Taxus_baccata> .
 
-<https://w3id.org/esgreen/salix_sp.> a sio:Specie ;
-    rdfs:label "salix sp." .
+<https://w3id.org/esgreen/total:> a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "total:" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Total:> .
 
-esgreen:taxus_baccata a sio:Specie ;
-    rdfs:label "taxus baccata" .
+esgreen:total_general a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "total_general" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Total_general> .
 
-<https://w3id.org/esgreen/total:> a sio:Specie ;
-    rdfs:label "total:" .
+<https://w3id.org/esgreen/ulmus_sp.> a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "ulmus_sp." ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Ulmus_sp.> .
 
-esgreen:total_general a sio:Specie ;
-    rdfs:label "total general" .
+esgreen:acacia_dealbata a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "acacia_dealbata" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Acacia_dealbata> .
 
-<https://w3id.org/esgreen/ulmus_sp.> a sio:Specie ;
-    rdfs:label "ulmus sp." .
+esgreen:acer_campestre a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "acer_campestre" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Acer_campestre> .
 
-esgreen:acacia_dealbata a sio:Specie ;
-    rdfs:label "acacia dealbata" .
+esgreen:ailanthus_altissima a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "ailanthus_altissima" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Ailanthus_altissima> .
 
-esgreen:acer_campestre a sio:Specie ;
-    rdfs:label "acer campestre" .
+esgreen:cedrus_atlantica a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "cedrus_atlantica" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Cedrus_atlantica> .
 
-esgreen:ailanthus_altissima a sio:Specie ;
-    rdfs:label "ailanthus altissima" .
+esgreen:cupressocyparis_leylandii a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "cupressocyparis_leylandii" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Cupressocyparis_leylandii> .
 
-esgreen:cedrus_atlantica a sio:Specie ;
-    rdfs:label "cedrus atlantica" .
+<https://w3id.org/esgreen/fraxinus_angustifolia_(fresno_de_la_tierra)> a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "fraxinus_angustifolia_(fresno_de_la_tierra)" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Fraxinus_angustifolia_(fresno_de_la_tierra)> .
 
-esgreen:cupressocyparis_leylandii a sio:Specie ;
-    rdfs:label "cupressocyparis leylandii" .
+esgreen:koelreuteria_paniculata a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "koelreuteria_paniculata" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Koelreuteria_paniculata> .
 
-<https://w3id.org/esgreen/fraxinus_angustifolia_(fresno_de_la_tierra)> a sio:Specie ;
-    rdfs:label "fraxinus angustifolia (fresno de la tierra)" .
+esgreen:liquidambar_styraciflua a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "liquidambar_styraciflua" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Liquidambar_styraciflua> .
 
-esgreen:koelreuteria_paniculata a sio:Specie ;
-    rdfs:label "koelreuteria paniculata" .
+esgreen:magnolia_grandiflora a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "magnolia_grandiflora" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Magnolia_grandiflora> .
 
-esgreen:liquidambar_styraciflua a sio:Specie ;
-    rdfs:label "liquidambar styraciflua" .
+esgreen:melia_azedarach a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "melia_azedarach" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Melia_azedarach> .
 
-esgreen:magnolia_grandiflora a sio:Specie ;
-    rdfs:label "magnolia grandiflora" .
+esgreen:morus_alba a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "morus_alba" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Morus_alba> .
 
-esgreen:melia_azedarach a sio:Specie ;
-    rdfs:label "melia azedarach" .
+<https://w3id.org/esgreen/morus_alba_'fruitless'> a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "morus_alba_'fruitless'" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Morus_alba_'fruitless'> .
 
-esgreen:morus_alba a sio:Specie ;
-    rdfs:label "morus alba" .
-
-<https://w3id.org/esgreen/morus_alba_'fruitless'> a sio:Specie ;
-    rdfs:label "morus alba 'fruitless'" .
-
-esgreen:nan a sio:Specie,
+esgreen:nan a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie,
         sio:site ;
-    rdfs:label "nan" .
+    rdfs:label "nan" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Nan> .
 
-<https://w3id.org/esgreen/pinus_pinea_(pino_pi�onero)> a sio:Specie ;
-    rdfs:label "pinus pinea (pino pi�onero)" .
+<https://w3id.org/esgreen/pinus_pinea_(pino_pinonero)> a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "pinus_pinea_(pino_pinonero)" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Pinus_pinea_(pino_pinonero)> .
 
-esgreen:platanus_hybrida a sio:Specie ;
-    rdfs:label "platanus hybrida" .
+esgreen:platanus_hybrida a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "platanus_hybrida" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Platanus_hybrida> .
 
-esgreen:populus_nigra a sio:Specie ;
-    rdfs:label "populus nigra" .
+<https://w3id.org/esgreen/platanus_hybrida_(platano_de_sombra)> a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "platanus_hybrida_(platano_de_sombra)" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Platanus_hybrida_(platano_de_sombra)> .
 
-<https://w3id.org/esgreen/populus_nigra_(chopo_negro)> a sio:Specie ;
-    rdfs:label "populus nigra (chopo negro)" .
+esgreen:populus_nigra a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "populus_nigra" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Populus_nigra> .
 
-<https://w3id.org/esgreen/populus�nigra�var.�italica> a sio:Specie ;
-    rdfs:label "populus�nigra�var.�italica" .
+<https://w3id.org/esgreen/populus_nigra_(chopo_negro)> a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "populus_nigra_(chopo_negro)" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Populus_nigra_(chopo_negro)> .
 
-esgreen:prunus_amygdalus a sio:Specie ;
-    rdfs:label "prunus amygdalus" .
+esgreen:populusnigravar.italica a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "populusnigravar.italica" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Populusnigravar.italica> .
 
-esgreen:prunus_cerasifera_subsp._pissartii a sio:Specie ;
-    rdfs:label "prunus cerasifera subsp. pissartii" .
+esgreen:prunus_amygdalus a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "prunus_amygdalus" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Prunus_amygdalus> .
 
-esgreen:thuja_occidentalis a sio:Specie ;
-    rdfs:label "thuja occidentalis" .
+esgreen:prunus_cerasifera_subsp._pissartii a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "prunus_cerasifera_subsp._pissartii" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Prunus_cerasifera_subsp._pissartii> .
 
-esgreen:tilia_platyphyllos a sio:Specie ;
-    rdfs:label "tilia platyphyllos" .
+esgreen:thuja_occidentalis a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "thuja_occidentalis" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Thuja_occidentalis> .
 
-<https://w3id.org/esgreen/tilia_platyphyllos_(tilo_de_hojas_grandes)> a sio:Specie ;
-    rdfs:label "tilia platyphyllos (tilo de hojas grandes)" .
+esgreen:tilia_platyphyllos a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "tilia_platyphyllos" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Tilia_platyphyllos> .
 
-esgreen:ulmus_minor a sio:Specie ;
-    rdfs:label "ulmus minor" .
+<https://w3id.org/esgreen/tilia_platyphyllos_(tilo_de_hojas_grandes)> a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "tilia_platyphyllos_(tilo_de_hojas_grandes)" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Tilia_platyphyllos_(tilo_de_hojas_grandes)> .
 
-esgreen:x_cupressocyparis_leylandii a sio:Specie ;
-    rdfs:label "x cupressocyparis leylandii" .
+esgreen:ulmus_minor a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "ulmus_minor" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Ulmus_minor> .
 
-esgreen:acer_negundo a sio:Specie ;
-    rdfs:label "acer negundo" .
+esgreen:x_cupressocyparis_leylandii a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "x_cupressocyparis_leylandii" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/X_cupressocyparis_leylandii> .
 
-esgreen:ligustrum_lucidum a sio:Specie ;
-    rdfs:label "ligustrum lucidum" .
+esgreen:acer_negundo a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "acer_negundo" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Acer_negundo> .
 
-esgreen:prunus_cerasifera_pissardii a sio:Specie ;
-    rdfs:label "prunus cerasifera pissardii" .
+esgreen:ligustrum_lucidum a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "ligustrum_lucidum" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Ligustrum_lucidum> .
 
-esgreen:robinia_pseudoacacia a sio:Specie ;
-    rdfs:label "robinia pseudoacacia" .
+esgreen:prunus_cerasifera_pissardii a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "prunus_cerasifera_pissardii" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Prunus_cerasifera_pissardii> .
 
-esgreen:ulmus_sp a sio:Specie ;
-    rdfs:label "ulmus sp" .
+esgreen:robinia_pseudoacacia a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "robinia_pseudoacacia" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Robinia_pseudoacacia> .
 
-esgreen:ligustrum_japonicum a sio:Specie ;
-    rdfs:label "ligustrum japonicum" .
+esgreen:ulmus_sp a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "ulmus_sp" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Ulmus_sp> .
 
-esgreen:olea_europaea a sio:Specie ;
-    rdfs:label "olea europaea" .
+esgreen:ligustrum_japonicum a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "ligustrum_japonicum" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Ligustrum_japonicum> .
 
-esgreen:populus_alba_bolleana a sio:Specie ;
-    rdfs:label "populus alba bolleana" .
+esgreen:olea_europaea a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "olea_europaea" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Olea_europaea> .
 
-esgreen:prunus_dulcis a sio:Specie ;
-    rdfs:label "prunus dulcis" .
+esgreen:populus_alba_bolleana a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "populus_alba_bolleana" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Populus_alba_bolleana> .
 
-esgreen:quercus_ilex a sio:Specie ;
-    rdfs:label "quercus ilex" .
+esgreen:prunus_dulcis a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "prunus_dulcis" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Prunus_dulcis> .
 
-esgreen:sophora_japonica a sio:Specie ;
-    rdfs:label "sophora japonica" .
+esgreen:quercus_ilex a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "quercus_ilex" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Quercus_ilex> .
 
-esgreen:trachycarpus_fortunei a sio:Specie ;
-    rdfs:label "trachycarpus fortunei" .
+esgreen:sophora_japonica a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "sophora_japonica" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Sophora_japonica> .
 
-esgreen:quercus_robur a sio:Specie ;
-    rdfs:label "quercus robur" .
+esgreen:trachycarpus_fortunei a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "trachycarpus_fortunei" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Trachycarpus_fortunei> .
 
-esgreen:ulmus_pumila a sio:Specie ;
-    rdfs:label "ulmus pumila" .
+esgreen:quercus_robur a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "quercus_robur" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Quercus_robur> .
 
-esgreen:platanus_hispanica a sio:Specie ;
-    rdfs:label "platanus hispanica" .
+esgreen:ulmus_pumila a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "ulmus_pumila" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Ulmus_pumila> .
 
-esgreen:cercis_siliquastrum a sio:Specie ;
-    rdfs:label "cercis siliquastrum" .
+esgreen:platanus_hispanica a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "platanus_hispanica" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Platanus_hispanica> .
 
-esgreen:gleditsia_triacanthos a sio:Specie ;
-    rdfs:label "gleditsia triacanthos" .
+esgreen:cercis_siliquastrum a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "cercis_siliquastrum" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Cercis_siliquastrum> .
 
-esgreen:cedrus_deodara a sio:Specie ;
-    rdfs:label "cedrus deodara" .
+esgreen:gleditsia_triacanthos a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "gleditsia_triacanthos" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Gleditsia_triacanthos> .
 
-esgreen:fraxinus_angustifolia a sio:Specie ;
-    rdfs:label "fraxinus angustifolia" .
+esgreen:cedrus_deodara a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "cedrus_deodara" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Cedrus_deodara> .
 
-esgreen:pinus_halepensis a sio:Specie ;
-    rdfs:label "pinus halepensis" .
+esgreen:fraxinus_angustifolia a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "fraxinus_angustifolia" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Fraxinus_angustifolia> .
 
-esgreen:aesculus_hippocastanum a sio:Specie ;
-    rdfs:label "aesculus hippocastanum" .
+esgreen:pinus_halepensis a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "pinus_halepensis" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Pinus_halepensis> .
 
-esgreen:cupressus_sempervirens a sio:Specie ;
-    rdfs:label "cupressus sempervirens" .
+esgreen:aesculus_hippocastanum a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "aesculus_hippocastanum" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Aesculus_hippocastanum> .
 
-esgreen:platanus_x_hybrida a sio:Specie ;
-    rdfs:label "platanus x hybrida" .
+esgreen:cupressus_sempervirens a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "cupressus_sempervirens" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Cupressus_sempervirens> .
 
-esgreen:celtis_australis a sio:Specie ;
-    rdfs:label "celtis australis" .
+esgreen:platanus_x_hybrida a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "platanus_x_hybrida" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Platanus_x_hybrida> .
 
-esgreen:pinus_pinea a sio:Specie ;
-    rdfs:label "pinus pinea" .
+esgreen:celtis_australis a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "celtis_australis" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Celtis_australis> .
 
-esgreen:otros a sio:Specie ;
-    rdfs:label "otros" .
+esgreen:pinus_pinea a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "pinus_pinea" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Pinus_pinea> .
+
+esgreen:otros a <http://purl.obolibrary.org/obo/FLOPO_0900033>,
+        sio:Specie ;
+    rdfs:label "otros" ;
+    rdfs:seeAlso <http://en.wikipedia.org/wiki/Otros> .
 

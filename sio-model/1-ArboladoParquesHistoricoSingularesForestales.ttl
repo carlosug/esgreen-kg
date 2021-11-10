@@ -1,0 +1,32 @@
+@prefix : <http://purl.org/ejp-rd/cde/v020/example-rdf/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> . 
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix wiki: <http://en.wikipedia.org/wiki/> .
+
+:parque a sio:Site ;
+    sio:isLocatedIn :georeferencing ;
+    dc:title "Retiro"^^xsd:string ;
+    sio:collection  :parque_especie ;
+    sio:contains :especie_name ;
+    sio:hasMember :especie_name .
+
+:parque_especie a sio:collection ;
+    dc:title "Retiro-Populus_nigra"^^xsd:string ;
+    sio:hasAttribute :unidades .
+
+:unidades a sio:MemberCount ;
+    sio:hasValue "unidades_year"^^xsd:integer ;
+    sio:hasUnit obo:UO_0000189 ;
+    sio:measuredAt "_year"^^xsd:date .
+
+
+# <!-- map UniqueIdentifier with WIKI and gbif database -->
+
+:especie a :habitatSpecies ;
+# :especie a sio:Object .
+    sio:UniqueIdentifier :key ;
+    sio:label :especie_name ;
+    :seeAlso wiki:especie_name .
+

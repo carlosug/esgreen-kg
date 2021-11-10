@@ -1,0 +1,43 @@
+@prefix : <http://purl.org/ejp-rd/cde/v1/example-rdf/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix sio: <http://semanticscience.org/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+
+:nombre_distrito  a :District, sio:Township ;
+    sio:label "Moratalaz"^^xsd:string ;
+    sio:contains :collection_especies .
+
+:collection_especies a sio:Collection ;
+    sio:hasAttribute :age_ .
+
+:age_ a sio:LifeStatus ;
+    sio:label "Viejo"^^xsd:string ;
+    sio:hasMeasurementValue :statistics_ .
+
+:statistics_ a sio:DimensionalQuantity ;
+    sio:MemberCount :N_Viejo ;
+    sio:Height :H_viejo .
+
+:N_Viejo a sio:MemberCount ;
+    sio:hasValue "12"^^xsd:integer ,
+         "30"^^xsd:integer ,
+         "38"^^xsd:integer ;
+    sio:hasUnit obo:UO_0000189 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+
+:H_viejo a sio:Mean ;
+    sio:hasValue "272.0"^^xsd:float ,
+         "303.0"^^xsd:float ,
+         "328.0"^^xsd:float ;
+    sio:hasUnit obo:UO_0000008 ; # mts
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+        
+

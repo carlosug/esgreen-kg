@@ -1,6 +1,11 @@
 
 
 # Import Libraries
+from rdflib import Graph, URIRef, Literal, RDF #basic RDF handling
+from rdflib.namespace import Namespace #common namespace
+import pandas as pd #for handling csv and csv contents
+
+# Import Libraries
 from rdflib import Graph, URIRef, Literal, RDF, XSD, RDFS #basic RDF handling
 from rdflib.namespace import Namespace #common namespace
 import pandas as pd #for handling csv and csv contents
@@ -8,116 +13,167 @@ import pandas as pd #for handling csv and csv contents
 # Define graph 'g' and namespaces
 sio = Namespace('http://semanticscience.org/resource/')
 esgreen = Namespace('https://w3id.org/esgreen/')
+obo = Namespace('http://purl.obolibratory.org/obo/')
+ppo = Namespace('http://purl.obolibratory.org/ppo/')
+dwc = Namespace('https://dwc.tdwg.org/list/#')
 
 g = Graph()
 g.bind('sio', sio)
 g.bind('esgreen', esgreen)
 
 def prepareUri(uri):
-    return esgreen + str(uri).replace(' ', '_').replace('"', '').lower()
+    return str(esgreen) + str(uri).replace(' ', '_').replace('"', '').lower()
 
 
-file_dates = [ '_2019', '_2020', '2017' ]
-
+file_dates = ['2017', '2019', '2020']
 
 for file_date in file_dates:
     # Read in the csv file
-    df = pd.read_csv(f'data/inputs/EstadoZonasVerdesDistritosCalles{file_date}.csv', sep = ';') 
-
+    df = pd.read_csv(f'data/inputs/preprocessing/EstadoZonasVerdesDistritosCalles_{file_date}.csv', sep = ';')
+    # file_date = file_date.replace('_', '')   
+    # df = df.loc[:, ~df.columns.str.contains('^Unnamed')] # remove unnamed cols
+    # df.columns = df.columns.str.replace(" ", "_")
+    #print('before.....',df.columns)
+    # cols = df.columns.to_list()
+    #statuses = ['Recien-plantado-y-no-consolidado','Joven', 'Maduro', 'Viejo', 'Otros']
     if file_date == '2017':
-        count_col = 'N� de ejemplares'
-        especie_col = 'Especie'
+        df.rename(columns={'distrito':'nombre_distrito'}, inplace=True)
+        # df.columns = ['parque', 'total_arboles', 'altura_media', 'perimetro_medio_(cm)', 'recien_plantado_y_no_consolidado', 'joven', 'maduro', 'viejo', 'otros']
+        #for col in df.columns:
+        stats_col = ['altura_promedio_(m)','perimetro_promedio_(cm)']
+        statuses = ['recien_plantado_y_no_consolidado','joven', 'maduro', 'viejo', 'otros']
+        length_stats_col = []
+        #print(statuses)
+       # stats_col = 'Altura_media'
+    #print(file_date, df)
     else:
-        file_date = file_date.replace('_', '')
-        count_col = 'UNIDADES ' + file_date.replace('_', '')
-        especie_col = 'ESPECIE'
-
-    # Create the triples and add them to graph 'g'
-    # def createAttr(g, predType, subject, obj, extra = {}):
-    #     """Create reified association"""
-    #     s_uri = str(subject).replace(' ', '')
-    #     obj = str(obj).replace(' ', '')
-    #     s_uri = esgreen[s_uri]
-    #     obj = esgreen[obj]
-
-    #     associationUri = URIRef(str(s_uri) + '/location')
-
-    #     g.add((s_uri, sio['ScientificName'], Literal(subject)))
-    #     g.add((s_uri, sio['hasAttribute'], associationUri))
-    #     g.add((associationUri, RDF.type, predType))
-    #     g.add((associationUri, sio['hasValue'], obj))
-
-    #     for extraProp, extraValue in extra.items():
-    #         if str(extraValue).startswith('http://') or str(extraValue).startswith('https://'):
-    #             g.add((associationUri, sio[extraProp], URIRef(extraValue)))
-    #         else: 
-    #             g.add((associationUri, sio[extraProp], Literal(extraValue)))   
-    #     return g
-
-    # Iterate dataframe and generate RDF triples
+        df.rename(columns={'recien_plantado_y_no_consolidado_(rplync)':'recien_plantado_y_no_consolidado',
+         'altura_media_(hmedia)_rplync':'hmedia_recien_plantado_y_no_consolidado',
+         'hmedia_j':'hmedia_joven',
+         'hmedia_v':'hmedia_viejo',
+         'hmedia_m':'hmedia_maduro',
+         'hmedia_o':'hmedia_otros',
+         'joven_(j)':'joven',
+         'maduro_(m)':'maduro',
+         'viejo_(v)': 'viejo',
+         'otros_(o)': 'otros'}, inplace=True)
+        stats_col = ['altura_promedio_(m)','perimetro_promedio_(cm)', 'hmedia_joven', 'hmedia_recien_plantado_y_no_consolidado', 'hmedia_viejo', 'hmedia_otros']
+        #length_stats_col = ['hmedia_joven', 'hmedia_recien_plantado_y_no_consolidado', 'hmedia_viejo', 'hmedia_otros']
+        statuses = ['recien_plantado_y_no_consolidado','joven', 'maduro', 'viejo', 'otros']
+        print(file_date, df.columns)
+    print(f'after',df.columns)
+#     # print(cols)
+#     # for (idx, row) in df.iterrows():
+#     #     cols = df.columns
+#     #     #cols = cols.replace('�', '')
+#     #     #print(cols)
+    
+    ### Iterate dataframe and generate RDF triples
     for index, row in df.iterrows():
+        destrict_uri = URIRef(prepareUri(row['nombre_distrito']))
 
-        park_uri = URIRef(prepareUri(row['PARQUE']))
-        specie_uri = URIRef(prepareUri(row[especie_col]))
-
-        collection_uri = URIRef(prepareUri(f"collection-{row[especie_col]}-{row['PARQUE']}"))
-        count_uri = URIRef(prepareUri(f"count-{file_date}-{row[especie_col]}-{row['PARQUE']}"))
+        status_uris = {}
+        # for age_status in statuses:
+        #     status_uris[age_status] = URIRef(prepareUri(age_status))
+        print(status_uris)
+        district_uri = URIRef(prepareUri(f"collection-of-trees-LocatedIn-{row['nombre_distrito']}"))
+        stats_uri = URIRef(prepareUri(f"measures-of-collection-of-trees-LocatedIn-{file_date}-{row['nombre_distrito']}"))
         
-        g.add((park_uri, RDF.type, sio.site))
-        g.add((park_uri, RDFS.label, Literal(str(row['PARQUE']).lower())))
 
-        g.add((collection_uri, RDF.type, sio.Collection))
-        g.add((collection_uri, sio.hasMember, specie_uri))
-        g.add((collection_uri, sio.hasAttribute, count_uri))
-
-        g.add((count_uri, RDF.type, sio.MemberCount))
-        g.add((count_uri, sio.hasValue, Literal(row[count_col], datatype=XSD.integer)))
-        g.add((count_uri, sio.measuredAt, Literal(file_date, datatype=XSD.integer)))
-
-        g.add((specie_uri, RDF.type, sio.Specie))
-        g.add((specie_uri, RDFS.label, Literal(str(row[especie_col]).lower())))
-
-
-        # g = createAttr(g, 
-        #     predType=sio['memberCount'], 
-        #     subject=row[especie_col], 
-        #     obj=row['PARQUE'], 
-        #     extra={'memberCount': row['UNIDADES 2020']}
-        # )
+        
+        g.add((destrict_uri, RDF.type, sio.SpatialRegion))
+        g.add((destrict_uri, RDFS.label, Literal(str(row['nombre_distrito']).lower())))
+        g.add((district_uri, RDF.type, sio.Collection))
+        print(statuses)
+        for age_status in statuses:
+            # age_status_uri = URIRef(prepareUri(age_status))
+            age_status_uri = URIRef(str(district_uri) + '-phenology-life-cycles-' + age_status.lower())
+            print(age_status_uri)
+            g.add((age_status_uri, RDF.type, sio.LifeStatus))
+            g.add((sio.LifeStatus, RDF.type, ppo.LifeStatus))
+            g.add((sio.LifeStatus, sio.SimilarTo, dwc.dwc_lifeStage))
+            g.add((age_status_uri, sio.hasQuality, Literal(age_status)))
+            g.add((age_status_uri, RDF.type, sio.MemberCount))
+            g.add((age_status_uri, sio.hasValue, Literal(row[age_status], datatype=XSD.integer)))
+            g.add((age_status_uri, sio.hasUnit, obo.UO_0000189))
+            g.add((age_status_uri, sio.measuredAt, Literal(file_date, datatype=XSD.date)))
 
 
-## Example with columns header
-# :PARQUE rdf:type sio:Site .
-# :PARQUE sio:isLocatedIn District .
-# :PARQUE sio:contains :collection-of-ESPECIE .
+        for statistics in stats_col:
+            #print('toto')
+            # age_status_uri = URIRef(prepareUri(age_status))
+            statistics_uri = URIRef(str(stats_uri) + '-SpatialQuantity-' + statistics.lower())
+            print(statistics_uri)
+            g.add((statistics_uri, RDF.type, sio.DimensionalQuantity))
+            g.add((statistics_uri, sio.hasQuality, Literal(age_status)))
+            g.add((statistics_uri, sio.hasValue, Literal(row[age_status], datatype=XSD.float)))
+            if stats_col == 'perimetro_promedio_(cm)':
+                g.add((statistics_uri, sio.hasUnit, obo.UO_0000007)) #cmts
+            else:
+                g.add((statistics_uri, sio.hasUnit, obo.UO_0000008)) #mts
 
-# :collection-of-ESPECIE rdf:type sio:Collection .
-# :collection-of-ESPECIE sio:hasMember :ESPECIE .
-# :collection-of-ESPECIE sio:has-attribute :UNIDADES .
-# :UNIDADES a sio:memberCount .
-# :UNIDADES sio:has-value "UNIDADES YEAR"
-
-# :ESPECIE a :habitatSpecies.
-# :ESPECIE sio:has-unique-identifier :ESPECIE-code .
-# :ESPECIE-Code sio:has-value "G3.74" .
+            g.add((statistics_uri, sio.measuredAt, Literal(file_date, datatype=XSD.date)))
+        
+        # g.add((status_uri, RDF.type, sio.LifeStatus))
+        # g.add((status_uri, RDFS.label, Literal(str(row[age_status]).lower())))
 
 
 
-## Example with values
-# :Jardines-del-buen-retiro rdf:type :Park .
-# Park sio: isLocatedIn District .
-# :Jardines-del-buen-retiro sio:contains :collection-of-aesculus-hippocastanum .
-# :collection-of-aesculus-hippocastanum a sio:Collection .
-# :collection-of-aesculus-hippocastanum sio:hasMember :aesculus-hippocastanum .
-# :aesculus-hippocastanum a :habitatSpecies.
-# :aesculus-hippocastanum sio: has-unique-indentifier :EUNIS-code .
-# :EUNIS-Code sio:has-value "G3.74" .
-# :collection-of-aesculus-hippocastanum sio:has-attribute :UNIDADES .
-# :UNIDADES a sio:memberCount .
-# :UNIDADES sio:has-value "UNIDADES YEAR"
+# print(g.serialize(format='turtle'))
+
+outputfile = 'outputs/rdflib-output4.ttl'
+g.serialize(outputfile, format='turtle')
+print(f'**************************finished....' + outputfile)
+#g.serialize('outputs/rdflib-output3.ttl', format='turtle')
+
+
+
+# # ## Example with columns header
+# # # :PARQUE rdf:type sio:Site .
+# # # :PARQUE sio:contains :collection-of-ESPECIE-STATUS .
+# # # :collection-of-ESPECIE-STATUS rdf:type sio:Collection .
+# # # :collection-of-trees sio:hasAttribute :age .
+# # # :age a :subClassOf sio:dimensional-quantity .
+# # # :age sio: has-label :lifeCycleInfo .
+# # # :lifeCycleInfo sio:has-label "Recien plantado y no consolidado" .
+# # # :Recien plantado y no consolidado a sio:memberCount .
+# # # :membercount sio:has-value "Recien plantado y no consolidado" .
+# # # :lifeCycleInfo sio:has-label "Recien plantado y no consolidado" .
+# # # :Recien plantado y no consolidado a sio:memberCount .
+# # # :membercount sio:has-value "Recien plantado y no consolidado" .
+# # # :lifeCycleInfo sio:has-label "Joven" .
+# # # :Joven a sio:memberCount .
+# # # :membercount sio:has-value "Joven" .  
+# # # :collection-of-trees sio:hasAttribute : Maduro .
+# # # :Maduro a sio:mean .
+# # # :Maduro sio: has-value "Maduro" .
+# # # :collection-of-trees sio:hasAttribute : Viejo .
+# # # :Viejo a sio:mean .
+# # # :Viejo sio: has-value "Viejo" .
+
+# # ## Example with values
+# # # Estado_arbolado_ParquesHistoricoSingularesForestales_YYYY.csv
+# # ######## Turtle syntax ########
+
+# # # :Parque-Madrid-Rio rdf:type :Park .
+# # # Park sio: isLocatedIn District .
+# # # :Parques-Madrid-Rio sio:contains :collection-of-trees .
+# # # :collection-of-trees a sio:Collection .
+# # # :collection-of-trees sio:hasAttribute :age .
+# # # :age a :subClassOf sio:dimensional-quantity .
+# # # :age sio: has-label :lifeCycleInfo .
+# # # :lifeCycleInfo sio:has-value "New" .
+# # # :lifeCycleInfo a sio:memberCount .
+# # # :cph_count sio:has-value "8" .  
+# # # :collection-of-trees sio:hasAttribute : averageHeight-Parque-Madrid-Rio .
+# # # :averageHeight a sio:mean .
+# # # :averageHeight-Parque-Madrid-Rio sio: has-value "5.99" .
+# # # :collection-of-trees sio:hasAttribute :circumference-Parque-Madrid-Rio .
+# # # :circumference-Parque-Madrid-Rio a sio:dimensional-quantity .
+# # # :circumference-Parque-Madrid-Rio sio: has-value "32.49" .
 
 
 
 
 # print(g.serialize(format='turtle'))
-g.serialize('outputs/rdflib-output.ttl', format='turtle')
+# g.serialize('outputs/rdflib-output3.ttl', format='turtle')

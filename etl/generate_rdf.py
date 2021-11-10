@@ -6,10 +6,16 @@ from rdflib.namespace import Namespace #common namespace
 import pandas as pd #for handling csv and csv contents
 import unicodedata
 import re
+import fileinput
+import csv
+
 
 # Define graph 'g' and namespaces
 sio = Namespace('http://semanticscience.org/resource/')
 esgreen = Namespace('https://w3id.org/esgreen/')
+obo = Namespace('http://purl.obolibrary.org/obo/')
+#eol = Namespace('https://eol.org/pages/')
+wiki = Namespace('http://en.wikipedia.org/wiki/')
 
 g = Graph()
 g.bind('sio', sio)
@@ -17,39 +23,47 @@ g.bind('esgreen', esgreen)
 
 def prepareUri(uri):
     return esgreen + str(uri).replace(' ', '_').replace('"', '').lower()
-    
+
+def prepareUriWiki(uri):
+    return wiki + str(uri).replace(' ', '_').replace('"', '')
+
+# def prepareUriEOL(uri):
+#     return eol + str(uri).replace(' ', '_').replace('"', '').lower()
 
 
 
 file_dates = [ '_2019', '_2020', '2017' ]
-pattern = r"\n^;Total:;(.*?)$"
-
-pattern = r"^;Total:;(.*?)$"
-pattern = "^;Total:;(.*?)$"
 
 
 for file_date in file_dates:
     # Read in the csv file
-    df = pd.read_csv(f'data/inputs/ArboladoParquesHistoricoSingularesForestales{file_date}.csv', sep = ';')
-
-
-
+    df = pd.read_csv(f'data/inputs/preprocessing/ArboladoParquesHistoricoSingularesForestales{file_date}.csv', sep = ';')
     # data cleaning
-    df.columns = df.columns.str.normalize('NFKD').str.encode('ascii', errors='ignore').str.decode('utf-8')
-    df = df.loc[:, ~df.columns.str.contains('^Unnamed')] # remove unnamed cols
-    df.columns = df.columns.str.replace(" ", "_")
+    #df = df.loc[:, ~df.columns.str.contains('^Unnamed')] # remove unnamed cols
 
     #print(df.tail(8))
     if file_date == '2017':
-        df['N_de_ejemplares'] = df['N_de_ejemplares'].apply(str).str.replace(u"�", "u")     
-        count_col = 'N_de_ejemplares'
-        especie_col = 'Especie'
+        count_col = 'n_de_ejemplares'
+        especie_col = 'especie'
         #print(f'if',count_col, especie_col, file_date)
     else:
         file_date = file_date.replace('_', '')
-        count_col = 'UNIDADES_' + file_date
-        especie_col = 'ESPECIE'
+        count_col = 'unidades_' + file_date
+        especie_col = 'especie'
+
+    # list_especies = df[especie_col]
+    # res_list = []
+    # for especie in list_especies:
+    #     if especie not in res_list:
+    #         res_list.append(especie)
+    
+    # print('Unique especies of the list using append:')
+    # for especie in res_list:
+    #     print(especie)
+    # print(len(res_list))
         #print(f'else',count_col, especie_col, file_date)
+    # for index, row in df.iterrows():
+    #     print (row[especie_col].capitalize())
 
     # Create the triples and add them to graph 'g'
     # def createAttr(g, predType, subject, obj, extra = {}):
@@ -73,27 +87,38 @@ for file_date in file_dates:
     #             g.add((associationUri, sio[extraProp], Literal(extraValue)))   
     #     return g
 
-    # Iterate dataframe and generate RDF triples
+   # Iterate dataframe and generate RDF triples
     for index, row in df.iterrows():
-        park_uri = URIRef(prepareUri(row['PARQUE']))
+        #a= str((row[especie_col]).capitalize())
+        park_uri = URIRef(prepareUri(row['parque']))
         specie_uri = URIRef(prepareUri(row[especie_col]))
+        wiki_uri = URIRef(prepareUriWiki(str(row[especie_col]).capitalize()))
+        #print(wiki_uri)
+        # eol_uri = URIRef(prepareUriEOL(row[especie_col]))
 
-        collection_uri = URIRef(prepareUri(f"collection-{row[especie_col]}-{row['PARQUE']}"))
-        count_uri = URIRef(prepareUri(f"count-{file_date}-{row[especie_col]}-{row['PARQUE']}"))
+        collection_uri = URIRef(prepareUri(f"collection-{row[especie_col]}-{row['parque']}"))
+        count_uri = URIRef(prepareUri(f"count-{file_date}-{row[especie_col]}-{row['parque']}"))
         
         g.add((park_uri, RDF.type, sio.site))
-        g.add((park_uri, RDFS.label, Literal(str(row['PARQUE']).lower())))
+        g.add((park_uri, RDFS.label, Literal(str(row['parque']).lower())))
+        #g.add(COORDINATES)
 
         g.add((collection_uri, RDF.type, sio.Collection))
+        # to add same as https://schema.org/Collection
         g.add((collection_uri, sio.hasMember, specie_uri))
+        g.add((specie_uri, RDF.type, obo.FLOPO_0900033))
         g.add((collection_uri, sio.hasAttribute, count_uri))
 
         g.add((count_uri, RDF.type, sio.MemberCount))
         g.add((count_uri, sio.hasValue, Literal(row[count_col], datatype=XSD.integer)))
-        g.add((count_uri, sio.measuredAt, Literal(file_date, datatype=XSD.integer)))
+        g.add((count_uri, sio.hasUnit, obo.UO_0000189)) # dimensionless unit
+        g.add((count_uri, sio.measuredAt, Literal(file_date, datatype=XSD.date)))
 
         g.add((specie_uri, RDF.type, sio.Specie))
+        #g.add((wiki_uri, RDF.type, sio.Specie))
         g.add((specie_uri, RDFS.label, Literal(str(row[especie_col]).lower())))
+        # to add: especie sio:UniqueIdentifier :ESPECIE-code .
+        g.add((specie_uri, RDFS.seeAlso, wiki_uri))
 
 
         # g = createAttr(g, 
@@ -105,19 +130,20 @@ for file_date in file_dates:
 
 
 # ## Example with columns header
-# # :PARQUE rdf:type sio:Site .
-# # :PARQUE sio:isLocatedIn District .
-# # :PARQUE sio:contains :collection-of-ESPECIE .
+# # :parque rdf:type sio:Site .
+# # :parque sio:isLocatedIn District .
+# # :parque sio:contains :collection-of-especie .
 
-# # :collection-of-ESPECIE rdf:type sio:Collection .
-# # :collection-of-ESPECIE sio:hasMember :ESPECIE .
-# # :collection-of-ESPECIE sio:has-attribute :UNIDADES .
-# # :UNIDADES a sio:memberCount .
-# # :UNIDADES sio:has-value "UNIDADES YEAR"
+# # :collection-of-especie rdf:type sio:Collection .
+# # :collection-of-especie sio:hasMember :especie .
+# # :collection-of-especie sio:has-attribute :unidades .
+# # :unidades a sio:memberCount .
+# # :unidades sio:has-value "unidades_year"
+# # :unidades sio:has-unit obo:UO_0000009 .
 
-# # :ESPECIE a :habitatSpecies.
-# # :ESPECIE sio:has-unique-identifier :ESPECIE-code .
-# # :ESPECIE-Code sio:has-value "G3.74" .
+# # :especie a :habitatSpecies.
+# # :especie sio:has-unique-identifier :ESPECIE-code .
+# # :especie-Code sio:has-value "G3.74" .
 
 
 
@@ -138,5 +164,6 @@ for file_date in file_dates:
 
 
 # print(g.serialize(format='turtle'))
-g.serialize('outputs/rdflib-output.ttl', format='turtle')
-print('finished....')
+outputfile = 'outputs/rdflib-output.ttl'
+g.serialize(outputfile, format='turtle')
+print(f'finished....' + outputfile)

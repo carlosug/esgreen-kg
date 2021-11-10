@@ -5,123 +5,3921 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/esgreen/CU�AVERDEDEO�DONNELLYP.F.FUENTECARRANTONA> sio:Site "CU�A VERDE DE O�DONNELL Y P. F. FUENTE CARRANTONA" ;
-    sio:hasMeasurementValue <https://w3id.org/esgreen/CU�AVERDEDEO�DONNELLYP.F.FUENTECARRANTONA/location> .
+esgreen:arganzuela a sio:SpatialRegion ;
+    rdfs:label "arganzuela" .
 
-esgreen:ELCAPRICHODELAALAMEDADEOSUNA sio:Site "EL CAPRICHO DE LA ALAMEDA DE OSUNA" ;
-    sio:hasMeasurementValue <https://w3id.org/esgreen/ELCAPRICHODELAALAMEDADEOSUNA/location> .
+esgreen:barajas a sio:SpatialRegion ;
+    rdfs:label "barajas" .
 
-<https://w3id.org/esgreen/Enelep�grafeOtrosnosehanconsideradolos�rbolescorrespondientesatocones.> sio:Site "En el ep�grafe Otros no se han considerado los �rboles correspondientes a tocones." ;
-    sio:hasMeasurementValue <https://w3id.org/esgreen/Enelep�grafeOtrosnosehanconsideradolos�rbolescorrespondientesatocones./location> .
+esgreen:carabanchel a sio:SpatialRegion ;
+    rdfs:label "carabanchel" .
 
-<https://w3id.org/esgreen/Enelep�grafeOtrossehanconsideradolos�rbolesdecr�pitosylos�rbolestodav�anoclasificadosenlabasededatos.> sio:Site "En el ep�grafe Otros se han considerado los �rboles decr�pitos y los �rboles todav�a no clasificados en la base de datos." ;
-    sio:hasMeasurementValue <https://w3id.org/esgreen/Enelep�grafeOtrossehanconsideradolos�rbolesdecr�pitosylos�rbolestodav�anoclasificadosenlabasededatos./location> .
+esgreen:centro a sio:SpatialRegion ;
+    rdfs:label "centro" .
 
-esgreen:JARDINESDELBUENRETIRO sio:Site "JARDINES DEL BUEN RETIRO" ;
-    sio:hasMeasurementValue <https://w3id.org/esgreen/JARDINESDELBUENRETIRO/location> .
+esgreen:chamartin a sio:SpatialRegion ;
+    rdfs:label "chamartin" .
 
-esgreen:JARDINESDESABATINI sio:Site "JARDINES DE SABATINI" ;
-    sio:hasMeasurementValue <https://w3id.org/esgreen/JARDINESDESABATINI/location> .
+esgreen:chamberi a sio:SpatialRegion ;
+    rdfs:label "chamberi" .
 
-<https://w3id.org/esgreen/JARDINESPLAZADEORIENTE-JARD�NDELCABONOVAL-JARD�NDELEPANTO> sio:Site "JARDINES PLAZA DE ORIENTE-JARD�N DEL CABO NOVAL-JARD�N DE LEPANTO" ;
-    sio:hasMeasurementValue <https://w3id.org/esgreen/JARDINESPLAZADEORIENTE-JARD�NDELCABONOVAL-JARD�NDELEPANTO/location> .
+esgreen:ciudad_lineal a sio:SpatialRegion ;
+    rdfs:label "ciudad_lineal" .
 
-esgreen:PARQUEDELADEHESADELAVILLA sio:Site "PARQUE DE LA DEHESA DE LA VILLA" ;
-    sio:hasMeasurementValue <https://w3id.org/esgreen/PARQUEDELADEHESADELAVILLA/location> .
+esgreen:collection-of-trees-locatedin-arganzuela a sio:Collection .
 
-esgreen:PARQUEDELOESTE-TEMPLODEDEBOD sio:Site "PARQUE DEL OESTE- TEMPLO DE DEBOD" ;
-    sio:hasMeasurementValue <https://w3id.org/esgreen/PARQUEDELOESTE-TEMPLODEDEBOD/location> .
+esgreen:collection-of-trees-locatedin-arganzuela-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 5.366,
+        5816.0,
+        5908.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-esgreen:PARQUEFORESTALDEVALDEBEBAS-FELIPEVI sio:Site "PARQUE FORESTAL DE VALDEBEBAS- FELIPE VI" ;
-    sio:hasMeasurementValue <https://w3id.org/esgreen/PARQUEFORESTALDEVALDEBEBAS-FELIPEVI/location> .
+esgreen:collection-of-trees-locatedin-arganzuela-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 16.454,
+        15222.0,
+        15453.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-esgreen:PARQUEJUANCARLOSI sio:Site "PARQUE JUAN CARLOS I" ;
-    sio:hasMeasurementValue <https://w3id.org/esgreen/PARQUEJUANCARLOSI/location> .
+esgreen:collection-of-trees-locatedin-arganzuela-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 327.0,
+        474.0,
+        534.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-esgreen:PARQUEJUANPABLOII sio:Site "PARQUE JUAN PABLO II" ;
-    sio:hasMeasurementValue <https://w3id.org/esgreen/PARQUEJUANPABLOII/location> .
+esgreen:collection-of-trees-locatedin-arganzuela-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 1548.0,
+        1797.0,
+        1904.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-esgreen:PARQUELINEALDELMANZANARES sio:Site "PARQUE LINEAL DEL MANZANARES" ;
-    sio:hasMeasurementValue <https://w3id.org/esgreen/PARQUELINEALDELMANZANARES/location> .
+esgreen:collection-of-trees-locatedin-arganzuela-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 154.0,
+        395.0,
+        411.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/PARQUEMADRIDR�O> sio:Site "PARQUE MADRID R�O" ;
-    sio:hasMeasurementValue <https://w3id.org/esgreen/PARQUEMADRIDR�O/location> .
+esgreen:collection-of-trees-locatedin-barajas a sio:Collection .
 
-esgreen:QUINTADELOSMOLINOS sio:Site "QUINTA DE LOS MOLINOS" ;
-    sio:hasMeasurementValue <https://w3id.org/esgreen/QUINTADELOSMOLINOS/location> .
+esgreen:collection-of-trees-locatedin-barajas-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 3.331,
+        5139.0,
+        5185.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-esgreen:QUINTAFUENTEDELBERRO sio:Site "QUINTA FUENTE DEL BERRO" ;
-    sio:hasMeasurementValue <https://w3id.org/esgreen/QUINTAFUENTEDELBERRO/location> .
+esgreen:collection-of-trees-locatedin-barajas-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 9.372,
+        9051.0,
+        9295.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/ROSALEDADEMADRID(PARQUEDELOESTE)> sio:Site "ROSALEDA DE MADRID (PARQUE DEL OESTE)" ;
-    sio:hasMeasurementValue <https://w3id.org/esgreen/ROSALEDADEMADRID(PARQUEDELOESTE)/location> .
+esgreen:collection-of-trees-locatedin-barajas-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 501.0,
+        711.0,
+        855.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/TOTAL:> sio:Site "TOTAL:" ;
-    sio:hasMeasurementValue <https://w3id.org/esgreen/TOTAL:/location> .
+esgreen:collection-of-trees-locatedin-barajas-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 405.0,
+        924.0,
+        1039.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-esgreen:Z.V.DISTRITOC-LASTABLAS sio:Site "Z.V. DISTRITO C-LAS TABLAS" ;
-    sio:hasMeasurementValue <https://w3id.org/esgreen/Z.V.DISTRITOC-LASTABLAS/location> .
+esgreen:collection-of-trees-locatedin-barajas-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 161.0,
+        179.0,
+        182.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/CU�AVERDEDEO�DONNELLYP.F.FUENTECARRANTONA/location> a sio:isLocatedIn ;
-    sio:hasValue <https://w3id.org/esgreen/4,12> .
+esgreen:collection-of-trees-locatedin-carabanchel a sio:Collection .
 
-<https://w3id.org/esgreen/ELCAPRICHODELAALAMEDADEOSUNA/location> a sio:isLocatedIn ;
-    sio:hasValue <https://w3id.org/esgreen/12,6> .
+esgreen:collection-of-trees-locatedin-carabanchel-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 14.469,
+        14116.0,
+        14166.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/Enelep�grafeOtrosnosehanconsideradolos�rbolescorrespondientesatocones./location> a sio:isLocatedIn ;
-    sio:hasValue esgreen:nan .
+esgreen:collection-of-trees-locatedin-carabanchel-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 24.614,
+        23968.0,
+        24516.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/Enelep�grafeOtrossehanconsideradolos�rbolesdecr�pitosylos�rbolestodav�anoclasificadosenlabasededatos./location> a sio:isLocatedIn ;
-    sio:hasValue esgreen:nan .
+esgreen:collection-of-trees-locatedin-carabanchel-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 341.0,
+        1063.0,
+        1175.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/JARDINESDELBUENRETIRO/location> a sio:isLocatedIn ;
-    sio:hasValue <https://w3id.org/esgreen/9,85> .
+esgreen:collection-of-trees-locatedin-carabanchel-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 674.0,
+        1611.0,
+        1856.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/JARDINESDESABATINI/location> a sio:isLocatedIn ;
-    sio:hasValue <https://w3id.org/esgreen/8,01> .
+esgreen:collection-of-trees-locatedin-carabanchel-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 242.0,
+        262.0,
+        303.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/JARDINESPLAZADEORIENTE-JARD�NDELCABONOVAL-JARD�NDELEPANTO/location> a sio:isLocatedIn ;
-    sio:hasValue <https://w3id.org/esgreen/10,22> .
+esgreen:collection-of-trees-locatedin-centro a sio:Collection .
 
-<https://w3id.org/esgreen/PARQUEDELADEHESADELAVILLA/location> a sio:isLocatedIn ;
-    sio:hasValue <https://w3id.org/esgreen/7,72> .
+esgreen:collection-of-trees-locatedin-centro-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 4.827,
+        4595.0,
+        4644.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/PARQUEDELOESTE-TEMPLODEDEBOD/location> a sio:isLocatedIn ;
-    sio:hasValue <https://w3id.org/esgreen/13,06> .
+esgreen:collection-of-trees-locatedin-centro-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 5.962,
+        5235.0,
+        5307.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/PARQUEFORESTALDEVALDEBEBAS-FELIPEVI/location> a sio:isLocatedIn ;
-    sio:hasValue <https://w3id.org/esgreen/3,87> .
+esgreen:collection-of-trees-locatedin-centro-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 28.0,
+        104.0,
+        355.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/PARQUEJUANCARLOSI/location> a sio:isLocatedIn ;
-    sio:hasValue <https://w3id.org/esgreen/4,76> .
+esgreen:collection-of-trees-locatedin-centro-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 855.0,
+        979.0,
+        1517.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/PARQUEJUANPABLOII/location> a sio:isLocatedIn ;
-    sio:hasValue <https://w3id.org/esgreen/4,49> .
+esgreen:collection-of-trees-locatedin-centro-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 239.0,
+        247.0,
+        272.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/PARQUELINEALDELMANZANARES/location> a sio:isLocatedIn ;
-    sio:hasValue <https://w3id.org/esgreen/4,77> .
+esgreen:collection-of-trees-locatedin-chamartin a sio:Collection .
 
-<https://w3id.org/esgreen/PARQUEMADRIDR�O/location> a sio:isLocatedIn ;
-    sio:hasValue <https://w3id.org/esgreen/5,58> .
+esgreen:collection-of-trees-locatedin-chamartin-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 6.522,
+        7294.0,
+        7378.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/QUINTADELOSMOLINOS/location> a sio:isLocatedIn ;
-    sio:hasValue <https://w3id.org/esgreen/12,92> .
+esgreen:collection-of-trees-locatedin-chamartin-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 17.558,
+        16412.0,
+        16649.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/QUINTAFUENTEDELBERRO/location> a sio:isLocatedIn ;
-    sio:hasValue <https://w3id.org/esgreen/10,13> .
+esgreen:collection-of-trees-locatedin-chamartin-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 327.0,
+        389.0,
+        534.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/ROSALEDADEMADRID(PARQUEDELOESTE)/location> a sio:isLocatedIn ;
-    sio:hasValue <https://w3id.org/esgreen/13,65> .
+esgreen:collection-of-trees-locatedin-chamartin-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 1479.0,
+        1679.0,
+        2026.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/TOTAL:/location> a sio:isLocatedIn ;
-    sio:hasValue esgreen:nan .
+esgreen:collection-of-trees-locatedin-chamartin-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 234.0,
+        277.0,
+        285.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-<https://w3id.org/esgreen/Z.V.DISTRITOC-LASTABLAS/location> a sio:isLocatedIn ;
-    sio:hasValue <https://w3id.org/esgreen/3,78> .
+esgreen:collection-of-trees-locatedin-chamberi a sio:Collection .
 
-<https://w3id.org/esgreen/nan/location> a sio:isLocatedIn ;
-    sio:hasValue esgreen:nan .
+esgreen:collection-of-trees-locatedin-chamberi-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 3.881,
+        3856.0,
+        4064.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
 
-esgreen:nan sio:Site "NaN"^^xsd:double ;
-    sio:hasMeasurementValue <https://w3id.org/esgreen/nan/location> .
+esgreen:collection-of-trees-locatedin-chamberi-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 6.894,
+        6254.0,
+        6368.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-chamberi-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 12.0,
+        169.0,
+        236.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-chamberi-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 888.0,
+        1237.0,
+        1555.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-chamberi-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 1.587,
+        1388.0,
+        1434.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-ciudad_lineal a sio:Collection .
+
+esgreen:collection-of-trees-locatedin-ciudad_lineal-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 8.386,
+        7857.0,
+        7905.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-ciudad_lineal-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 27.353,
+        24189.0,
+        24427.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-ciudad_lineal-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 1.816,
+        2923.0,
+        3006.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-ciudad_lineal-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 623.0,
+        1316.0,
+        1802.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-ciudad_lineal-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 890.0,
+        903.0,
+        989.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-datos_incluidos_del_ci5_(unidades_arboreas_de_zonas_verdes,_arbolado_viario_y_arbolado_de_zzvv_con_tipologia_viaria)> a sio:Collection .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-datos_incluidos_del_ci5_(unidades_arboreas_de_zonas_verdes,_arbolado_viario_y_arbolado_de_zzvv_con_tipologia_viaria)-phenology-life-cycles-joven> a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-datos_incluidos_del_ci5_(unidades_arboreas_de_zonas_verdes,_arbolado_viario_y_arbolado_de_zzvv_con_tipologia_viaria)-phenology-life-cycles-maduro> a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-datos_incluidos_del_ci5_(unidades_arboreas_de_zonas_verdes,_arbolado_viario_y_arbolado_de_zzvv_con_tipologia_viaria)-phenology-life-cycles-otros> a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-datos_incluidos_del_ci5_(unidades_arboreas_de_zonas_verdes,_arbolado_viario_y_arbolado_de_zzvv_con_tipologia_viaria)-phenology-life-cycles-recien_plantado_y_no_consolidado> a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-datos_incluidos_del_ci5_(unidades_arboreas_de_zonas_verdes,_arbolado_viario_y_arbolado_de_zzvv_con_tipologia_viaria)-phenology-life-cycles-viejo> a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos> a sio:Collection .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos,_los_tocones_y_los_arboles_en_proceso_de_clasificacion> a sio:Collection .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos,_los_tocones_y_los_arboles_en_proceso_de_clasificacion-phenology-life-cycles-joven> a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos,_los_tocones_y_los_arboles_en_proceso_de_clasificacion-phenology-life-cycles-maduro> a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos,_los_tocones_y_los_arboles_en_proceso_de_clasificacion-phenology-life-cycles-otros> a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos,_los_tocones_y_los_arboles_en_proceso_de_clasificacion-phenology-life-cycles-recien_plantado_y_no_consolidado> a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos,_los_tocones_y_los_arboles_en_proceso_de_clasificacion-phenology-life-cycles-viejo> a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos-phenology-life-cycles-joven> a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos-phenology-life-cycles-maduro> a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos-phenology-life-cycles-otros> a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos-phenology-life-cycles-recien_plantado_y_no_consolidado> a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos-phenology-life-cycles-viejo> a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-fuencarral_-_el_pardo a sio:Collection .
+
+esgreen:collection-of-trees-locatedin-fuencarral_-_el_pardo-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 17.03,
+        19472.0,
+        20549.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-fuencarral_-_el_pardo-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 27.653,
+        23931.0,
+        24280.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-fuencarral_-_el_pardo-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 1.881,
+        2007.0,
+        2832.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-fuencarral_-_el_pardo-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 7319.0,
+        7777.0,
+        8859.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-fuencarral_-_el_pardo-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 1.008,
+        4140.0,
+        4184.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-hortaleza a sio:Collection .
+
+esgreen:collection-of-trees-locatedin-hortaleza-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 8.876,
+        14003.0,
+        14167.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-hortaleza-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 28.569,
+        26505.0,
+        26943.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-hortaleza-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 1.745,
+        3556.0,
+        5845.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-hortaleza-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 1116.0,
+        2208.0,
+        2617.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-hortaleza-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 5.274,
+        4597.0,
+        4770.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-latina a sio:Collection .
+
+esgreen:collection-of-trees-locatedin-latina-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 10.331,
+        9205.0,
+        9413.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-latina-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 25.149,
+        20891.0,
+        21993.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-latina-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 2.218,
+        2098.0,
+        3016.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-latina-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 2960.0,
+        3403.0,
+        3581.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-latina-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 641.0,
+        844.0,
+        942.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-los_valores_de_altura_media_estan_expresados_en_metros a sio:Collection .
+
+esgreen:collection-of-trees-locatedin-los_valores_de_altura_media_estan_expresados_en_metros-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-los_valores_de_altura_media_estan_expresados_en_metros-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-los_valores_de_altura_media_estan_expresados_en_metros-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-los_valores_de_altura_media_estan_expresados_en_metros-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-los_valores_de_altura_media_estan_expresados_en_metros-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-moncloa_-_aravaca a sio:Collection .
+
+esgreen:collection-of-trees-locatedin-moncloa_-_aravaca-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 9.067,
+        8899.0,
+        9441.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-moncloa_-_aravaca-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 19.605,
+        17834.0,
+        18967.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-moncloa_-_aravaca-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 1.013,
+        916.0,
+        1219.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-moncloa_-_aravaca-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 2103.0,
+        2780.0,
+        3295.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-moncloa_-_aravaca-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 2.54,
+        2145.0,
+        2420.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-moratalaz a sio:Collection .
+
+esgreen:collection-of-trees-locatedin-moratalaz-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 9.449,
+        8584.0,
+        9108.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-moratalaz-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 14.014,
+        12989.0,
+        13617.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-moratalaz-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 397.0,
+        531.0,
+        547.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-moratalaz-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 449.0,
+        1399.0,
+        1723.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-moratalaz-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 381.0,
+        409.0,
+        437.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-nan a sio:Collection .
+
+esgreen:collection-of-trees-locatedin-nan-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-nan-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-nan-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-nan-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-nan-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-no_se_incluyen_los_datos_del_ci6_(parques_historicos,_singulares_y_forestales)> a sio:Collection .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-no_se_incluyen_los_datos_del_ci6_(parques_historicos,_singulares_y_forestales)-phenology-life-cycles-joven> a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-no_se_incluyen_los_datos_del_ci6_(parques_historicos,_singulares_y_forestales)-phenology-life-cycles-maduro> a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-no_se_incluyen_los_datos_del_ci6_(parques_historicos,_singulares_y_forestales)-phenology-life-cycles-otros> a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-no_se_incluyen_los_datos_del_ci6_(parques_historicos,_singulares_y_forestales)-phenology-life-cycles-recien_plantado_y_no_consolidado> a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/collection-of-trees-locatedin-no_se_incluyen_los_datos_del_ci6_(parques_historicos,_singulares_y_forestales)-phenology-life-cycles-viejo> a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-puente_de_vallecas a sio:Collection .
+
+esgreen:collection-of-trees-locatedin-puente_de_vallecas-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 19.818,
+        18433.0,
+        18885.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-puente_de_vallecas-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 23.418,
+        21540.0,
+        22416.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-puente_de_vallecas-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 1.164,
+        941.0,
+        1027.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-puente_de_vallecas-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 1384.0,
+        3939.0,
+        4143.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-puente_de_vallecas-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 242.0,
+        256.0,
+        265.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-retiro a sio:Collection .
+
+esgreen:collection-of-trees-locatedin-retiro-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 5.547,
+        4795.0,
+        4895.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-retiro-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 8.159,
+        8260.0,
+        8331.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-retiro-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 333.0,
+        340.0,
+        360.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-retiro-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 590.0,
+        731.0,
+        930.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-retiro-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 568.0,
+        659.0,
+        679.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-salamanca a sio:Collection .
+
+esgreen:collection-of-trees-locatedin-salamanca-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 7.473,
+        6623.0,
+        6732.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-salamanca-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 12.584,
+        11361.0,
+        11656.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-salamanca-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 356.0,
+        383.0,
+        397.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-salamanca-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 1332.0,
+        1639.0,
+        2116.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-salamanca-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 156.0,
+        517.0,
+        536.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-san_blas_-_canillejas a sio:Collection .
+
+esgreen:collection-of-trees-locatedin-san_blas_-_canillejas-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 8.531,
+        8360.0,
+        8879.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-san_blas_-_canillejas-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 26.801,
+        24812.0,
+        25017.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-san_blas_-_canillejas-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 2.87,
+        2959.0,
+        3002.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-san_blas_-_canillejas-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 818.0,
+        1356.0,
+        1541.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-san_blas_-_canillejas-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 581.0,
+        594.0,
+        640.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-tampoco_se_han_considerado_los_arboles_que_dependen_de_las_juntas_municipales_de__distrito a sio:Collection .
+
+esgreen:collection-of-trees-locatedin-tampoco_se_han_considerado_los_arboles_que_dependen_de_las_juntas_municipales_de__distrito-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-tampoco_se_han_considerado_los_arboles_que_dependen_de_las_juntas_municipales_de__distrito-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-tampoco_se_han_considerado_los_arboles_que_dependen_de_las_juntas_municipales_de__distrito-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-tampoco_se_han_considerado_los_arboles_que_dependen_de_las_juntas_municipales_de__distrito-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-tampoco_se_han_considerado_los_arboles_que_dependen_de_las_juntas_municipales_de__distrito-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue nan ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-tetuan a sio:Collection .
+
+esgreen:collection-of-trees-locatedin-tetuan-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 4.639,
+        4324.0,
+        4362.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-tetuan-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 9.769,
+        9258.0,
+        9365.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-tetuan-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 69.0,
+        113.0,
+        126.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-tetuan-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 640.0,
+        1078.0,
+        1211.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-tetuan-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 35.0,
+        36.0,
+        43.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-total_general a sio:Collection .
+
+esgreen:collection-of-trees-locatedin-total_general-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 220.85,
+        224.658,
+        225.077 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-total_general-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 327.82,
+        335.509,
+        357.266 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-total_general-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 17.568,
+        23.078,
+        28.671 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-total_general-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 31.216,
+        42.987,
+        48.63 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-total_general-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 15.889,
+        18.283,
+        19.084 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-usera a sio:Collection .
+
+esgreen:collection-of-trees-locatedin-usera-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 9.463,
+        9041.0,
+        9057.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-usera-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 21.145,
+        19844.0,
+        20165.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-usera-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 618.0,
+        1037.0,
+        1096.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-usera-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 509.0,
+        1509.0,
+        1527.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-usera-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 181.0,
+        186.0,
+        188.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-vicalvaro a sio:Collection .
+
+esgreen:collection-of-trees-locatedin-vicalvaro-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 16.293,
+        15881.0,
+        17665.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-vicalvaro-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 5.67,
+        5400.0,
+        5588.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-vicalvaro-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 272.0,
+        303.0,
+        328.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-vicalvaro-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 476.0,
+        2473.0,
+        3430.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-vicalvaro-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 47.0,
+        50.0,
+        53.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-villa_de_vallecas a sio:Collection .
+
+esgreen:collection-of-trees-locatedin-villa_de_vallecas-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 29.301,
+        27541.0,
+        28620.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-villa_de_vallecas-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 5.461,
+        5059.0,
+        5235.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-villa_de_vallecas-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 557.0,
+        675.0,
+        848.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-villa_de_vallecas-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 1187.0,
+        2362.0,
+        2738.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-villa_de_vallecas-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 95.0,
+        96.0,
+        102.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-villaverde a sio:Collection .
+
+esgreen:collection-of-trees-locatedin-villaverde-phenology-life-cycles-joven a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "joven" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 18.25,
+        17409.0,
+        17469.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-villaverde-phenology-life-cycles-maduro a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "maduro" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 21.062,
+        19734.0,
+        19992.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-villaverde-phenology-life-cycles-otros a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 453.0,
+        1353.0,
+        1636.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-villaverde-phenology-life-cycles-recien_plantado_y_no_consolidado a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "recien_plantado_y_no_consolidado" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 741.0,
+        1546.0,
+        1584.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+esgreen:collection-of-trees-locatedin-villaverde-phenology-life-cycles-viejo a sio:LifeStatus,
+        sio:MemberCount ;
+    sio:hasQuality "viejo" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000189> ;
+    sio:hasValue 211.0,
+        219.0,
+        255.0 ;
+    sio:measuredAt "2017-01-01"^^xsd:date,
+        "2019-01-01"^^xsd:date,
+        "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/datos_incluidos_del_ci5_(unidades_arboreas_de_zonas_verdes,_arbolado_viario_y_arbolado_de_zzvv_con_tipologia_viaria)> a sio:SpatialRegion ;
+    rdfs:label "datos_incluidos_del_ci5_(unidades_arboreas_de_zonas_verdes,_arbolado_viario_y_arbolado_de_zzvv_con_tipologia_viaria)" .
+
+<https://w3id.org/esgreen/en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos> a sio:SpatialRegion ;
+    rdfs:label "en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_\"decrepitos\"" .
+
+<https://w3id.org/esgreen/en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos,_los_tocones_y_los_arboles_en_proceso_de_clasificacion> a sio:SpatialRegion ;
+    rdfs:label "en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_\"decrepitos\",_los_tocones_y_los_arboles_en_proceso_de_clasificacion" .
+
+esgreen:fuencarral_-_el_pardo a sio:SpatialRegion ;
+    rdfs:label "fuencarral_-_el_pardo" .
+
+esgreen:hortaleza a sio:SpatialRegion ;
+    rdfs:label "hortaleza" .
+
+esgreen:latina a sio:SpatialRegion ;
+    rdfs:label "latina" .
+
+esgreen:los_valores_de_altura_media_estan_expresados_en_metros a sio:SpatialRegion ;
+    rdfs:label "los_valores_de_altura_media_estan_expresados_en_metros" .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-arganzuela-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "327.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-arganzuela-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "327.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-barajas-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "501.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-barajas-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "501.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-carabanchel-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "341.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-carabanchel-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "341.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-centro-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "28.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-centro-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "28.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-chamartin-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "534.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-chamartin-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "534.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-chamberi-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "12.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-chamberi-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "12.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-ciudad_lineal-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1.816"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-ciudad_lineal-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1.816"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-datos_incluidos_del_ci5_(unidades_arboreas_de_zonas_verdes,_arbolado_viario_y_arbolado_de_zzvv_con_tipologia_viaria)-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-datos_incluidos_del_ci5_(unidades_arboreas_de_zonas_verdes,_arbolado_viario_y_arbolado_de_zzvv_con_tipologia_viaria)-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-fuencarral_-_el_pardo-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1.881"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-fuencarral_-_el_pardo-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1.881"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-hortaleza-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1.745"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-hortaleza-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1.745"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-latina-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2.218"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-latina-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2.218"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-moncloa_-_aravaca-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1.013"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-moncloa_-_aravaca-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1.013"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-moratalaz-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "397.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-moratalaz-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "397.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-nan-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-nan-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-no_se_incluyen_los_datos_del_ci6_(parques_historicos,_singulares_y_forestales)-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-no_se_incluyen_los_datos_del_ci6_(parques_historicos,_singulares_y_forestales)-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-puente_de_vallecas-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1.164"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-puente_de_vallecas-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1.164"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-retiro-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "340.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-retiro-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "340.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-salamanca-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "356.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-salamanca-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "356.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-san_blas_-_canillejas-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2.87"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-san_blas_-_canillejas-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2.87"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-tetuan-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "69.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-tetuan-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "69.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-total_general-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "17.568"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-total_general-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "17.568"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-usera-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "618.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-usera-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "618.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-vicalvaro-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "328.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-vicalvaro-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "328.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-villa_de_vallecas-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "557.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-villa_de_vallecas-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "557.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-villaverde-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "453.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2017-villaverde-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "453.0"^^xsd:float ;
+    sio:measuredAt "2017-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-arganzuela-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "474.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-arganzuela-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "474.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-arganzuela-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "474.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-arganzuela-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "474.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-arganzuela-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "474.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-arganzuela-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "474.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-barajas-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "711.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-barajas-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "711.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-barajas-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "711.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-barajas-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "711.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-barajas-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "711.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-barajas-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "711.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-carabanchel-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1063.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-carabanchel-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1063.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-carabanchel-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1063.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-carabanchel-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1063.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-carabanchel-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1063.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-carabanchel-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1063.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-centro-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "104.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-centro-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "104.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-centro-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "104.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-centro-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "104.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-centro-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "104.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-centro-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "104.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-chamartin-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "327.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-chamartin-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "327.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-chamartin-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "327.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-chamartin-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "327.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-chamartin-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "327.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-chamartin-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "327.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-chamberi-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "169.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-chamberi-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "169.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-chamberi-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "169.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-chamberi-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "169.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-chamberi-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "169.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-chamberi-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "169.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-ciudad_lineal-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2923.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-ciudad_lineal-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2923.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-ciudad_lineal-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2923.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-ciudad_lineal-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2923.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-ciudad_lineal-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2923.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-ciudad_lineal-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2923.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-datos_incluidos_del_ci5_(unidades_arboreas_de_zonas_verdes,_arbolado_viario_y_arbolado_de_zzvv_con_tipologia_viaria)-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-datos_incluidos_del_ci5_(unidades_arboreas_de_zonas_verdes,_arbolado_viario_y_arbolado_de_zzvv_con_tipologia_viaria)-SpatialQuantity-hmedia_joven> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-datos_incluidos_del_ci5_(unidades_arboreas_de_zonas_verdes,_arbolado_viario_y_arbolado_de_zzvv_con_tipologia_viaria)-SpatialQuantity-hmedia_otros> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-datos_incluidos_del_ci5_(unidades_arboreas_de_zonas_verdes,_arbolado_viario_y_arbolado_de_zzvv_con_tipologia_viaria)-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-datos_incluidos_del_ci5_(unidades_arboreas_de_zonas_verdes,_arbolado_viario_y_arbolado_de_zzvv_con_tipologia_viaria)-SpatialQuantity-hmedia_viejo> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-datos_incluidos_del_ci5_(unidades_arboreas_de_zonas_verdes,_arbolado_viario_y_arbolado_de_zzvv_con_tipologia_viaria)-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos-SpatialQuantity-hmedia_joven> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos-SpatialQuantity-hmedia_otros> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos-SpatialQuantity-hmedia_viejo> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-fuencarral_-_el_pardo-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2007.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-fuencarral_-_el_pardo-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2007.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-fuencarral_-_el_pardo-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2007.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-fuencarral_-_el_pardo-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2007.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-fuencarral_-_el_pardo-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2007.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-fuencarral_-_el_pardo-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2007.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-hortaleza-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3556.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-hortaleza-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3556.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-hortaleza-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3556.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-hortaleza-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3556.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-hortaleza-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3556.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-hortaleza-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3556.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-latina-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2098.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-latina-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2098.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-latina-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2098.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-latina-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2098.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-latina-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2098.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-latina-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2098.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-los_valores_de_altura_media_estan_expresados_en_metros-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-los_valores_de_altura_media_estan_expresados_en_metros-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-los_valores_de_altura_media_estan_expresados_en_metros-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-los_valores_de_altura_media_estan_expresados_en_metros-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-los_valores_de_altura_media_estan_expresados_en_metros-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-los_valores_de_altura_media_estan_expresados_en_metros-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-moncloa_-_aravaca-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "916.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-moncloa_-_aravaca-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "916.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-moncloa_-_aravaca-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "916.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-moncloa_-_aravaca-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "916.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-moncloa_-_aravaca-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "916.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-moncloa_-_aravaca-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "916.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-moratalaz-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "547.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-moratalaz-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "547.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-moratalaz-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "547.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-moratalaz-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "547.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-moratalaz-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "547.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-moratalaz-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "547.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-nan-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-nan-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-nan-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-nan-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-nan-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-nan-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-no_se_incluyen_los_datos_del_ci6_(parques_historicos,_singulares_y_forestales)-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-no_se_incluyen_los_datos_del_ci6_(parques_historicos,_singulares_y_forestales)-SpatialQuantity-hmedia_joven> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-no_se_incluyen_los_datos_del_ci6_(parques_historicos,_singulares_y_forestales)-SpatialQuantity-hmedia_otros> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-no_se_incluyen_los_datos_del_ci6_(parques_historicos,_singulares_y_forestales)-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-no_se_incluyen_los_datos_del_ci6_(parques_historicos,_singulares_y_forestales)-SpatialQuantity-hmedia_viejo> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-no_se_incluyen_los_datos_del_ci6_(parques_historicos,_singulares_y_forestales)-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-puente_de_vallecas-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1027.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-puente_de_vallecas-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1027.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-puente_de_vallecas-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1027.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-puente_de_vallecas-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1027.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-puente_de_vallecas-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1027.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-puente_de_vallecas-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1027.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-retiro-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "333.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-retiro-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "333.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-retiro-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "333.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-retiro-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "333.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-retiro-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "333.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-retiro-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "333.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-salamanca-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "383.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-salamanca-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "383.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-salamanca-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "383.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-salamanca-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "383.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-salamanca-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "383.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-salamanca-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "383.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-san_blas_-_canillejas-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2959.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-san_blas_-_canillejas-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2959.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-san_blas_-_canillejas-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2959.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-san_blas_-_canillejas-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2959.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-san_blas_-_canillejas-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2959.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-san_blas_-_canillejas-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2959.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-tetuan-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "113.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-tetuan-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "113.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-tetuan-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "113.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-tetuan-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "113.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-tetuan-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "113.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-tetuan-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "113.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-total_general-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "23.078"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-total_general-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "23.078"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-total_general-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "23.078"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-total_general-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "23.078"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-total_general-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "23.078"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-total_general-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "23.078"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-usera-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1037.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-usera-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1037.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-usera-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1037.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-usera-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1037.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-usera-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1037.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-usera-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1037.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-vicalvaro-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "303.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-vicalvaro-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "303.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-vicalvaro-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "303.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-vicalvaro-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "303.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-vicalvaro-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "303.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-vicalvaro-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "303.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-villa_de_vallecas-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "675.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-villa_de_vallecas-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "675.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-villa_de_vallecas-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "675.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-villa_de_vallecas-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "675.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-villa_de_vallecas-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "675.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-villa_de_vallecas-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "675.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-villaverde-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1353.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-villaverde-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1353.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-villaverde-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1353.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-villaverde-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1353.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2019-villaverde-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1353.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2019-villaverde-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1353.0"^^xsd:float ;
+    sio:measuredAt "2019-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-arganzuela-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "534.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-arganzuela-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "534.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-arganzuela-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "534.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-arganzuela-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "534.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-arganzuela-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "534.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-arganzuela-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "534.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-barajas-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "855.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-barajas-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "855.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-barajas-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "855.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-barajas-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "855.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-barajas-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "855.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-barajas-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "855.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-carabanchel-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1175.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-carabanchel-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1175.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-carabanchel-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1175.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-carabanchel-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1175.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-carabanchel-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1175.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-carabanchel-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1175.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-centro-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "355.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-centro-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "355.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-centro-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "355.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-centro-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "355.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-centro-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "355.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-centro-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "355.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-chamartin-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "389.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-chamartin-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "389.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-chamartin-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "389.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-chamartin-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "389.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-chamartin-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "389.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-chamartin-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "389.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-chamberi-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "236.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-chamberi-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "236.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-chamberi-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "236.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-chamberi-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "236.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-chamberi-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "236.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-chamberi-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "236.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-ciudad_lineal-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3006.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-ciudad_lineal-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3006.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-ciudad_lineal-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3006.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-ciudad_lineal-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3006.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-ciudad_lineal-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3006.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-ciudad_lineal-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3006.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-datos_incluidos_del_ci5_(unidades_arboreas_de_zonas_verdes,_arbolado_viario_y_arbolado_de_zzvv_con_tipologia_viaria)-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-datos_incluidos_del_ci5_(unidades_arboreas_de_zonas_verdes,_arbolado_viario_y_arbolado_de_zzvv_con_tipologia_viaria)-SpatialQuantity-hmedia_joven> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-datos_incluidos_del_ci5_(unidades_arboreas_de_zonas_verdes,_arbolado_viario_y_arbolado_de_zzvv_con_tipologia_viaria)-SpatialQuantity-hmedia_otros> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-datos_incluidos_del_ci5_(unidades_arboreas_de_zonas_verdes,_arbolado_viario_y_arbolado_de_zzvv_con_tipologia_viaria)-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-datos_incluidos_del_ci5_(unidades_arboreas_de_zonas_verdes,_arbolado_viario_y_arbolado_de_zzvv_con_tipologia_viaria)-SpatialQuantity-hmedia_viejo> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-datos_incluidos_del_ci5_(unidades_arboreas_de_zonas_verdes,_arbolado_viario_y_arbolado_de_zzvv_con_tipologia_viaria)-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos,_los_tocones_y_los_arboles_en_proceso_de_clasificacion-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos,_los_tocones_y_los_arboles_en_proceso_de_clasificacion-SpatialQuantity-hmedia_joven> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos,_los_tocones_y_los_arboles_en_proceso_de_clasificacion-SpatialQuantity-hmedia_otros> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos,_los_tocones_y_los_arboles_en_proceso_de_clasificacion-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos,_los_tocones_y_los_arboles_en_proceso_de_clasificacion-SpatialQuantity-hmedia_viejo> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-en_edad_fenologica_=_otros_se_consideran_los_arboles_clasificados_como_decrepitos,_los_tocones_y_los_arboles_en_proceso_de_clasificacion-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-fuencarral_-_el_pardo-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2832.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-fuencarral_-_el_pardo-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2832.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-fuencarral_-_el_pardo-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2832.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-fuencarral_-_el_pardo-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2832.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-fuencarral_-_el_pardo-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2832.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-fuencarral_-_el_pardo-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "2832.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-hortaleza-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "5845.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-hortaleza-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "5845.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-hortaleza-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "5845.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-hortaleza-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "5845.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-hortaleza-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "5845.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-hortaleza-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "5845.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-latina-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3016.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-latina-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3016.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-latina-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3016.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-latina-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3016.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-latina-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3016.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-latina-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3016.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-los_valores_de_altura_media_estan_expresados_en_metros-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-los_valores_de_altura_media_estan_expresados_en_metros-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-los_valores_de_altura_media_estan_expresados_en_metros-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-los_valores_de_altura_media_estan_expresados_en_metros-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-los_valores_de_altura_media_estan_expresados_en_metros-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-los_valores_de_altura_media_estan_expresados_en_metros-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-moncloa_-_aravaca-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1219.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-moncloa_-_aravaca-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1219.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-moncloa_-_aravaca-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1219.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-moncloa_-_aravaca-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1219.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-moncloa_-_aravaca-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1219.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-moncloa_-_aravaca-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1219.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-moratalaz-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "531.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-moratalaz-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "531.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-moratalaz-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "531.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-moratalaz-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "531.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-moratalaz-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "531.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-moratalaz-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "531.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-nan-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-nan-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-nan-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-nan-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-nan-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-nan-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-no_se_incluyen_los_datos_del_ci6_(parques_historicos,_singulares_y_forestales)-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-no_se_incluyen_los_datos_del_ci6_(parques_historicos,_singulares_y_forestales)-SpatialQuantity-hmedia_joven> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-no_se_incluyen_los_datos_del_ci6_(parques_historicos,_singulares_y_forestales)-SpatialQuantity-hmedia_otros> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-no_se_incluyen_los_datos_del_ci6_(parques_historicos,_singulares_y_forestales)-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-no_se_incluyen_los_datos_del_ci6_(parques_historicos,_singulares_y_forestales)-SpatialQuantity-hmedia_viejo> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-no_se_incluyen_los_datos_del_ci6_(parques_historicos,_singulares_y_forestales)-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-puente_de_vallecas-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "941.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-puente_de_vallecas-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "941.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-puente_de_vallecas-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "941.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-puente_de_vallecas-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "941.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-puente_de_vallecas-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "941.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-puente_de_vallecas-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "941.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-retiro-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "360.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-retiro-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "360.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-retiro-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "360.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-retiro-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "360.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-retiro-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "360.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-retiro-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "360.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-salamanca-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "397.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-salamanca-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "397.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-salamanca-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "397.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-salamanca-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "397.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-salamanca-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "397.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-salamanca-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "397.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-san_blas_-_canillejas-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3002.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-san_blas_-_canillejas-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3002.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-san_blas_-_canillejas-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3002.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-san_blas_-_canillejas-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3002.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-san_blas_-_canillejas-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3002.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-san_blas_-_canillejas-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "3002.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-tampoco_se_han_considerado_los_arboles_que_dependen_de_las_juntas_municipales_de__distrito-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-tampoco_se_han_considerado_los_arboles_que_dependen_de_las_juntas_municipales_de__distrito-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-tampoco_se_han_considerado_los_arboles_que_dependen_de_las_juntas_municipales_de__distrito-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-tampoco_se_han_considerado_los_arboles_que_dependen_de_las_juntas_municipales_de__distrito-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-tampoco_se_han_considerado_los_arboles_que_dependen_de_las_juntas_municipales_de__distrito-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-tampoco_se_han_considerado_los_arboles_que_dependen_de_las_juntas_municipales_de__distrito-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "NaN"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-tetuan-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "126.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-tetuan-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "126.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-tetuan-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "126.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-tetuan-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "126.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-tetuan-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "126.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-tetuan-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "126.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-total_general-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "28.671"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-total_general-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "28.671"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-total_general-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "28.671"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-total_general-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "28.671"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-total_general-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "28.671"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-total_general-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "28.671"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-usera-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1096.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-usera-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1096.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-usera-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1096.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-usera-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1096.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-usera-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1096.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-usera-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1096.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-vicalvaro-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "272.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-vicalvaro-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "272.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-vicalvaro-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "272.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-vicalvaro-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "272.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-vicalvaro-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "272.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-vicalvaro-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "272.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-villa_de_vallecas-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "848.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-villa_de_vallecas-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "848.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-villa_de_vallecas-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "848.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-villa_de_vallecas-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "848.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-villa_de_vallecas-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "848.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-villa_de_vallecas-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "848.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-villaverde-SpatialQuantity-altura_promedio_(m)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1636.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-villaverde-SpatialQuantity-hmedia_joven a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1636.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-villaverde-SpatialQuantity-hmedia_otros a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1636.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-villaverde-SpatialQuantity-hmedia_recien_plantado_y_no_consolidado a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1636.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:measures-of-collection-of-trees-locatedin-2020-villaverde-SpatialQuantity-hmedia_viejo a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1636.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+<https://w3id.org/esgreen/measures-of-collection-of-trees-locatedin-2020-villaverde-SpatialQuantity-perimetro_promedio_(cm)> a sio:DimensionalQuantity ;
+    sio:hasQuality "otros" ;
+    sio:hasUnit <http://purl.obolibratory.org/obo/UO_0000008> ;
+    sio:hasValue "1636.0"^^xsd:float ;
+    sio:measuredAt "2020-01-01"^^xsd:date .
+
+esgreen:moncloa_-_aravaca a sio:SpatialRegion ;
+    rdfs:label "moncloa_-_aravaca" .
+
+esgreen:moratalaz a sio:SpatialRegion ;
+    rdfs:label "moratalaz" .
+
+esgreen:nan a sio:SpatialRegion ;
+    rdfs:label "nan" .
+
+<https://w3id.org/esgreen/no_se_incluyen_los_datos_del_ci6_(parques_historicos,_singulares_y_forestales)> a sio:SpatialRegion ;
+    rdfs:label "no_se_incluyen_los_datos_del_ci6_(parques_historicos,_singulares_y_forestales)" .
+
+esgreen:puente_de_vallecas a sio:SpatialRegion ;
+    rdfs:label "puente_de_vallecas" .
+
+esgreen:retiro a sio:SpatialRegion ;
+    rdfs:label "retiro" .
+
+esgreen:salamanca a sio:SpatialRegion ;
+    rdfs:label "salamanca" .
+
+esgreen:san_blas_-_canillejas a sio:SpatialRegion ;
+    rdfs:label "san_blas_-_canillejas" .
+
+esgreen:tampoco_se_han_considerado_los_arboles_que_dependen_de_las_juntas_municipales_de__distrito a sio:SpatialRegion ;
+    rdfs:label "tampoco_se_han_considerado_los_arboles_que_dependen_de_las_juntas_municipales_de__distrito" .
+
+esgreen:tetuan a sio:SpatialRegion ;
+    rdfs:label "tetuan" .
+
+esgreen:total_general a sio:SpatialRegion ;
+    rdfs:label "total_general" .
+
+esgreen:usera a sio:SpatialRegion ;
+    rdfs:label "usera" .
+
+esgreen:vicalvaro a sio:SpatialRegion ;
+    rdfs:label "vicalvaro" .
+
+esgreen:villa_de_vallecas a sio:SpatialRegion ;
+    rdfs:label "villa_de_vallecas" .
+
+esgreen:villaverde a sio:SpatialRegion ;
+    rdfs:label "villaverde" .
+
+sio:LifeStatus a <http://purl.obolibratory.org/ppo/LifeStatus> ;
+    sio:SimilarTo <https://dwc.tdwg.org/list/#dwc_lifeStage> .
 

@@ -8,6 +8,7 @@ import pandas as pd #for handling csv and csv contents
 # Define graph 'g' and namespaces
 sio = Namespace('http://semanticscience.org/resource/')
 esgreen = Namespace('https://w3id.org/esgreen/')
+obo = Namespace('http://purl.obolibratory.org/obo/')
 
 g = Graph()
 g.bind('sio', sio)
@@ -17,32 +18,35 @@ def prepareUri(uri):
     return esgreen + str(uri).replace(' ', '_').replace('"', '').lower()
 
 
-file_dates = [ '_2019', '_2020' ]
+file_dates = [ '2019', '2020' ]
 
 
 for file_date in file_dates:
     # Read in the csv file
-    df = pd.read_csv(f'data/inputs/MasasParquesHistoricoSingularesForestales{file_date}.csv', sep = ';') 
-    if file_date == '_2020':
-        surface_col = 'SUPERFICIE OCUPADA  (m2) '  
+    df = pd.read_csv(f'data/inputs/preprocessing//MasasParquesHistoricoSingularesForestales_{file_date}.csv', sep = ';') 
+    if file_date == '2020':
+        df.rename(columns={'superficie_ocupada__(m2)_':'superficie_ocupada_(m2)'}, inplace=True)
+        surface_col = 'superficie_ocupada_(m2)'
+        especie_col = 'especie_predominante'
+        count_col = 'unidades_' + file_date#.replace('_', '')   
     else:
         file_date = file_date.replace('_', '')
-        count_col = 'Unidades ' + file_date.replace('_', '')
-        especie_col = 'ESPECIE PREDOMINANTE'  
-        surface_col = 'SUPERFICIE OCUPADA (m2)'  
+        count_col = 'unidades_' + file_date#.replace('_', '')
+        especie_col = 'especie_predominante'  
+        surface_col = 'superficie_ocupada_(m2)'  
 
     # Iterate dataframe and generate RDF triples
     for index, row in df.iterrows():
 
-        park_uri = URIRef(prepareUri(row['PARQUE']))
+        park_uri = URIRef(prepareUri(row['parque']))
         specie_uri = URIRef(prepareUri(row[especie_col]))
 
-        collection_uri = URIRef(prepareUri(f"collection-{row[especie_col]}-{row['PARQUE']}"))
-        count_uri = URIRef(prepareUri(f"count-{file_date}-{row[especie_col]}-{row['PARQUE']}"))
-        surface_uri = URIRef(prepareUri(f"Total-surface-{file_date}-{row[especie_col]}-{row['PARQUE']}"))
+        collection_uri = URIRef(prepareUri(f"collection-{row[especie_col]}-{row['parque']}"))
+        count_uri = URIRef(prepareUri(f"count-{file_date}-{row[especie_col]}-{row['parque']}"))
+        surface_uri = URIRef(prepareUri(f"Total-surface-{file_date}-{row[especie_col]}-{row['parque']}"))
         
         g.add((park_uri, RDF.type, sio.site))
-        g.add((park_uri, RDFS.label, Literal(str(row['PARQUE']).lower())))
+        g.add((park_uri, RDFS.label, Literal(str(row['parque']).lower())))
 
         g.add((collection_uri, RDF.type, sio.Collection))
         g.add((collection_uri, sio.hasMember, specie_uri))
@@ -51,7 +55,9 @@ for file_date in file_dates:
         g.add((count_uri, RDF.type, sio.MemberCount))
         g.add((surface_uri, RDF.type, sio.SurfaceArea))
         g.add((count_uri, sio.hasValue, Literal(row[count_col], datatype=XSD.integer)))
+        g.add((count_uri, sio.hasUnit, obo.UO_0000189))
         g.add((surface_uri, sio.hasValue, Literal(row[surface_col], datatype=XSD.Float)))
+        g.add((surface_uri, sio.hasUnit, obo.UO_0000082)) #mts square
         g.add((count_uri, sio.measuredAt, Literal(file_date, datatype=XSD.integer)))
         g.add((surface_uri, sio.measuredAt, Literal(file_date, datatype=XSD.integer)))
 
@@ -105,5 +111,7 @@ for file_date in file_dates:
 
 
 
-# print(g.serialize(format='turtle'))
-g.serialize('outputs/rdflib-output5.ttl', format='turtle')
+outputfile = 'outputs/rdflib-output5.ttl'
+g.serialize(outputfile, format='turtle')
+print(f'**************************finished********************************* file in:' + outputfile)
+#g.serialize('outputs/rdflib-output3.ttl', format='turtle')
