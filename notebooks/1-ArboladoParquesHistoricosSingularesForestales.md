@@ -1,6 +1,6 @@
 ### Semantic model figure
 
-This module describes the data elements related to tree inventory dataset.
+This module describes the data elements related to [tree inventory dataset](https://github.com/carlosug/opengov-kg/blob/main/etl/data/inputs/preprocessing/ArboladoParquesHistoricoSingularesForestales_2019.csv).
 
 
 <p align="center">
@@ -25,7 +25,7 @@ This module describes the data elements related to tree inventory dataset.
 :parque_name a sio:Site ;
     sio:isLocatedIn :parque_name ;
     dc:title "Retiro"^^xsd:string ;
-    sio:collection  :parque_name_especie_names ;
+    sio:collection  :parque_name_especie_name ; # new variable
     sio:contains :especie_name ;
     sio:hasMember :especie_name .
 
@@ -43,7 +43,7 @@ This module describes the data elements related to tree inventory dataset.
 
 :especie a :habitatSpecies ;
 # :especie a sio:Object .
-    sio:UniqueIdentifier :key ;
+    sio:UniqueIdentifier :key ; # from external dataset
     sio:label :especie_name ;
     :seeAlso wiki:especie_name .
 
@@ -57,7 +57,7 @@ This module describes the data elements related to tree inventory dataset.
 | Original variable name | New variable name | Description                                             | Type   | Use                | SIO Term | Other term |
 | ---------------------- | ----------------- | ------------------------------------------------------- | ------ | ------------------ | --------- | --------- |
 | PARQUE                 | park              | The unique ID name of the park on which tree is located | `string` | To locate the tree | [Site](https://vemonet.github.io/semanticscience/browse/class-siosite.html) |
-| ESPECIE                | scientific_name   | Botanical name for the dominant specie                  | `string` | To group by taxon  | [MaterialEntity](https://vemonet.github.io/semanticscience/browse/class-siomaterialentity.html) | Specie |
+| ESPECIE                | scientific_name   | Botanical name for the dominant specie                  | `string` | To group by taxon  | [BiologicalEntity](https://vemonet.github.io/semanticscience/browse/class-siobiologicalentity.html) | Specie |
 | UNIDADES YEAR          | count             | Number of tree from same type                           | `int`    | To count/sum       | [MemberCount](https://vemonet.github.io/semanticscience/browse/class-siomembercount.html) | |
 
 
