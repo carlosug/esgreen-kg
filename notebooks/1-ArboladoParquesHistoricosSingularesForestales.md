@@ -43,7 +43,7 @@ This module describes the data elements related to [tree inventory dataset](http
 
 :especie a :habitatSpecies ;
 # :especie a sio:Object .
-    sio:UniqueIdentifier :key ; # from external dataset
+    sio:UniqueIdentifier :key ; # from external dataset : https://github.com/carlosug/opengov-kg/blob/main/etl/data/inputs/preprocessing/normalized.csv
     sio:label :especie_name ;
     :seeAlso wiki:especie_name .
 
