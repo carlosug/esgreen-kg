@@ -15,46 +15,81 @@ This module describes the data elements related to tree inventory dataset.
 
 ```ttl
 
-@prefix : <http://purl.org/ejp-rd/cde/v1/example-rdf/> .
-@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix : <http://purl.org/ejp-rd/cde/v020/example-rdf/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> . 
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix wiki: <http://en.wikipedia.org/wiki/> .
+@prefix gbif: <https://www.gbif.org/species/> .
+@prefix esgreen: <https://w3id.org/esgreen/> .
+@prefix schema: <http://schema.org/> .
 
-:nombre_distrito  a :District, sio:Township ;
-    sio:label "Moratalaz"^^xsd:string ;
-    sio:contains :collection_especies .
+:distrito_ a schema:AdministrativeArea ;
+    sio:similarTo sio:Township ;
+    sio:isLocatedIn "Madrid"^^xsd:string ;
+    sio:HasValue "Moratalaz"^^xsd:string ;
+    sio:contains :collectionOfTrees ;
+    # sio:collection  :collectionOfEspecies ;
+    # sio:contains :especie ;
+    # sio:hasMember :especie_name ;
+    sio:hasAttribute :geo_ .
 
-:collection_especies a sio:Collection ;
-    sio:hasAttribute :age_ .
+
+# geolocation for district
+:geo_ a sio:GeographicPosition ;
+    sio:hasAttribute :latitude_ ;
+    sio:hasAttribute :longitude_ ;
+    sio:hasAttribute :postal_code_ .
+
+:latitude_ a sio:Latitude ;
+    sio:HasValue "34.5"^^xsd:float .
+
+:longitude_ a sio:Longitude ;    
+    sio:HasValue "123"^^xsd:float .
+    
+:postal_code_ a sio:PostalCode ;
+    sio:HasValue "20067"^^xsd:integer .
+
+:collectionOfTrees a sio:collection ;
+    sio:IsRealizedIn :stats_process_ ;
+    sio:isLocatedIn :parque_ ;
+    sio:hasMember :especie_ ;
+    sio:measuredAt "2021"^^xsd:date .
+
+:stats_process_ a sio:Process ;
+    sio:label "stats measuring process"^^xsd:string ;
+    sio:hasOutput :stats_output_ .
+
+
+:especie_ a sio:BiologicalEntity ;
+    sio:isPartOf :collectionOfTrees .
+
+
+:stats_output_ a sio:InformationContentEntity ;
+    sio:hasAttribute :unidades_ ;
+    sio:hasAttribute :age_ ;
+    sio:hasAttribute :perimeter_ ;
+    sio:hasAttribute :height_ .
+
+:unidades_ a sio:MemberCount ;
+    sio:label "Total"^^xsd:string ;
+    sio:hasValue "35"^^xsd:integer ;
+    sio:hasUnit obo:UO_0000189 .
 
 :age_ a sio:LifeStatus ;
-    sio:label "Viejo"^^xsd:string ;
-    sio:hasMeasurementValue :statistics_ .
+    sio:hasQuality "joven" ;
+    sio:hasValue "Joven (J)"^^xsd:string .
 
-:statistics_ a sio:DimensionalQuantity ;
-    sio:MemberCount :N_Viejo ;
-    sio:Height :H_viejo .
+:perimeter_ a sio:DimensionalQuantity ;
+    sio:label "perimetro_promedio_(cm)"^^xsd:string ;
+    sio:hasValue "33.4"^^xsd:float ;
+    sio:hasUnit obo:UO_0000007 .
 
-:N_Viejo a sio:MemberCount ;
-    sio:hasValue "12"^^xsd:integer ,
-         "30"^^xsd:integer ,
-         "38"^^xsd:integer ;
-    sio:hasUnit obo:UO_0000189 ;
-    sio:measuredAt "2017-01-01"^^xsd:date,
-        "2019-01-01"^^xsd:date,
-        "2020-01-01"^^xsd:date .
-
-
-:H_viejo a sio:Mean ;
-    sio:hasValue "272.0"^^xsd:float ,
-         "303.0"^^xsd:float ,
-         "328.0"^^xsd:float ;
-    sio:hasUnit obo:UO_0000008 ; # mts
-    sio:measuredAt "2017-01-01"^^xsd:date,
-        "2019-01-01"^^xsd:date,
-        "2020-01-01"^^xsd:date .
+:height_ a sio:DimensionalQuantity, sio:Mean ;
+    sio:label "altura_promedio_(m)"^^xsd:string ;
+    sio:hasValue "435"^^xsd:integer ;
+    sio:hasUnit obo:UO_0000008 .
 
 ```
 
