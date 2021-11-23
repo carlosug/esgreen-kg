@@ -45,7 +45,7 @@
     sio:equivalentTo wiki:_especie_name_ ;
     sio:isPartOf :CollectionOfTrees .
 
-:identifier_ a sio:Identifier, gbif:key ; # from external dataset : https://github.com/carlosug/opengov-kg/blob/main/etl/data/inputs/preprocessing/normalized.csv
+:identifier_ a sio:Identifier;
     sio:denotes :especie_name_ ;
     sio:HasValue "gbif_000008"^^xsd:string .
 
@@ -71,14 +71,8 @@
 :m2_ a sio:SurfaceArea ;
     sio:label "perimetro_promedio_(cm)"^^xsd:string ;
     sio:hasValue "33.4"^^xsd:float ;
-    sio:hasUnit obo:UO_0000189 .tentEntity ;
-    sio:refersTo :unidades_ .
-
-:unidades_ a sio:MemberCount ;
-    sio:hasValue "35"^^xsd:integer ;
     sio:hasUnit obo:UO_0000189 ;
-    sio:measuredAt "2021"^^xsd:date .
-
+    sio:refersTo :unidades_ .
 
 
 
