@@ -4,46 +4,80 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix wiki: <http://en.wikipedia.org/wiki/> .
+@prefix schema: <http://schema.org/> .
 
-:nombre_distrito a :District ;
+
+:distrito_ a schema:AdministrativeArea ;
     sio:similarTo sio:Township ;
-    sio:isLocatedIn :georeferencing ;
-    sio:label "Moratalaz"^^xsd:string ;
-    sio:contains :nombre_especie ;
-    sio:collection  :nombre_distrito_nombre_especie ;
-    sio:hasMember :especie_name .
-
-:nombre_distrito_nombre_especie a sio:collection ;
-    dc:title "Moratalaz-Populus_nigra"^^xsd:string ;
-    sio:hasAttribute :unidades .
-
-:statistics_ a sio:DimensionalQuantity ;
-    sio:MemberCount :unidades_year ;
-    sio:SurfaceArea :_m2 .
-
-:unidades_year a sio:MemberCount ;
-    sio:hasValue "unidades_year"^^xsd:integer ;
-    sio:hasUnit obo:UO_0000189 ;
-    sio:measuredAt "_year"^^xsd:date .
-
-:_m2 a sio:SurfaceArea ;
-    sio:hasValue "272.0"^^xsd:float ,
-         "303.0"^^xsd:float ,
-         "328.0"^^xsd:float ;
-    sio:hasUnit obo:UO_0000082 ; # mts2
-    sio:measuredAt "2017-01-01"^^xsd:date,
-        "2019-01-01"^^xsd:date,
-        "2020-01-01"^^xsd:date .
+    sio:isLocatedIn "Madrid"^^xsd:string ;
+    sio:HasValue "Moratalaz"^^xsd:string ;
+    sio:contains :collectionOfTrees ;
+    # sio:collection  :collectionOfEspecies ;
+    # sio:contains :especie ;
+    # sio:hasMember :especie_name ;
+    sio:hasAttribute :geo_ .
 
 
-# <!-- map UniqueIdentifier with WIKI and gbif database -->
+# geolocation for district
+:geo_ a sio:GeographicPosition ;
+    sio:hasAttribute :latitude_ ;
+    sio:hasAttribute :longitude_ ;
+    sio:hasAttribute :postal_code_ .
 
-:especie a :habitatSpecies ;
-    sio:hasAttribute :unidades_year ;
+:latitude_ a sio:Latitude ;
+    sio:HasValue "34.5"^^xsd:float .
+
+:longitude_ a sio:Longitude ;    
+    sio:HasValue "123"^^xsd:float .
+    
+:postal_code_ a sio:PostalCode ;
+    sio:HasValue "20067"^^xsd:integer .
+
+:collectionOfTrees a sio:collection ;
+    sio:HasValue "Moratalaz-Populus_nigra"^^xsd:string ;
+    sio:IsRealizedIn :stats_process_ ;
+    sio:hasMember :especie_ .
+
+:especie_ a sio:BiologicalEntity ;
 # :especie a sio:Object .
-    sio:UniqueIdentifier :key ;
-    sio:label :especie_name ;
-    :seeAlso wiki:especie_name .
+    sio:hasAttribute :identifier_ ;
+    sio:label :especie_name_ ;
+    sio:equivalentTo wiki:_especie_name_ ;
+    sio:isPartOf :CollectionOfTrees .
+
+:identifier_ a sio:Identifier, gbif:key ; # from external dataset : https://github.com/carlosug/opengov-kg/blob/main/etl/data/inputs/preprocessing/normalized.csv
+    sio:denotes :especie_name_ ;
+    sio:HasValue "gbif_000008"^^xsd:string .
+
+:especie_name_ a sio:ScientificName ;
+    sio:label "Especie Predominante"^^xsd:string ;
+    sio:HasValue "Populus_nigra"^^xsd:string .
+
+
+:stats_process_ a sio:Process ;
+    sio:label "stats measuring process"^^xsd:string ;
+    sio:hasOutput :stats_output_ .
+
+
+:stats_output_ a sio:InformationContentEntity ;
+    sio:hasAttribute :unidades_ ;
+    sio:hasAttribute :m2_ .
+
+:unidades_ a sio:MemberCount ;
+    sio:label "Unidades"^^xsd:string ;
+    sio:hasValue "35"^^xsd:integer ;
+    sio:hasUnit obo:UO_0000189 .
+
+:m2_ a sio:SurfaceArea ;
+    sio:label "perimetro_promedio_(cm)"^^xsd:string ;
+    sio:hasValue "33.4"^^xsd:float ;
+    sio:hasUnit obo:UO_0000189 .tentEntity ;
+    sio:refersTo :unidades_ .
+
+:unidades_ a sio:MemberCount ;
+    sio:hasValue "35"^^xsd:integer ;
+    sio:hasUnit obo:UO_0000189 ;
+    sio:measuredAt "2021"^^xsd:date .
 
 
 

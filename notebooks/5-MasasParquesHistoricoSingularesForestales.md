@@ -21,6 +21,8 @@ This module describes the data elements related to tree inventory dataset.
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix wiki: <http://en.wikipedia.org/wiki/> .
 
+
+
 :parque_ a sio:Site ;
     sio:HasValue "Retiro"^^xsd:string ;
     sio:contains  :collectionOfTrees .
@@ -30,7 +32,6 @@ This module describes the data elements related to tree inventory dataset.
 
 :collectionOfTrees a sio:collection ;
     sio:HasValue "Retiro-Populus_nigra"^^xsd:string ;
-    sio:hasAttribute :unidades_ ;
     sio:IsRealizedIn :stats_process_ ;
     sio:hasMember :especie_ .
 

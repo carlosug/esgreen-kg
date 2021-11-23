@@ -16,7 +16,6 @@
 
 :collectionOfTrees a sio:collection ;
     sio:HasValue "Retiro-Populus_nigra"^^xsd:string ;
-    sio:hasAttribute :unidades_ ;
     sio:IsRealizedIn :stats_process_ ;
     sio:hasMember :especie_ .
 
