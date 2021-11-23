@@ -5,6 +5,7 @@ import glob
 import pandas as pd
 # adapted from here: https://gist.github.com/Gabriel-Chen/774801e1fc7a28265f57e5c3642b25dc
 # solutions here: https://coderedirect.com/questions/409995/remove-special-characters-from-csv-file-using-python
+# check here: https://github.com/TheScienceMuseum/heritage-connector-nlp/blob/main/notebooks/Preprocess%20Text.ipynb
 # def strip_accents(text):
 #     try:
 #         text = unicode(text, 'utf-8')
