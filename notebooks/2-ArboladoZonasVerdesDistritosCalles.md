@@ -13,40 +13,72 @@ This module describes the data elements related to tree inventory dataset.
 ### Example RDF (turtle):
 
 ```ttl
-
 @prefix : <http://purl.org/ejp-rd/cde/v020/example-rdf/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> . 
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix wiki: <http://en.wikipedia.org/wiki/> .
+@prefix schema: <http://schema.org/>.
 
-:nombre_distrito a :District ;
+
+:distrito_ a schema:AdministrativeArea ;
     sio:similarTo sio:Township ;
-    sio:isLocatedIn :georeferencing ;
-    sio:label "Moratalaz"^^xsd:string ;
-    sio:contains :nombre_especie ;
-    sio:collection  :nombre_distrito_nombre_especie ;
-    sio:hasMember :especie_name .
-
-:nombre_distrito_nombre_especie a sio:collection ;
-    dc:title "Moratalaz-Populus_nigra"^^xsd:string ;
-    sio:hasAttribute :unidades .
-
-:unidades_year a sio:MemberCount ;
-    sio:hasValue "unidades_year"^^xsd:integer ;
-    sio:hasUnit obo:UO_0000189 ;
-    sio:measuredAt "_year"^^xsd:date .
+    sio:isLocatedIn "Madrid"^^xsd:string ;
+    sio:HasValue "Moratalaz"^^xsd:string ;
+    sio:contains :collectionOfTrees ;
+    # sio:collection  :collectionOfEspecies ;
+    # sio:contains :especie ;
+    # sio:hasMember :especie_name ;
+    sio:hasAttribute :geo_ .
 
 
-# <!-- map UniqueIdentifier with WIKI and gbif database -->
+# geolocation for district
+:geo_ a sio:GeographicPosition ;
+    sio:hasAttribute :latitude_ ;
+    sio:hasAttribute :longitude_ ;
+    sio:hasAttribute :postal_code_ .
 
-:especie a :habitatSpecies ;
-    sio:hasAttribute :unidades_year ;
+:latitude_ a sio:Latitude ;
+    sio:HasValue "34.5"^^xsd:float .
+
+:longitude_ a sio:Longitude ;    
+    sio:HasValue "123"^^xsd:float .
+    
+:postal_code_ a sio:PostalCode ;
+    sio:HasValue "20067"^^xsd:integer .
+
+
+:collectionOfTrees a sio:collection ;
+    sio:HasValue "Moratalaz-Populus_nigra"^^xsd:string ;
+    sio:hasAttribute :unidades_ ;
+    sio:IsRealizedIn :count_process_ ;
+    sio:hasMember :especie_ .
+
+:especie_ a sio:BiologicalEntity ;
 # :especie a sio:Object .
-    sio:UniqueIdentifier :key ;
-    sio:label :especie_name ;
-    :seeAlso wiki:especie_name .
+    sio:hasAttribute :identifier_ ;
+    sio:label :especie_name_ ;
+    sio:equivalentTo wiki:_especie_name_ ;
+    sio:isPartOf :collectionOfTrees .
+
+:identifier_ a sio:Identifier ; # from external dataset.
+    sio:denotes :especie_name_ ;
+    sio:HasValue "gbif_000008"^^xsd:string .
+
+:especie_name_ a sio:ScientificName ;
+    sio:HasValue "Populus_nigra"^^xsd:string .
+
+:count_process_ a sio:Process ;
+    sio:label "count measuring process"^^xsd:string ;
+    sio:hasOutput :count_output_ .
+
+:count_output_ a sio:InformationContentEntity ;
+    sio:refersTo :unidades_ .
+
+:unidades_ a sio:MemberCount ;
+    sio:hasValue "35"^^xsd:integer ;
+    sio:hasUnit obo:UO_0000189 ;
+    sio:measuredAt "2021"^^xsd:date .
 
 ```
 
