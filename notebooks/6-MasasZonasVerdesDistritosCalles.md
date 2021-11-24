@@ -17,7 +17,6 @@ This module describes the data elements related to tree inventory dataset.
 @prefix obo: <http://purl.obolibrary.org/obo/> . 
 @prefix sio: <http://semanticscience.org/resource/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix wiki: <http://en.wikipedia.org/wiki/> .
 @prefix schema: <http://schema.org/> .
 
@@ -58,7 +57,7 @@ This module describes the data elements related to tree inventory dataset.
     sio:hasAttribute :identifier_ ;
     sio:label :especie_name_ ;
     sio:equivalentTo wiki:_especie_name_ ;
-    sio:isPartOf :CollectionOfTrees .
+    sio:isPartOf :collectionOfTrees .
 
 :identifier_ a sio:Identifier;
     sio:denotes :especie_name_ ;
