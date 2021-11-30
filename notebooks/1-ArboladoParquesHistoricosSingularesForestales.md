@@ -1,6 +1,6 @@
 ### Semantic model figure
 
-This module describes the data elements related to [tree inventory dataset](https://github.com/carlosug/opengov-kg/blob/main/etl/data/inputs/preprocessing/ArboladoParquesHistoricoSingularesForestales_2019.csv).
+This module describes the data elements related to [tree inventory dataset](https://github.com/carlosug/opengov-kg/blob/main/etl/data/inputs/preprocessing/ArboladoParquesHistoricoSingularesForestales_2019.csv). It covers the ESGREEN level of Arbolado Parques Historicos Singulares Forestales. The data specification can e found on the Madrid Platform at this [link](https://datos.madrid.es/FWProjects/egob/Catalogo/MedioAmbiente/ZonasVerdes/Ficheros/Informaci%C3%B3n%20de%20estado%20del%20arbolado%20en%20parques%20hist%C3%B3ricos%20singulares%20y%20forestales%20en%202019.pdf).
 
 
 <p align="center">
@@ -32,7 +32,7 @@ This module describes the data elements related to [tree inventory dataset](http
 
 :collectionOfTrees a sio:collection ;
     sio:HasValue "Retiro-Populus_nigra"^^xsd:string ;
-    sio:hasAttribute :unidades ;
+    sio:hasAttribute :unidades_ ;
     sio:IsRealizedIn :count_process_ ;
     sio:hasMember :especie_ ;
     sio:isLocatedIn :parque_ .
@@ -42,16 +42,16 @@ This module describes the data elements related to [tree inventory dataset](http
     sio:hasAttribute :identifier_ ;
     sio:label :especie_name_ ;
     sio:equivalentTo wiki:_especie_name_ ;
-    sio:isPartOf :CollectionOfTrees .
+    sio:isPartOf :collectionOfTrees .
 
-:identifier_ a sio:Identifier, gbif:key ; # from external dataset : https://github.com/carlosug/opengov-kg/blob/main/etl/data/inputs/preprocessing/normalized.csv
+:identifier_ a sio:Identifier ; # from external dataset : https://github.com/carlosug/opengov-kg/blob/main/etl/data/inputs/preprocessing/normalized.csv
     sio:denotes :especie_name_ ;
     sio:HasValue "gbif_000008"^^xsd:string .
 
 :especie_name_ a sio:ScientificName ;
     sio:HasValue "Populus_nigra"^^xsd:string .
 
-:count_process_ a sio:Process ;
+:count_process_ a sio:Process, sio:DataCollection ;
     sio:label "count measuring process"^^xsd:string ;
     sio:hasOutput :count_output_ .
 
@@ -62,6 +62,8 @@ This module describes the data elements related to [tree inventory dataset](http
     sio:hasValue "35"^^xsd:integer ;
     sio:hasUnit obo:UO_0000189 ;
     sio:measuredAt "2021"^^xsd:date .
+
+
 ```
 
 ***
