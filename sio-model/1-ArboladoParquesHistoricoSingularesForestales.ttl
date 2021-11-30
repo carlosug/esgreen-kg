@@ -16,7 +16,7 @@
 
 :collectionOfTrees a sio:collection ;
     sio:HasValue "Retiro-Populus_nigra"^^xsd:string ;
-    sio:hasAttribute :unidades ;
+    sio:hasAttribute :unidades_ ;
     sio:IsRealizedIn :count_process_ ;
     sio:hasMember :especie_ ;
     sio:isLocatedIn :parque_ .
@@ -26,16 +26,16 @@
     sio:hasAttribute :identifier_ ;
     sio:label :especie_name_ ;
     sio:equivalentTo wiki:_especie_name_ ;
-    sio:isPartOf :CollectionOfTrees .
+    sio:isPartOf :collectionOfTrees .
 
-:identifier_ a sio:Identifier, gbif:key ; # from external dataset : https://github.com/carlosug/opengov-kg/blob/main/etl/data/inputs/preprocessing/normalized.csv
+:identifier_ a sio:Identifier ; # from external dataset : https://github.com/carlosug/opengov-kg/blob/main/etl/data/inputs/preprocessing/normalized.csv
     sio:denotes :especie_name_ ;
     sio:HasValue "gbif_000008"^^xsd:string .
 
 :especie_name_ a sio:ScientificName ;
     sio:HasValue "Populus_nigra"^^xsd:string .
 
-:count_process_ a sio:Process ;
+:count_process_ a sio:Process, sio:DataCollection ;
     sio:label "count measuring process"^^xsd:string ;
     sio:hasOutput :count_output_ .
 
