@@ -34,7 +34,7 @@
     sio:label "Especie Predominante"^^xsd:string ;
     sio:HasValue "Populus_nigra"^^xsd:string .
 
-:stats_process_ a sio:Process ;
+:stats_process_ a sio:Process, sio:DataCollection ;
     sio:label "stats measuring process"^^xsd:string ;
     sio:hasOutput :stats_output_ .
 
@@ -51,6 +51,6 @@
 :m2_ a sio:SurfaceArea ;
     sio:label "perimetro_promedio_(cm)"^^xsd:string ;
     sio:hasValue "33.4"^^xsd:float ;
-    sio:hasUnit obo:UO_0000189 .
+    sio:hasUnit obo:UO_0000007 .
 
 
