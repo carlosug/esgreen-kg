@@ -1,6 +1,6 @@
 ### Semantic model figure
 
-This module describes the data elements related to [tree inventory dataset](https://github.com/carlosug/opengov-kg/blob/main/etl/data/inputs/preprocessing/ArboladoParquesHistoricoSingularesForestales_2019.csv). It covers the ESGREEN level of Arbolado Parques Historicos Singulares Forestales. The data specification can e found on the Madrid Platform at this [link](https://datos.madrid.es/FWProjects/egob/Catalogo/MedioAmbiente/ZonasVerdes/Ficheros/Informaci%C3%B3n%20de%20estado%20del%20arbolado%20en%20parques%20hist%C3%B3ricos%20singulares%20y%20forestales%20en%202019.pdf).
+This module describes the data elements related to [tree inventory dataset](https://github.com/carlosug/opengov-kg/blob/main/etl/data/inputs/preprocessing/ArboladoParquesHistoricoSingularesForestales_2019.csv). It covers the ESGREEN level of Arbolado Parques Historicos Singulares Forestales. The data specification can e found on the Open Data Madrid Platform at this [link](https://datos.madrid.es/FWProjects/egob/Catalogo/MedioAmbiente/ZonasVerdes/Ficheros/Informaci%C3%B3n%20de%20estado%20del%20arbolado%20en%20parques%20hist%C3%B3ricos%20singulares%20y%20forestales%20en%202019.pdf).
 
 
 <p align="center">
