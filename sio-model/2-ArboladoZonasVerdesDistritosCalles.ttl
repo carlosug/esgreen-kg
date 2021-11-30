@@ -53,7 +53,7 @@
 :especie_name_ a sio:ScientificName ;
     sio:HasValue "Populus_nigra"^^xsd:string .
 
-:count_process_ a sio:Process ;
+:count_process_ a sio:Process, sio:DataCollection ;
     sio:label "count measuring process"^^xsd:string ;
     sio:hasOutput :count_output_ .
 

@@ -1,6 +1,6 @@
 ### Semantic model figure
 
-This module describes the data elements related to tree inventory dataset.
+This module describes the data elements related to [tree inventory dataset](https://github.com/carlosug/opengov-kg/blob/main/etl/data/inputs/preprocessing). It covers the ESGREEN level of Arbolado Zonas Verdes Distritos y Calles. The data specification can e found on the Open Data Madrid Platform at this [link](https://datos.madrid.es/portal/site/egob/menuitem.c05c1f754a33a9fbe4b2e4b284f1a5a0/?vgnextoid=0101507f09436610VgnVCM2000001f4a900aRCRD&vgnextchannel=374512b9ace9f310VgnVCM100000171f5a0aRCRD&vgnextfmt=default).
 
 <p align="center">
     <a href="../images/arbolado_2.png" target="_blank">
@@ -61,14 +61,14 @@ This module describes the data elements related to tree inventory dataset.
     sio:equivalentTo wiki:_especie_name_ ;
     sio:isPartOf :collectionOfTrees .
 
-:identifier_ a sio:Identifier ; # from external dataset.
+:identifier_ a sio:Identifier ; # from external dataset 
     sio:denotes :especie_name_ ;
     sio:HasValue "gbif_000008"^^xsd:string .
 
 :especie_name_ a sio:ScientificName ;
     sio:HasValue "Populus_nigra"^^xsd:string .
 
-:count_process_ a sio:Process ;
+:count_process_ a sio:Process, sio:DataCollection ;
     sio:label "count measuring process"^^xsd:string ;
     sio:hasOutput :count_output_ .
 

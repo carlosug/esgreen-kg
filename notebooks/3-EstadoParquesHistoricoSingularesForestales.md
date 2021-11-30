@@ -1,6 +1,6 @@
 ### Semantic model figure
 
-This module describes the data elements related to tree inventory dataset.
+This module describes the data elements related to [tree inventory dataset](https://github.com/carlosug/opengov-kg/blob/main/etl/data/inputs/preprocessing). It covers the ESGREEN level of Estado Parques Historico Singulares Forestales. The data specification can e found on the Open Data Madrid Platform at this [link](https://datos.madrid.es/FWProjects/egob/Catalogo/MedioAmbiente/ZonasVerdes/Ficheros/Informaci%C3%B3n%20de%20estado%20del%20arbolado%20en%20parques%20hist%C3%B3ricos%20singulares%20y%20forestales%20en%202019.pdf).
 
 
 <p align="center">
@@ -14,7 +14,6 @@ This module describes the data elements related to tree inventory dataset.
 ### Example RDF (turtle):
 
 ```ttl
-
 @prefix : <http://purl.org/ejp-rd/cde/v020/example-rdf/> .
 @prefix obo: <http://purl.obolibrary.org/obo/> . 
 @prefix sio: <http://semanticscience.org/resource/> .
@@ -37,7 +36,7 @@ This module describes the data elements related to tree inventory dataset.
     sio:hasMember :especie_ ;
     sio:measuredAt "2021"^^xsd:date .
 
-:stats_process_ a sio:Process ;
+:stats_process_ a sio:Process, sio:DataCollection ;
     sio:label "stats measuring process"^^xsd:string ;
     sio:hasOutput :stats_output_ .
 
@@ -56,7 +55,7 @@ This module describes the data elements related to tree inventory dataset.
     sio:hasValue "35"^^xsd:integer ;
     sio:hasUnit obo:UO_0000189 .
 
-:age_ a sio:LifeStatus ;
+:age_ a sio:LifeStatus, sio:attribute ;
     sio:hasQuality "joven" ;
     sio:hasValue "joven"^^xsd:string .
 
