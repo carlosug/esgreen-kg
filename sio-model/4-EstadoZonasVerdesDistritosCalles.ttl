@@ -40,7 +40,7 @@
     sio:hasMember :especie_ ;
     sio:measuredAt "2021"^^xsd:date .
 
-:stats_process_ a sio:Process ;
+:stats_process_ a sio:Process, sio:DataCollection ;
     sio:label "stats measuring process"^^xsd:string ;
     sio:hasOutput :stats_output_ .
 
@@ -60,7 +60,7 @@
     sio:hasValue "35"^^xsd:integer ;
     sio:hasUnit obo:UO_0000189 .
 
-:age_ a sio:LifeStatus ;
+:age_ a sio:LifeStatus, sio:Attribute ;
     sio:hasQuality "joven" ;
     sio:hasValue "Joven (J)"^^xsd:string .
 
