@@ -53,7 +53,7 @@
     sio:HasValue "Populus_nigra"^^xsd:string .
 
 
-:stats_process_ a sio:Process ;
+:stats_process_ a sio:Process, sio:DataCollection ;
     sio:label "stats measuring process"^^xsd:string ;
     sio:hasOutput :stats_output_ .
 

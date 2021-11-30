@@ -1,6 +1,6 @@
 ### Semantic model figure
 
-This module describes the data elements related to [tree inventory dataset](https://github.com/carlosug/opengov-kg/blob/main/etl/data/inputs/preprocessing). It covers the ESGREEN level of Masas Parques Historico Singulares Forestales. The data specification can e found on the Open Data Madrid Platform at this [link](https://datos.madrid.es/FWProjects/egob/Catalogo/MedioAmbiente/ZonasVerdes/ficheros/Estructura_DS_Masas.pdf).
+This module describes the data elements related to [tree inventory dataset](https://github.com/carlosug/opengov-kg/blob/main/etl/data/inputs/preprocessing). It covers the ESGREEN level of Masas Parques Historico Singulares Forestales. The data specification can be found on the Open Data Madrid Platform at this [link](https://datos.madrid.es/FWProjects/egob/Catalogo/MedioAmbiente/ZonasVerdes/ficheros/Estructura_DS_Masas.pdf).
 
 
 <p align="center">
