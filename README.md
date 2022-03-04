@@ -3,7 +3,7 @@
 
 > To make **BIODIVERSITY** data Interoperable (the <b>I</b> in FAIR).
 
-## SPARQL Research questions
+## Potential SPARQL Research questions
 * 1. **city center** most abundant organisms.
 * 2. **outside** city center.
 * 3. **areas** with least and most diverse species  diversity (Shannon Index).
