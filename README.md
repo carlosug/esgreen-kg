@@ -1,6 +1,8 @@
 # Knowledge Graph for Open Government Data - Case of ESGREEN
 🌲 A RDF knowledge graph for green spaces infrastructure (trees, parkland, green areas) data of a city that are relevant for [Open City Project](https://github.com/CiudadesAbiertas). 
 
+- [ESGREEN Abstract](documents/abstract.pdf)
+
 > To make **BIODIVERSITY** data Interoperable (the <b>I</b> in FAIR).
 
 ## Potential SPARQL Research questions
